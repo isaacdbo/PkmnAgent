@@ -1,0 +1,6 @@
+*.pdf
+reinforcement-learning-and-mcts-sample-code copy 2/
+.pycache*/
+.ipynb*
+
+pokemon-tcg-ai-battle/
