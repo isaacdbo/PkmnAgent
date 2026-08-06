@@ -1,6 +1,17 @@
+# Ignore PDFs
 *.pdf
-reinforcement-learning-and-mcts-sample-code copy 2/
-.pycache*/
-.ipynb*
 
+# Ignore specific folders
+reinforcement-learning-and-mcts-sample-code copy 2
 pokemon-tcg-ai-battle/
+
+# Python cache folders
+__pycache__/
+*.pyc
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+first_out/
+Miniconda*.sh
+*.pth
