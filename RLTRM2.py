@@ -568,7 +568,7 @@ def create_node(parent: Node | None,
                     if picked and picked.id == 1220:
                         policy[i] *= 2.0
 
-                # 3. Prioritize using Spidops ex's Ability if it has no energy
+                # 3. Prioritize using Spidops Ability if it has no energy
                 elif opt.type == OptionType.ABILITY:
                     pokemon_card = get_card(obs, opt.area, opt.index, your_index)
                     if pokemon_card and pokemon_card.id == 401: # Spidops
