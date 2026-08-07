@@ -50,14 +50,25 @@ num_words_encoder = 24
 # Per-pokemon word: 46 + 4*card_count; 4 pokemon words + 2 player words + 5 misc words
 encoder_size = 300 + 22 * card_count
 
+# Domain-knowledge card IDs resolved from card_table at load time
+_TR_PROTON_ID    = next((cid for cid, d in card_table.items() if d.name == "Team Rocket's Proton"), 1220)
+_ULTRA_BALL_ID   = next((cid for cid, d in card_table.items() if d.name == "Ultra Ball"), 1121)
+_GRASS_ENERGY_ID = next((cid for cid, d in card_table.items() if d.name == "Basic {G} Energy"), 1)
+_SPIDOPS_ID      = 401  # Spidops ex — ability 'Bug Catching Set' fetches energy from deck
+_MEWTWO_IDS      = frozenset(cid for cid, d in card_table.items() if "mewtwo" in d.name.lower())
+_MIMIKYU_IDS     = frozenset(cid for cid, d in card_table.items() if "mimikyu" in d.name.lower())
+_TR_ENERGY_IDS   = frozenset(cid for cid, d in card_table.items()
+                              if "rocket" in d.name.lower() and d.cardType == CardType.SPECIAL_ENERGY)
+
 decoder_main_feature = 8 # Feature count of SelectContext.Main
 decoder_attack_offset = 14 # First index of Attack feature
 decoder_card_offset = decoder_attack_offset + attack_count # First index of Card Feature
 decoder_size = decoder_card_offset + (1 + decoder_main_feature + SelectContext.RECOVER_SPECIAL_CONDITION) * card_count # Decoder input vocabulary size
 
-FAST_TEST = True  # flip to False for real training runs
+FAST_TEST = True  # ~5 min; set False for ~1 hour runs
 
-SEARCH_COUNT = 5 if FAST_TEST else 50  # MCTS simulations per move
+# ~1 hour: 20 | ~2 hours: 30
+SEARCH_COUNT = 5 if FAST_TEST else 20
 
 # Decoder Layer of MyModel
 class DecoderLayer(torch.nn.Module):
@@ -297,6 +308,45 @@ def shaped_reward(obs: Observation, your_index: int) -> float:
     return reward
 
 
+def count_evolutions(ps: PlayerState) -> int:
+    """Count Stage-1 and Stage-2 Pokémon in play (active + bench)."""
+    count = 0
+    for p in (ps.active + ps.bench):
+        if p is not None:
+            d = card_table.get(p.id)
+            if d and (d.stage1 or d.stage2):
+                count += 1
+    return count
+
+
+def board_reward(state: 'State', your_index: int) -> float:
+    """State-based heuristic added to MCTS leaf value only (never to training targets).
+    Discourages deck-out strategies from random deck determinisation."""
+    you = state.players[your_index]
+    opp = state.players[1 - your_index]
+
+    # Penalise running down your own deck relative to opponent's;
+    # random determinisation otherwise makes milling look artificially attractive.
+    return (opp.deckCount - you.deckCount) * 0.01
+
+
+def extract_revealed_cards(obs: Observation, your_index: int) -> list[int]:
+    """Return card IDs the opponent just revealed (visible in this step's logs)."""
+    opp_index = 1 - your_index
+    visible_areas = {AreaType.DISCARD, AreaType.ACTIVE, AreaType.BENCH, AreaType.STADIUM}
+    revealed: list[int] = []
+    for log in obs.logs:
+        if log.playerIndex != opp_index:
+            continue
+        if log.type == LogType.MOVE_CARD and log.cardId and log.toArea in visible_areas:
+            revealed.append(log.cardId)
+        elif log.type == LogType.PLAY and log.cardId:
+            revealed.append(log.cardId)
+        elif log.type == LogType.EVOLVE and log.cardIdAfter:
+            revealed.append(log.cardIdAfter)
+    return list(set(revealed))
+
+
 def get_encoder_input(obs: Observation, your_deck: list[int]) -> SparseVector:
     your_index = obs.current.yourIndex
     state = obs.current
@@ -451,13 +501,14 @@ def eval_nn(sv_enc: SparseVector, sv_dec:SparseVector, model: MyModel) -> tuple[
 
     return (value.tolist()[0][0], policy.tolist()[0])
 
-# Single Training Sample
+# Single Training Sample - Used for MCTS backpropagation and training
 class LearnSample:
-    def __init__(self, value: float, policy: list[float], sv_enc: SparseVector, sv_dec:SparseVector):
-        self.value = value # Encoder output
-        self.policy = policy # Decoder output
+    def __init__(self, value: float, policy: list[float], sv_enc: SparseVector, sv_dec: SparseVector):
+        self.value = value          # value target: z ∈ {+1, 0, -1}, set by _backup_and_store
+        self.policy = policy        # policy target: visit-count proportions π(a|s)
         self.sv_enc = sv_enc
         self.sv_dec = sv_dec
+        self.action_count = len(policy)
    
 # MCTS Node Child
 class Child:
@@ -501,166 +552,216 @@ def create_node(parent: Node | None,
                 model: MyModel
     ) -> tuple[Node, LearnSample | None]:
     node = Node(parent, search_state)
-
-    obs = search_state.observation
+    obs  = search_state.observation
     state = obs.current
+
+    # --- (A) Terminal node: assign outcome; backprop happens in the MCTS loop, not here ---
     if state.result >= 0:
-        # Battle finished
-        if state.result == 2:
-            node.value = 0
-        elif state.result == your_index:
-            node.value = 1
-        else:
-            node.value = -1
-        node.backprop(node.value)
-        sample = None
+        node.value = 0.0 if state.result == 2 else (1.0 if state.result == your_index else -1.0)
+        return (node, None)
+
+    # --- Build legal-action list ---
+    # MAIN: non-terminal first so ATTACK/END are always present even if > 64 total options
+    if obs.select.context == SelectContext.MAIN and obs.select.maxCount == 1:
+        _t = (OptionType.ATTACK, OptionType.END)
+        non_terminal = [i for i, o in enumerate(obs.select.option) if o.type not in _t]
+        terminal     = [i for i, o in enumerate(obs.select.option) if o.type in _t]
+        actions = [[i] for i in non_terminal[:64 - len(terminal)]] + [[i] for i in terminal]
     else:
-        # For MAIN (maxCount=1): non-terminal actions first, then ATTACK, then END (always included)
-        if obs.select.context == SelectContext.MAIN and obs.select.maxCount == 1:
-            _terminal = (OptionType.ATTACK, OptionType.END)
-            non_terminal = [i for i, o in enumerate(obs.select.option) if o.type not in _terminal]
-            terminal    = [i for i, o in enumerate(obs.select.option) if o.type in _terminal]
-            budget = 64 - len(terminal)
-            actions = [[i] for i in non_terminal[:budget]] + [[i] for i in terminal]
-        else:
-            actions = []
-            indices = list(range(obs.select.maxCount))
-            for _ in range(64):
-                actions.append(indices.copy())
-                for i in range(len(indices)):
-                    index = len(indices) - i - 1
-                    if indices[index] < len(obs.select.option) - i - 1:
-                        indices[index] += 1
-                        for j in range(index+1, len(indices)):
-                            indices[j] = indices[j - 1] + 1
-                        break
-                else:
+        actions = []
+        indices = list(range(obs.select.maxCount))
+        for _ in range(64):
+            actions.append(indices.copy())
+            for i in range(len(indices)):
+                k = len(indices) - i - 1
+                if indices[k] < len(obs.select.option) - i - 1:
+                    indices[k] += 1
+                    for j in range(k + 1, len(indices)):
+                        indices[j] = indices[j - 1] + 1
                     break
+            else:
+                break
 
-        sv_enc = get_encoder_input(obs, your_deck)
-        sv_dec = get_decoder_input(obs, actions)
-        value, policy = eval_nn(sv_enc, sv_dec, model)
-        v = value
-        if state.yourIndex != your_index:
-            v = -v
-        v = max(-1.0, min(1.0, v + shaped_reward(obs, your_index)))
-        node.value = v
-        node.backprop(v)
-        
-        # --- Domain-Biased Priors (only when it is our player's turn) ---
-        if state.yourIndex == your_index:
-            your_ps = state.players[your_index]
+    # --- (B) Encode state and run NN ---
+    sv_enc = get_encoder_input(obs, your_deck)
+    sv_dec = get_decoder_input(obs, actions)
+    # eval_nn returns (value_scalar, policy_logits_list); logits are tanh outputs in [-1, 1]
+    value_pred, policy_logits = eval_nn(sv_enc, sv_dec, model)
+
+    # Node value: NN prediction + log-based shaped reward + state-based board reward
+    # (search only — training targets z remain pure game outcomes)
+    # No clamping: unclamped values keep shaped-reward information intact for PUCT.
+    # Backprop happens in the MCTS loop, not here, to avoid double-counting.
+    v = value_pred if state.yourIndex == your_index else -value_pred
+    v += shaped_reward(obs, your_index)
+    v += board_reward(state, your_index)
+    node.value = v
+
+    # --- Domain prior bonuses: additive logit offsets applied before softmax ---
+    # Scale tanh outputs by 3 to widen dynamic range before softmax; without this,
+    # softmax over [-1, 1] produces near-uniform distributions and weak action differentiation.
+    logits = [x * 4.0 for x in policy_logits]  # copy with scaling; length == len(actions)
+    if state.yourIndex == your_index:
+        your_ps = state.players[your_index]
+        ctx = obs.select.context
+
+        if ctx == SelectContext.MAIN:
+            has_ultra_ball = any(c.id == _ULTRA_BALL_ID for c in (your_ps.hand or []))
             for i, action in enumerate(actions):
-                if not action:
-                    continue
-
+                if not action: continue
                 opt = obs.select.option[action[0]]
 
-                # 1. Prioritize playing key Supporters / cards on turn 1
-                if opt.type == OptionType.PLAY:
+                if opt.type == OptionType.PLAY and not state.supporterPlayed:
                     card = your_ps.hand[opt.index]
-                    if card.id == 1220 and state.turn <= 2: # TR Proton on turn 1
-                        policy[i] *= 1.5
+                    data = card_table.get(card.id)
+                    if data and data.cardType == CardType.SUPPORTER:
+                        logits[i] += 0.916  # log(2.5): supporter every turn
+                        if card.id == _TR_PROTON_ID and state.turn <= 2:
+                            logits[i] += 0.405  # log(1.5) extra: TR Proton T1
 
-                # 2. Prioritize selecting TR Proton from deck after Transceiver on turn 1
-                elif (opt.type == OptionType.CARD
-                      and obs.select.context == SelectContext.TO_HAND
-                      and state.turn <= 2):
-                    picked = get_card(obs, opt.area, opt.index, opt.playerIndex)
-                    if picked and picked.id == 1220:
-                        policy[i] *= 2.0
+                elif opt.type == OptionType.ATTACH:
+                    energy = get_card(obs, opt.area, opt.index, your_index)
+                    target = get_card(obs, opt.inPlayArea, opt.inPlayIndex, your_index)
+                    if energy and target:
+                        if energy.id == _GRASS_ENERGY_ID and target.id == _SPIDOPS_ID:
+                            logits[i] += 0.916  # Grass → Spidops
+                        elif energy.id in _TR_ENERGY_IDS and target.id in (_MEWTWO_IDS | _MIMIKYU_IDS):
+                            logits[i] += 0.916  # TR Energy → Mewtwo / Mimikyu
 
-                # 3. Prioritize using Spidops Ability if it has no energy
                 elif opt.type == OptionType.ABILITY:
-                    pokemon_card = get_card(obs, opt.area, opt.index, your_index)
-                    if pokemon_card and pokemon_card.id == 401: # Spidops
-                        if not pokemon_card.energyCards:
-                            policy[i] *= 1.6
-        # --- End of Domain-Biased Priors ---
+                    poke = get_card(obs, opt.area, opt.index, your_index)
+                    if poke and poke.id == _SPIDOPS_ID and not poke.energyCards:
+                        # extra boost when Ultra Ball is in hand — fetched energy = discard fodder
+                        logits[i] += 0.916 if has_ultra_ball else 0.693
 
-        prob_sum = 0.0
-        for i in range(len(policy)):
-            p = math.exp(policy[i] * 10.0)
-            node.children.append(Child(actions[i], p))
-            prob_sum += p
-        for c in node.children:
-            c.prob /= prob_sum
-        sample = LearnSample(value, policy, sv_enc, sv_dec)
+        elif ctx == SelectContext.TO_HAND:
+            for i, action in enumerate(actions):
+                if not action: continue
+                opt = obs.select.option[action[0]]
+                if opt.type == OptionType.CARD:
+                    picked = get_card(obs, opt.area, opt.index, opt.playerIndex)
+                    if picked:
+                        if picked.id == _TR_PROTON_ID and state.turn <= 2:
+                            logits[i] += 0.916
+                        elif picked.id == _GRASS_ENERGY_ID:
+                            logits[i] += 0.693  # Bug Catching Set energy search
 
+        elif (ctx == SelectContext.DISCARD and obs.select.effect is not None
+              and obs.select.effect.id == _ULTRA_BALL_ID):
+            for i, action in enumerate(actions):
+                if not action: continue
+                opt = obs.select.option[action[0]]
+                if opt.type == OptionType.CARD:
+                    to_discard = get_card(obs, opt.area, opt.index, opt.playerIndex)
+                    if to_discard:
+                        d = card_table.get(to_discard.id)
+                        if d and d.cardType in (CardType.BASIC_ENERGY, CardType.SPECIAL_ENERGY):
+                            logits[i] += 0.693  # prefer discarding energy for Ultra Ball
+
+    # --- (C) Softmax → normalised priors; build children (all unexpanded) ---
+    # Softmax over legal-action logits only: all priors ∈ (0,1) and sum to 1.
+    priors = torch.softmax(torch.tensor(logits, dtype=torch.float32), dim=0).tolist()
+    for i, action in enumerate(actions):
+        node.children.append(Child(action, priors[i]))
+
+    # --- (D) LearnSample: encodings stored now; policy/value filled by mcts_agent ---
+    sample = LearnSample(
+        value  = 0.0,                    # overwritten by _backup_and_store after game ends
+        policy = [0.0] * len(actions),   # overwritten by mcts_agent with visit-count proportions
+        sv_enc = sv_enc,
+        sv_dec = sv_dec,
+    )
     return (node, sample)
 
 # We will perform exploration using MCTS and select actions. At the same time, we will also generate training data.
-def mcts_agent(obs_dict: dict, your_deck: list[int], model: MyModel) -> tuple[list[int], LearnSample]:
+def mcts_agent(obs_dict: dict, your_deck: list[int], model: MyModel,
+              opponent_deck_sample: list[int] | None = None) -> tuple[list[int], LearnSample]:
     obs = to_observation_class(obs_dict)
     your_index = obs.current.yourIndex
     state = obs.current
     active = state.players[1 - your_index].active
     search_state = search_begin(
         obs,
-        your_deck=random.sample(your_deck, state.players[your_index].deckCount), # Randomly select from deck.
-        your_prize=random.sample(your_deck, len(state.players[your_index].prize)), # Randomly select from deck.
-        opponent_deck=[1072] * state.players[1 - your_index].deckCount, # Fill with Snorlax (There is no deep meaning).
-        opponent_prize=[1] * len(state.players[1 - your_index].prize), # Fill with Basic Energy (There is no deep meaning)
+        your_deck=random.sample(your_deck, state.players[your_index].deckCount),
+        your_prize=random.sample(your_deck, len(state.players[your_index].prize)),
+        # Use belief-sampled deck if available; otherwise fall back to generic Snorlax placeholder
+        opponent_deck=opponent_deck_sample if opponent_deck_sample is not None
+                      else [1072] * state.players[1 - your_index].deckCount,
+        opponent_prize=[1] * len(state.players[1 - your_index].prize),
         opponent_hand=[1] * state.players[1 - your_index].handCount, # Fill with Basic Energy.
         opponent_active=[1072] if len(active) > 0 and active[0] == None else []) # Fill with Snorlax.
-    root, sample = create_node(None, search_state, your_index, your_deck, model) # Create root node.
+    # root_sample holds the ROOT's encodings — this is what we train on.
+    # Expansion calls inside the loop must NOT overwrite it.
+    root, root_sample = create_node(None, search_state, your_index, your_deck, model)
 
     # Search
     for _ in range(SEARCH_COUNT):
         current = root
-        while True:
-            value = -1e9
-            c = 0.4 * math.sqrt(current.visit)
-            for child in current.children:
-                visit = 0
-                if child.node == None:
-                    v = current.total / current.visit
-                else:
-                    v = child.node.total / child.node.visit
-                    visit = child.node.visit
-                if current.state.observation.current.yourIndex != your_index:
-                    v = -v
-                v += c * child.prob / (1 + visit)
-                if value < v:
-                    value = v
-                    next = child
-            
-            if next.node == None:
-                search_state = search_step(current.state.searchId, next.select)
-                next.node, _ = create_node(current, search_state, your_index, your_deck, model)
-                break
-            else:
-                current = next.node
-                if current.state.observation.current.result >= 0:
-                    current.backprop(current.value)
-                    break
 
-    # Select the most visited node.
+        while True:
+            # PUCT selection + descent/expansion are all inside this loop.
+            # current advances toward a leaf each iteration; loop breaks when
+            # a node is expanded or a terminal is reached.
+
+            total_visits = sum(c.node.visit for c in current.children if c.node)
+
+            best_child = None
+            best_score = -1e9
+            c_puct = 1.0
+
+            for child in current.children:
+                Q = child.node.total / child.node.visit if child.node else 0.0
+                N = child.node.visit if child.node else 0
+                # At opponent's nodes they minimise our value — negate Q so PUCT
+                # correctly steers them toward the action worst for us.
+                if current.state.observation.current.yourIndex != your_index:
+                    Q = -Q
+                U = c_puct * child.prob * math.sqrt(total_visits + 1) / (1 + N)
+                score = Q + U
+                if score > best_score:
+                    best_score = score
+                    best_child = child
+
+            if best_child.node is None:
+                # Leaf: expand — discard its sample (train only on root position)
+                ss = search_step(current.state.searchId, best_child.select)
+                next_node, _ = create_node(current, ss, your_index, your_deck, model)
+                best_child.node = next_node
+                next_node.backprop(next_node.value)
+                break  # simulation done; next for-iteration starts from root
+
+            # Already expanded: descend
+            current = best_child.node
+            if current.state.observation.current.result >= 0:
+                current.backprop(current.value)
+                break  # terminal; next for-iteration starts from root
+            # Non-terminal: continue while loop (deeper descent)
+
+    # Select the action with highest visit count
     max_child = None
     max_visit = -1
-    min_value = 10
-    for child in root.children:
-        if child.node != None:
-            if max_visit < child.node.visit:
-                max_child = child
-                max_visit = child.node.visit
-            v = child.node.total / child.node.visit
-            if min_value > v:
-                min_value = v
 
-    # Generate training data
-    sample.value = root.total / root.visit
-    for i in range(len(root.children)):
-        child = root.children[i]
-        v = sample.value
-        if child.node == None:
-            v = min_value - v - 0.03
-        else:
-            v = child.node.total / child.node.visit - v
-        sample.policy[i] = max(-1.0, min(1.0, v))
+    for child in root.children:
+        if child.node is not None and child.node.visit > max_visit:
+            max_visit = child.node.visit
+            max_child = child
+
+    # Build policy target from visit count proportions (AlphaZero-style)
+    visit_counts = [
+        (child.node.visit if child.node is not None else 0)
+        for child in root.children
+    ]
+    total_visits = sum(visit_counts)
+    if total_visits > 0:
+        root_sample.policy = [v / total_visits for v in visit_counts]
+    else:
+        root_sample.policy = [child.prob for child in root.children]  # fallback to priors
+
+    # value will be overwritten by _backup_and_store; set interim MCTS estimate
+    root_sample.value = root.total / root.visit
 
     search_end()
-    return (max_child.select, sample)
+    return (max_child.select, root_sample)
 
 
 # Helper class to construct batch inputs for the neural network.
@@ -715,6 +816,49 @@ if __name__ == "__main__":
         file_path = "/kaggle_simulations/agent/" + file_path
     my_deck = pd.read_excel(file_path, header=None).iloc[:, 0].tolist()
 
+    # --- Opponent archetype belief ---
+    ARCHETYPES: dict[str, list[int] | None] = {
+        "dragapult":    dragapult,
+        "grimmsnarl":   grimmsnarl,
+        "lucario":      lucario,
+        "mega_lopunny": mega_lopunny,
+        "slop_box":     slop_box,
+        "other":        None,  # unknown / non-meta deck
+    }
+    # Cache as frozensets for O(1) membership test
+    _ARCHETYPE_SETS: dict[str, frozenset[int]] = {
+        k: frozenset(v) for k, v in ARCHETYPES.items() if v is not None
+    }
+
+    def initial_belief() -> dict[str, float]:
+        n = len(ARCHETYPES)
+        return {name: 1.0 / n for name in ARCHETYPES}
+
+    def update_belief(belief: dict[str, float], revealed_card_id: int) -> None:
+        for name in belief:
+            s = _ARCHETYPE_SETS.get(name)
+            # "other" gets weak compatibility; known archetypes: 1.0 if in deck, 0.01 if not
+            belief[name] *= (0.5 if s is None else (1.0 if revealed_card_id in s else 0.01))
+        total = sum(belief.values())
+        if total > 0:
+            for name in belief:
+                belief[name] /= total
+        else:
+            belief.update(initial_belief())  # reset if all weights collapsed to zero
+
+    def sample_opponent_deck_from_belief(belief: dict[str, float], deck_count: int) -> list[int]:
+        names = list(belief.keys())
+        archetype_name = random.choices(names, weights=[belief[n] for n in names], k=1)[0]
+        deck = ARCHETYPES[archetype_name]
+        if deck is None or deck_count <= 0:
+            return [1072] * deck_count  # Snorlax: always a valid Basic
+        sample = random.sample(deck, min(deck_count, len(deck)))
+        # search_begin requires at least one Basic Pokémon; ensure one is present
+        if not any(card_table.get(c) and card_table[c].basic for c in sample):
+            basics = [c for c in deck if card_table.get(c) and card_table[c].basic]
+            sample[-1] = random.choice(basics) if basics else 1072
+        return sample
+
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     loss_fn_enc = torch.nn.HuberLoss(delta=0.2)
     loss_fn_dec = torch.nn.HuberLoss(reduction="none", delta=0.1)
@@ -723,14 +867,15 @@ if __name__ == "__main__":
     BATCH_SIZE = 128
     LAMBDA = 0.9
     REPLAY_BUFFER_MAXLEN = 25_000       # ~500 games × ~50 samples/player/game
-    WARMUP_EPOCHS             = 1  if FAST_TEST else 5
-    WARMUP_SELF_PLAY_GAMES    = 3  if FAST_TEST else 50
-    MAIN_EPOCHS               = 2  if FAST_TEST else 20
-    EVAL_EVERY                = 1  if FAST_TEST else 5
-    MAIN_SELF_PLAY_M2_GAMES   = 3  if FAST_TEST else 50
-    MAIN_SELF_PLAY_OPP_GAMES  = 2  if FAST_TEST else 20
-    MAIN_CROSS_PLAY_GAMES     = 2  if FAST_TEST else 10
-    EVAL_GAMES_PER_MATCHUP    = 2  if FAST_TEST else 10
+    # ~1 hour values shown; 2-hour alternatives in comments
+    WARMUP_EPOCHS             = 1  if FAST_TEST else 4   # 1hr: 2 - 2h: 3
+    WARMUP_SELF_PLAY_GAMES    = 3  if FAST_TEST else 25  # 1hr: 15 -2h: 25
+    MAIN_EPOCHS               = 2  if FAST_TEST else 20   # 1hr: 8 - 2h: 15
+    EVAL_EVERY                = 1  if FAST_TEST else 4   # 1hr: 2  - 2h: 3
+    MAIN_SELF_PLAY_M2_GAMES   = 3  if FAST_TEST else 25  # 1hr: 15 - 2h: 25
+    MAIN_SELF_PLAY_OPP_GAMES  = 2  if FAST_TEST else 15   # 1hr: 8 - 2h: 15
+    MAIN_CROSS_PLAY_GAMES     = 2  if FAST_TEST else 12   # 1hr: 2 - 2h: 12
+    EVAL_GAMES_PER_MATCHUP    = 2  if FAST_TEST else 10   # 1hr: 5 - 2h: 8
 
     class AgentState:
         def __init__(self, name: str, deck: list[int]):
@@ -739,6 +884,7 @@ if __name__ == "__main__":
             self.model = MyModel(128, 2, 256, 3, 1).to(device)
             self.optimizer = torch.optim.AdamW(self.model.parameters(), lr=3e-4)
             self.replay: deque = deque(maxlen=REPLAY_BUFFER_MAXLEN)
+            self.opponent_belief: dict[str, float] = initial_belief()
 
         def save_checkpoint(self):
             folder = os.path.join("checkpoints", self.name)
@@ -761,13 +907,18 @@ if __name__ == "__main__":
             except Exception as e:
                 print(f"[{self.name}] Checkpoint load failed ({e}), starting fresh.")
 
-    def _backup_and_store(agent, result: int, player_idx: int, samples: list):
-        value = 1.0 if player_idx == result else (0.0 if result == 2 else -1.0)
-        for sample in reversed(samples):
-            label = (value + sample.value) * 0.5
-            value = value * LAMBDA + sample.value * (1.0 - LAMBDA)
-            sample.value = label
-            agent.replay.append(sample)
+    def _backup_and_store(agent, result: int, player_idx: int, samples: list[LearnSample]):
+    # Convert result (0/1/2) into +1 / 0 / -1 from this player's perspective
+        if result == 2:
+            z = 0.0          # draw
+        elif result == player_idx:
+            z = 1.0          # this player won
+        else:
+            z = -1.0         # this player lost
+
+        for s in samples:
+            s.value = z      # long-term outcome target
+            agent.replay.append(s)
 
     def run_self_play(agent, n_games: int):
         agent.model.eval()
@@ -790,6 +941,10 @@ if __name__ == "__main__":
         opp.model.eval()
         with torch.inference_mode():
             for i in progress(n_games, f"[m2 vs {opp.name}]"):
+                # Reset opponent belief at start of each game
+                m2.opponent_belief  = initial_belief()
+                opp.opponent_belief = initial_belief()
+
                 if i % 2 == 0:
                     obs, _ = battle_start(m2.deck, opp.deck)
                     by_player = [m2, opp]
@@ -798,8 +953,21 @@ if __name__ == "__main__":
                     by_player = [opp, m2]
                 per_player: list[list[LearnSample]] = [[], []]
                 while obs["current"]["result"] < 0:
-                    yi = obs["current"]["yourIndex"]
-                    selected, sample = mcts_agent(obs, by_player[yi].deck, by_player[yi].model)
+                    yi   = obs["current"]["yourIndex"]
+                    agent = by_player[yi]
+
+                    # Update belief from cards the opponent just revealed this step
+                    obs_obj = to_observation_class(obs)
+                    for card_id in extract_revealed_cards(obs_obj, yi):
+                        update_belief(agent.opponent_belief, card_id)
+
+                    # Determinise opponent hidden state from current belief
+                    opp_deck_count = obs["current"]["players"][1 - yi]["deckCount"]
+                    opp_deck_sample = sample_opponent_deck_from_belief(
+                        agent.opponent_belief, opp_deck_count
+                    )
+
+                    selected, sample = mcts_agent(obs, agent.deck, agent.model, opp_deck_sample)
                     per_player[yi].append(sample)
                     obs = battle_select(selected)
                 battle_finish()
@@ -807,52 +975,96 @@ if __name__ == "__main__":
                 for pi in range(2):
                     _backup_and_store(by_player[pi], result, pi, per_player[pi])
 
-    def train_agent(agent):
-        sample_list = list(agent.replay)
-        if len(sample_list) < BATCH_SIZE:
-            print(f"[{agent.name}] Too few samples ({len(sample_list)}), skipping.")
+    def train_agent(agent, batch_size: int = BATCH_SIZE):
+        n = len(agent.replay)
+        if n < batch_size:
+            print(f"[{agent.name}] Too few samples ({n}), skipping.")
             return
-        print(f"[{agent.name}] Training ({len(sample_list)} samples)...")
+
+        # One full pass worth of gradient steps, but each batch is a fresh
+        # random draw — true SGD breaks temporal correlation between consecutive
+        # game states that would otherwise bias the gradient direction.
+        num_batches = n // batch_size
+        print(f"[{agent.name}] Training ({n} samples, {num_batches} batches)...")
         agent.model.train()
-        random.shuffle(sample_list)
-        batch_count = len(sample_list) // BATCH_SIZE
-        for i in range(batch_count):
+
+        for _ in range(num_batches):
+            # Fresh random sample each step: diverse gradients, no ordering bias
+            batch = random.sample(list(agent.replay), batch_size)
+
+            # --- Build sparse encoder / decoder inputs via LearnInput ---
+            # EmbeddingBag expects flat index/value/offset tensors, not dense matrices,
+            # so we use LearnInput to pack all samples into a single contiguous buffer.
             input_enc = LearnInput()
             input_dec = LearnInput()
-            mask: list[float] = []
-            label_enc: list[float] = []
-            label_dec: list[float] = []
-            for sample in sample_list[BATCH_SIZE * i: BATCH_SIZE * (i + 1)]:
-                input_enc.add(sample.sv_enc)
-                input_dec.add(sample.sv_dec)
-                label_enc.append(sample.value)
-                label_dec.extend(sample.policy)
-                mask.extend([1.0] * len(sample.policy))
-                pad = 64 - len(sample.policy)
-                mask.extend([0.0] * pad)
-                label_dec.extend([0.0] * pad)
-                for _ in range(pad):
-                    input_dec.offset.append(len(input_dec.index))
+            action_counts: list[int] = []
+            for s in batch:
+                input_enc.add(s.sv_enc)
+                input_dec.add(s.sv_dec)
+                action_counts.append(s.action_count)
+                # Pad decoder words to max_actions so EmbeddingBag produces a
+                # uniform (batch × max_actions) output — empty words sum to zero.
+            max_actions = max(action_counts)
+            # Reprocess decoder offsets with dynamic padding
+            input_dec = LearnInput()
+            for s in batch:
+                input_dec.add(s.sv_dec)
+                for _ in range(max_actions - s.action_count):
+                    input_dec.offset.append(len(input_dec.index))  # empty word
 
-            mask_t = torch.tensor(mask, dtype=torch.float32, device=device).view(BATCH_SIZE, -1)
-            lbl_enc = torch.tensor(label_enc, dtype=torch.float32, device=device).view(BATCH_SIZE, -1)
-            lbl_dec = torch.tensor(label_dec, dtype=torch.float32, device=device).view(BATCH_SIZE, -1)
+            # --- Policy targets: visit-count proportions π(a|s) ---
+            # Dynamic width (max_actions) avoids wasting compute on the 64 - max_actions
+            # columns that no sample in this batch actually uses.
+            padded_policy = [
+                s.policy + [0.0] * (max_actions - s.action_count) for s in batch
+            ]
+            policy_targets = torch.tensor(padded_policy, dtype=torch.float32, device=device)
+
+            # --- Value targets: outcome z ∈ {+1, 0, -1} ---
+            # Shape (batch, 1) matches the model's value head output.
+            value_targets = torch.tensor(
+                [s.value for s in batch], dtype=torch.float32, device=device
+            ).unsqueeze(1)
+
+            # --- Validity mask: 1 for real actions, 0 for padding ---
+            mask = torch.zeros(batch_size, max_actions, device=device)
+            for i, count in enumerate(action_counts):
+                mask[i, :count] = 1.0
+
+            # --- Forward pass ---
+            # model returns (value_head, policy_head): (batch,1) and (batch, max_actions)
+            out_enc, out_dec = agent.model(
+                torch.tensor(input_enc.index,  dtype=torch.int32,   device=device),
+                torch.tensor(input_enc.value,  dtype=torch.float32, device=device),
+                torch.tensor(input_enc.offset, dtype=torch.int32,   device=device),
+                torch.tensor(input_dec.index,  dtype=torch.int32,   device=device),
+                torch.tensor(input_dec.value,  dtype=torch.float32, device=device),
+                torch.tensor(input_dec.offset, dtype=torch.int32,   device=device))
+
+            # --- Value loss: MSE ---
+            # z is a fixed discrete signal in [-1, 1]; MSE penalises all errors equally,
+            # which prevents the head from ignoring small residuals near the extremes.
+            loss_value = torch.nn.functional.mse_loss(out_enc, value_targets)
+
+            # --- Policy loss: cross-entropy against visit-count proportions ---
+            # Padding slots are set to -1e9 before log_softmax so the model is never
+            # rewarded for assigning probability to actions that don't exist here.
+            # This keeps the MCTS prior well-calibrated: once trained, the policy head
+            # will concentrate probability on the actions MCTS found most valuable,
+            # so future searches need fewer simulations to reach good decisions.
+            masked_logits = out_dec + (mask - 1.0) * 1e9
+            log_probs = torch.nn.functional.log_softmax(masked_logits, dim=-1)
+            # CE = -∑_a π(a)·log q(a); unvisited actions contribute 0 since π=0.
+            loss_policy = -(policy_targets * log_probs).sum(-1).mean()
 
             agent.optimizer.zero_grad()
-            out_enc, out_dec = agent.model(
-                torch.tensor(input_enc.index, dtype=torch.int32, device=device),
-                torch.tensor(input_enc.value, dtype=torch.float32, device=device),
-                torch.tensor(input_enc.offset, dtype=torch.int32, device=device),
-                torch.tensor(input_dec.index, dtype=torch.int32, device=device),
-                torch.tensor(input_dec.value, dtype=torch.float32, device=device),
-                torch.tensor(input_dec.offset, dtype=torch.int32, device=device))
-
-            loss_enc = loss_fn_enc(out_enc, lbl_enc)
-            loss_dec = (loss_fn_dec(out_dec, lbl_dec) * mask_t).sum() / mask_t.sum().clamp(min=1)
-            (loss_enc + loss_dec).backward()
+            (loss_value + loss_policy).backward()
+            # Clip gradients: early in training the policy targets are noisy (few visits),
+            # so large gradient steps would destabilise both heads simultaneously.
             torch.nn.utils.clip_grad_norm_(agent.model.parameters(), 1.0)
             agent.optimizer.step()
-        print(f"[{agent.name}] Done ({batch_count} batches).")
+
+        print(f"[{agent.name}] Done ({num_batches} batches).")
 
     def evaluate(m2, opponents: list, n_games: int):
         print("=== Evaluation ===")
