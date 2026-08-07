@@ -55,7 +55,9 @@ decoder_attack_offset = 14 # First index of Attack feature
 decoder_card_offset = decoder_attack_offset + attack_count # First index of Card Feature
 decoder_size = decoder_card_offset + (1 + decoder_main_feature + SelectContext.RECOVER_SPECIAL_CONDITION) * card_count # Decoder input vocabulary size
 
-SEARCH_COUNT = 50 # MCTS Search count
+FAST_TEST = True  # flip to False for real training runs
+
+SEARCH_COUNT = 5 if FAST_TEST else 50  # MCTS simulations per move
 
 # Decoder Layer of MyModel
 class DecoderLayer(torch.nn.Module):
@@ -698,266 +700,257 @@ def progress(count: int, text: str):
         yield current
         current += 1
 
-# Juno's M2 List
-#sample_deck = [721,721,722,722,722,722,723,723,723,723,1092,1121,1121,1145,1145,1163,1163,1219,1219,1219,1219,1227,1227,1227,1227,1262,1262,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
+if __name__ == "__main__":
+    # Juno's M2 List
+    #sample_deck = [721,721,722,722,722,722,723,723,723,723,1092,1121,1121,1145,1145,1163,1163,1219,1219,1219,1219,1227,1227,1227,1227,1262,1262,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
 
-dragapult = [119, 119, 119, 119, 120, 120, 120, 120, 121, 121, 121, 112, 112, 305, 66, 235, 140, 1071, 1227, 1227, 1227, 1227,1182, 1182, 1182, 1198, 1198, 1240, 1086, 1086, 1086, 1086, 1152, 1152, 1152, 1152, 1121, 1121, 1121, 1121, 1120, 1120, 1120, 1120, 1097, 1097, 1097, 1213, 1080, 1260, 1260, 5, 5, 5, 5, 2, 2, 2, 7, 7]
-grimmsnarl = [646, 646, 646, 646, 647, 647, 647, 648, 648, 648, 112, 112, 112, 112, 860, 860, 860, 104, 104, 104, 235, 235, 689, 1227, 1227, 1227, 1227, 1182, 1182, 1182, 1219, 1219, 1219, 1152, 1152, 1152, 1152, 1086, 1086, 1086, 1097, 1097, 1079, 1122, 1092, 1213, 1174, 1259, 1259, 1259, 1259, 7, 7, 7, 7, 7, 7, 7, 7, 7]
-lucario = [677, 677, 677, 678, 678, 678, 676, 676, 676, 673, 673, 674, 674, 675, 675, 1071, 1227, 1227, 1227, 1227, 1213, 1213, 1182, 1182, 1211, 1219, 1229, 1142, 1142, 1142, 1142, 1152, 1152, 1152, 1152, 1121, 1121, 1121, 1121, 1141, 1141, 1141, 1141, 1080, 1174, 1174, 1174, 1252, 1252, 6, 6, 6, 6, 6, 6,6, 6, 6, 6, 6]
-mega_lopunny = [305, 305, 305, 65, 66, 66, 66, 848, 848, 848, 849, 849, 849, 109, 791, 174, 869, 1229, 1229, 1229, 1229, 1182, 1182, 1182, 1182, 1225, 1225, 1225, 1227, 1227, 1227, 1121, 1121, 1121, 1121, 1152, 1152, 1152, 1152, 1122, 1122, 1122, 1122, 1086, 1086, 1086, 1174, 1174, 1174, 1264, 1264, 1264, 11, 11, 11, 11, 16, 16, 16, 13]
-slop_box = [756, 756, 756, 756, 1071, 1071, 1071, 1071, 272, 272, 272, 272, 184, 184, 184, 108, 108, 140, 140, 791, 209, 979,1198, 1198, 1198, 1198, 1182, 1182, 1182, 1188, 1188, 1205, 1121, 1121, 1121, 1121, 1102, 1102, 1102, 1102, 1146, 1146, 1146, 1088, 1172, 1172, 1250, 1250, 1250, 1250, 5, 5, 5, 5, 3,3, 6, 6, 19, 2]
+    dragapult = [119, 119, 119, 119, 120, 120, 120, 120, 121, 121, 121, 112, 112, 305, 66, 235, 140, 1071, 1227, 1227, 1227, 1227,1182, 1182, 1182, 1198, 1198, 1240, 1086, 1086, 1086, 1086, 1152, 1152, 1152, 1152, 1121, 1121, 1121, 1121, 1120, 1120, 1120, 1120, 1097, 1097, 1097, 1213, 1080, 1260, 1260, 5, 5, 5, 5, 2, 2, 2, 7, 7]
+    grimmsnarl = [646, 646, 646, 646, 647, 647, 647, 648, 648, 648, 112, 112, 112, 112, 860, 860, 860, 104, 104, 104, 235, 235, 689, 1227, 1227, 1227, 1227, 1182, 1182, 1182, 1219, 1219, 1219, 1152, 1152, 1152, 1152, 1086, 1086, 1086, 1097, 1097, 1079, 1122, 1092, 1213, 1174, 1259, 1259, 1259, 1259, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+    lucario = [677, 677, 677, 678, 678, 678, 676, 676, 676, 673, 673, 674, 674, 675, 675, 1071, 1227, 1227, 1227, 1227, 1213, 1213, 1182, 1182, 1211, 1219, 1229, 1142, 1142, 1142, 1142, 1152, 1152, 1152, 1152, 1121, 1121, 1121, 1121, 1141, 1141, 1141, 1141, 1080, 1174, 1174, 1174, 1252, 1252, 6, 6, 6, 6, 6, 6,6, 6, 6, 6, 6]
+    mega_lopunny = [305, 305, 305, 65, 66, 66, 66, 848, 848, 848, 849, 849, 849, 109, 791, 174, 869, 1229, 1229, 1229, 1229, 1182, 1182, 1182, 1182, 1225, 1225, 1225, 1227, 1227, 1227, 1121, 1121, 1121, 1121, 1152, 1152, 1152, 1152, 1122, 1122, 1122, 1122, 1086, 1086, 1086, 1174, 1174, 1174, 1264, 1264, 1264, 11, 11, 11, 11, 16, 16, 16, 13]
+    slop_box = [756, 756, 756, 756, 1071, 1071, 1071, 1071, 272, 272, 272, 272, 184, 184, 184, 108, 108, 140, 140, 791, 209, 979,1198, 1198, 1198, 1198, 1182, 1182, 1182, 1188, 1188, 1205, 1121, 1121, 1121, 1121, 1102, 1102, 1102, 1102, 1146, 1146, 1146, 1088, 1172, 1172, 1250, 1250, 1250, 1250, 5, 5, 5, 5, 3,3, 6, 6, 19, 2]
 
-file_path = "M2Deck.xlsx"
-if not os.path.exists(file_path):
-    file_path = "/kaggle_simulations/agent/" + file_path
-my_deck = pd.read_excel(file_path, header=None).iloc[:, 0].tolist()
+    file_path = "M2Deck.xlsx"
+    if not os.path.exists(file_path):
+        file_path = "/kaggle_simulations/agent/" + file_path
+    my_deck = pd.read_excel(file_path, header=None).iloc[:, 0].tolist()
 
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    loss_fn_enc = torch.nn.HuberLoss(delta=0.2)
+    loss_fn_dec = torch.nn.HuberLoss(reduction="none", delta=0.1)
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-loss_fn_enc = torch.nn.HuberLoss(delta=0.2)
-loss_fn_dec = torch.nn.HuberLoss(reduction="none", delta=0.1)
+    # --- Training Hyperparameters ---
+    BATCH_SIZE = 128
+    LAMBDA = 0.9
+    REPLAY_BUFFER_MAXLEN = 25_000       # ~500 games × ~50 samples/player/game
+    WARMUP_EPOCHS             = 1  if FAST_TEST else 5
+    WARMUP_SELF_PLAY_GAMES    = 3  if FAST_TEST else 50
+    MAIN_EPOCHS               = 2  if FAST_TEST else 20
+    EVAL_EVERY                = 1  if FAST_TEST else 5
+    MAIN_SELF_PLAY_M2_GAMES   = 3  if FAST_TEST else 50
+    MAIN_SELF_PLAY_OPP_GAMES  = 2  if FAST_TEST else 20
+    MAIN_CROSS_PLAY_GAMES     = 2  if FAST_TEST else 10
+    EVAL_GAMES_PER_MATCHUP    = 2  if FAST_TEST else 10
 
-# --- Training Hyperparameters ---
-BATCH_SIZE = 128
-LAMBDA = 0.9
-REPLAY_BUFFER_MAXLEN = 25_000       # ~500 games × ~50 samples/player/game
-WARMUP_EPOCHS = 5
-WARMUP_SELF_PLAY_GAMES = 50
-MAIN_EPOCHS = 20
-EVAL_EVERY = 5                      # run evaluation every N main epochs
-MAIN_SELF_PLAY_M2_GAMES = 50
-MAIN_SELF_PLAY_OPP_GAMES = 20
-MAIN_CROSS_PLAY_GAMES = 10          # per matchup; both sides use MCTS
-EVAL_GAMES_PER_MATCHUP = 10
+    class AgentState:
+        def __init__(self, name: str, deck: list[int]):
+            self.name = name
+            self.deck = deck
+            self.model = MyModel(128, 2, 256, 3, 1).to(device)
+            self.optimizer = torch.optim.AdamW(self.model.parameters(), lr=3e-4)
+            self.replay: deque = deque(maxlen=REPLAY_BUFFER_MAXLEN)
 
+        def save_checkpoint(self):
+            folder = os.path.join("checkpoints", self.name)
+            os.makedirs(folder, exist_ok=True)
+            ts = time.strftime("%Y-%m-%d_%H-%M")
+            path = os.path.join(folder, f"model_{ts}.pth")
+            torch.save(self.model.state_dict(), path)
+            print(f"[{self.name}] Saved: {path}")
 
-class AgentState:
-    def __init__(self, name: str, deck: list[int]):
-        self.name = name
-        self.deck = deck
-        self.model = MyModel(128, 2, 256, 3, 1).to(device)
-        self.optimizer = torch.optim.AdamW(self.model.parameters(), lr=3e-4)
-        self.replay: deque = deque(maxlen=REPLAY_BUFFER_MAXLEN)
+        def load_latest_checkpoint(self):
+            folder = os.path.join("checkpoints", self.name)
+            if not os.path.exists(folder):
+                return
+            files = sorted(glob.glob(os.path.join(folder, "model_*.pth")))
+            if not files:
+                return
+            try:
+                self.model.load_state_dict(torch.load(files[-1], map_location=device))
+                print(f"[{self.name}] Loaded: {files[-1]}")
+            except Exception as e:
+                print(f"[{self.name}] Checkpoint load failed ({e}), starting fresh.")
 
-    def save_checkpoint(self):
-        folder = os.path.join("checkpoints", self.name)
-        os.makedirs(folder, exist_ok=True)
-        ts = time.strftime("%Y-%m-%d_%H-%M")
-        path = os.path.join(folder, f"model_{ts}.pth")
-        torch.save(self.model.state_dict(), path)
-        print(f"[{self.name}] Saved: {path}")
+    def _backup_and_store(agent, result: int, player_idx: int, samples: list):
+        value = 1.0 if player_idx == result else (0.0 if result == 2 else -1.0)
+        for sample in reversed(samples):
+            label = (value + sample.value) * 0.5
+            value = value * LAMBDA + sample.value * (1.0 - LAMBDA)
+            sample.value = label
+            agent.replay.append(sample)
 
-    def load_latest_checkpoint(self):
-        folder = os.path.join("checkpoints", self.name)
-        if not os.path.exists(folder):
-            return
-        files = sorted(glob.glob(os.path.join(folder, "model_*.pth")))
-        if not files:
-            return
-        try:
-            self.model.load_state_dict(torch.load(files[-1], map_location=device))
-            print(f"[{self.name}] Loaded: {files[-1]}")
-        except Exception as e:
-            print(f"[{self.name}] Checkpoint load failed ({e}), starting fresh.")
-
-
-def _backup_and_store(agent: AgentState, result: int, player_idx: int, samples: list):
-    """Apply TD(λ) backup to samples and append to agent's replay buffer."""
-    value = 1.0 if player_idx == result else (0.0 if result == 2 else -1.0)
-    for sample in reversed(samples):
-        label = (value + sample.value) * 0.5
-        value = value * LAMBDA + sample.value * (1.0 - LAMBDA)
-        sample.value = label
-        agent.replay.append(sample)
-
-
-def run_self_play(agent: AgentState, n_games: int):
-    agent.model.eval()
-    with torch.inference_mode():
-        for _ in progress(n_games, f"[{agent.name}] self-play"):
-            obs, _ = battle_start(agent.deck, agent.deck)
-            per_player: list[list[LearnSample]] = [[], []]
-            while obs["current"]["result"] < 0:
-                yi = obs["current"]["yourIndex"]
-                selected, sample = mcts_agent(obs, agent.deck, agent.model)
-                per_player[yi].append(sample)
-                obs = battle_select(selected)
-            battle_finish()
-            result = obs["current"]["result"]
-            for pi in range(2):
-                _backup_and_store(agent, result, pi, per_player[pi])
-
-
-def run_cross_play(m2: AgentState, opp: AgentState, n_games: int):
-    """Run games between M2 and opp; both sides collect training samples."""
-    m2.model.eval()
-    opp.model.eval()
-    with torch.inference_mode():
-        for i in progress(n_games, f"[m2 vs {opp.name}]"):
-            if i % 2 == 0:
-                obs, _ = battle_start(m2.deck, opp.deck)
-                by_player = [m2, opp]
-            else:
-                obs, _ = battle_start(opp.deck, m2.deck)
-                by_player = [opp, m2]
-            per_player: list[list[LearnSample]] = [[], []]
-            while obs["current"]["result"] < 0:
-                yi = obs["current"]["yourIndex"]
-                selected, sample = mcts_agent(obs, by_player[yi].deck, by_player[yi].model)
-                per_player[yi].append(sample)
-                obs = battle_select(selected)
-            battle_finish()
-            result = obs["current"]["result"]
-            for pi in range(2):
-                _backup_and_store(by_player[pi], result, pi, per_player[pi])
-
-
-def train_agent(agent: AgentState):
-    sample_list = list(agent.replay)
-    if len(sample_list) < BATCH_SIZE:
-        print(f"[{agent.name}] Too few samples ({len(sample_list)}), skipping.")
-        return
-    print(f"[{agent.name}] Training ({len(sample_list)} samples)...")
-    agent.model.train()
-    random.shuffle(sample_list)
-    batch_count = len(sample_list) // BATCH_SIZE
-    for i in range(batch_count):
-        input_enc = LearnInput()
-        input_dec = LearnInput()
-        mask: list[float] = []
-        label_enc: list[float] = []
-        label_dec: list[float] = []
-        for sample in sample_list[BATCH_SIZE * i: BATCH_SIZE * (i + 1)]:
-            input_enc.add(sample.sv_enc)
-            input_dec.add(sample.sv_dec)
-            label_enc.append(sample.value)
-            label_dec.extend(sample.policy)
-            mask.extend([1.0] * len(sample.policy))
-            pad = 64 - len(sample.policy)
-            mask.extend([0.0] * pad)
-            label_dec.extend([0.0] * pad)
-            for _ in range(pad):
-                input_dec.offset.append(len(input_dec.index))
-
-        mask_t = torch.tensor(mask, dtype=torch.float32, device=device).view(BATCH_SIZE, -1)
-        lbl_enc = torch.tensor(label_enc, dtype=torch.float32, device=device).view(BATCH_SIZE, -1)
-        lbl_dec = torch.tensor(label_dec, dtype=torch.float32, device=device).view(BATCH_SIZE, -1)
-
-        agent.optimizer.zero_grad()
-        out_enc, out_dec = agent.model(
-            torch.tensor(input_enc.index, dtype=torch.int32, device=device),
-            torch.tensor(input_enc.value, dtype=torch.float32, device=device),
-            torch.tensor(input_enc.offset, dtype=torch.int32, device=device),
-            torch.tensor(input_dec.index, dtype=torch.int32, device=device),
-            torch.tensor(input_dec.value, dtype=torch.float32, device=device),
-            torch.tensor(input_dec.offset, dtype=torch.int32, device=device))
-
-        loss_enc = loss_fn_enc(out_enc, lbl_enc)
-        loss_dec = (loss_fn_dec(out_dec, lbl_dec) * mask_t).sum() / mask_t.sum().clamp(min=1)
-        (loss_enc + loss_dec).backward()
-        torch.nn.utils.clip_grad_norm_(agent.model.parameters(), 1.0)
-        agent.optimizer.step()
-    print(f"[{agent.name}] Done ({batch_count} batches).")
-
-
-def evaluate(m2: AgentState, opponents: list, n_games: int):
-    print("=== Evaluation ===")
-    m2.model.eval()
-    with torch.inference_mode():
-        for opp in opponents:
-            opp.model.eval()
-            res = [0, 0, 0]  # win, loss, draw
-            for i in progress(n_games, f"Eval m2 vs {opp.name}"):
-                if i % 2 == 0:
-                    obs, _ = battle_start(m2.deck, opp.deck)
-                    m2_pi = 0
-                else:
-                    obs, _ = battle_start(opp.deck, m2.deck)
-                    m2_pi = 1
+    def run_self_play(agent, n_games: int):
+        agent.model.eval()
+        with torch.inference_mode():
+            for _ in progress(n_games, f"[{agent.name}] self-play"):
+                obs, _ = battle_start(agent.deck, agent.deck)
+                per_player: list[list[LearnSample]] = [[], []]
                 while obs["current"]["result"] < 0:
                     yi = obs["current"]["yourIndex"]
-                    if yi == m2_pi:
-                        selected, _ = mcts_agent(obs, m2.deck, m2.model)
-                    else:
-                        selected, _ = mcts_agent(obs, opp.deck, opp.model)
+                    selected, sample = mcts_agent(obs, agent.deck, agent.model)
+                    per_player[yi].append(sample)
                     obs = battle_select(selected)
                 battle_finish()
-                r = obs["current"]["result"]
-                if r == 2:
-                    res[2] += 1
-                elif r == m2_pi:
-                    res[0] += 1
+                result = obs["current"]["result"]
+                for pi in range(2):
+                    _backup_and_store(agent, result, pi, per_player[pi])
+
+    def run_cross_play(m2, opp, n_games: int):
+        m2.model.eval()
+        opp.model.eval()
+        with torch.inference_mode():
+            for i in progress(n_games, f"[m2 vs {opp.name}]"):
+                if i % 2 == 0:
+                    obs, _ = battle_start(m2.deck, opp.deck)
+                    by_player = [m2, opp]
                 else:
-                    res[1] += 1
-            total = res[0] + res[1]
-            rate = 100 * res[0] // total if total else 0
-            print(f"  vs {opp.name:14s}: {rate:3d}%  ({res[0]}W / {res[1]}L / {res[2]}D)")
+                    obs, _ = battle_start(opp.deck, m2.deck)
+                    by_player = [opp, m2]
+                per_player: list[list[LearnSample]] = [[], []]
+                while obs["current"]["result"] < 0:
+                    yi = obs["current"]["yourIndex"]
+                    selected, sample = mcts_agent(obs, by_player[yi].deck, by_player[yi].model)
+                    per_player[yi].append(sample)
+                    obs = battle_select(selected)
+                battle_finish()
+                result = obs["current"]["result"]
+                for pi in range(2):
+                    _backup_and_store(by_player[pi], result, pi, per_player[pi])
 
+    def train_agent(agent):
+        sample_list = list(agent.replay)
+        if len(sample_list) < BATCH_SIZE:
+            print(f"[{agent.name}] Too few samples ({len(sample_list)}), skipping.")
+            return
+        print(f"[{agent.name}] Training ({len(sample_list)} samples)...")
+        agent.model.train()
+        random.shuffle(sample_list)
+        batch_count = len(sample_list) // BATCH_SIZE
+        for i in range(batch_count):
+            input_enc = LearnInput()
+            input_dec = LearnInput()
+            mask: list[float] = []
+            label_enc: list[float] = []
+            label_dec: list[float] = []
+            for sample in sample_list[BATCH_SIZE * i: BATCH_SIZE * (i + 1)]:
+                input_enc.add(sample.sv_enc)
+                input_dec.add(sample.sv_dec)
+                label_enc.append(sample.value)
+                label_dec.extend(sample.policy)
+                mask.extend([1.0] * len(sample.policy))
+                pad = 64 - len(sample.policy)
+                mask.extend([0.0] * pad)
+                label_dec.extend([0.0] * pad)
+                for _ in range(pad):
+                    input_dec.offset.append(len(input_dec.index))
 
-# --- Agent Setup ---
-all_agents = [
-    AgentState("m2",           my_deck),
-    AgentState("dragapult",    dragapult),
-    AgentState("grimmsnarl",   grimmsnarl),
-    AgentState("lucario",      lucario),
-    AgentState("mega_lopunny", mega_lopunny),
-    AgentState("slop_box",     slop_box),
-]
-m2_agent        = all_agents[0]
-opponent_agents = all_agents[1:]
+            mask_t = torch.tensor(mask, dtype=torch.float32, device=device).view(BATCH_SIZE, -1)
+            lbl_enc = torch.tensor(label_enc, dtype=torch.float32, device=device).view(BATCH_SIZE, -1)
+            lbl_dec = torch.tensor(label_dec, dtype=torch.float32, device=device).view(BATCH_SIZE, -1)
 
-for agent in all_agents:
-    agent.load_latest_checkpoint()
+            agent.optimizer.zero_grad()
+            out_enc, out_dec = agent.model(
+                torch.tensor(input_enc.index, dtype=torch.int32, device=device),
+                torch.tensor(input_enc.value, dtype=torch.float32, device=device),
+                torch.tensor(input_enc.offset, dtype=torch.int32, device=device),
+                torch.tensor(input_dec.index, dtype=torch.int32, device=device),
+                torch.tensor(input_dec.value, dtype=torch.float32, device=device),
+                torch.tensor(input_dec.offset, dtype=torch.int32, device=device))
 
-total_games = 0
-run_start = time.time()
+            loss_enc = loss_fn_enc(out_enc, lbl_enc)
+            loss_dec = (loss_fn_dec(out_dec, lbl_dec) * mask_t).sum() / mask_t.sum().clamp(min=1)
+            (loss_enc + loss_dec).backward()
+            torch.nn.utils.clip_grad_norm_(agent.model.parameters(), 1.0)
+            agent.optimizer.step()
+        print(f"[{agent.name}] Done ({batch_count} batches).")
 
-# === WARM-UP PHASE ===
-print(f"=== Warm-up Phase ({WARMUP_EPOCHS} epochs) ===")
-for epoch in range(WARMUP_EPOCHS):
-    print(f"--- Warm-up Epoch {epoch + 1}/{WARMUP_EPOCHS} ---")
+    def evaluate(m2, opponents: list, n_games: int):
+        print("=== Evaluation ===")
+        m2.model.eval()
+        with torch.inference_mode():
+            for opp in opponents:
+                opp.model.eval()
+                res = [0, 0, 0]  # win, loss, draw
+                for i in progress(n_games, f"Eval m2 vs {opp.name}"):
+                    if i % 2 == 0:
+                        obs, _ = battle_start(m2.deck, opp.deck)
+                        m2_pi = 0
+                    else:
+                        obs, _ = battle_start(opp.deck, m2.deck)
+                        m2_pi = 1
+                    while obs["current"]["result"] < 0:
+                        yi = obs["current"]["yourIndex"]
+                        if yi == m2_pi:
+                            selected, _ = mcts_agent(obs, m2.deck, m2.model)
+                        else:
+                            selected, _ = mcts_agent(obs, opp.deck, opp.model)
+                        obs = battle_select(selected)
+                    battle_finish()
+                    r = obs["current"]["result"]
+                    if r == 2:
+                        res[2] += 1
+                    elif r == m2_pi:
+                        res[0] += 1
+                    else:
+                        res[1] += 1
+                total = res[0] + res[1]
+                rate = 100 * res[0] // total if total else 0
+                print(f"  vs {opp.name:14s}: {rate:3d}%  ({res[0]}W / {res[1]}L / {res[2]}D)")
+
+    # --- Agent Setup ---
+    all_agents = [
+        AgentState("m2",           my_deck),
+        AgentState("dragapult",    dragapult),
+        AgentState("grimmsnarl",   grimmsnarl),
+        AgentState("lucario",      lucario),
+        AgentState("mega_lopunny", mega_lopunny),
+        AgentState("slop_box",     slop_box),
+    ]
+    m2_agent        = all_agents[0]
+    opponent_agents = all_agents[1:]
+
     for agent in all_agents:
-        run_self_play(agent, WARMUP_SELF_PLAY_GAMES)
-        total_games += WARMUP_SELF_PLAY_GAMES
-        train_agent(agent)
-    for agent in all_agents:
-        agent.save_checkpoint()
+        agent.load_latest_checkpoint()
 
-# === MAIN PHASE ===
-print(f"=== Main Phase ({MAIN_EPOCHS} epochs) ===")
-for epoch in range(MAIN_EPOCHS):
-    epoch_start = time.time()
-    print(f"--- Main Epoch {epoch + 1}/{MAIN_EPOCHS} ---")
+    total_games = 0
+    run_start = time.time()
 
-    # Self-play data collection
-    run_self_play(m2_agent, MAIN_SELF_PLAY_M2_GAMES)
-    total_games += MAIN_SELF_PLAY_M2_GAMES
-    for opp in opponent_agents:
-        run_self_play(opp, MAIN_SELF_PLAY_OPP_GAMES)
-        total_games += MAIN_SELF_PLAY_OPP_GAMES
+    # === WARM-UP PHASE ===
+    print(f"=== Warm-up Phase ({WARMUP_EPOCHS} epochs) ===")
+    for epoch in range(WARMUP_EPOCHS):
+        print(f"--- Warm-up Epoch {epoch + 1}/{WARMUP_EPOCHS} ---")
+        for agent in all_agents:
+            run_self_play(agent, WARMUP_SELF_PLAY_GAMES)
+            total_games += WARMUP_SELF_PLAY_GAMES
+            train_agent(agent)
+        for agent in all_agents:
+            agent.save_checkpoint()
 
-    # Cross-play: M2 vs each opponent (both sides collect samples)
-    for opp in opponent_agents:
-        run_cross_play(m2_agent, opp, MAIN_CROSS_PLAY_GAMES)
-        total_games += MAIN_CROSS_PLAY_GAMES
+    # === MAIN PHASE ===
+    print(f"=== Main Phase ({MAIN_EPOCHS} epochs) ===")
+    for epoch in range(MAIN_EPOCHS):
+        epoch_start = time.time()
+        print(f"--- Main Epoch {epoch + 1}/{MAIN_EPOCHS} ---")
 
-    # Train all agents on their replay buffers
-    for agent in all_agents:
-        train_agent(agent)
+        # Self-play data collection
+        run_self_play(m2_agent, MAIN_SELF_PLAY_M2_GAMES)
+        total_games += MAIN_SELF_PLAY_M2_GAMES
+        for opp in opponent_agents:
+            run_self_play(opp, MAIN_SELF_PLAY_OPP_GAMES)
+            total_games += MAIN_SELF_PLAY_OPP_GAMES
 
-    # Checkpoint all agents
-    for agent in all_agents:
-        agent.save_checkpoint()
+        # Cross-play: M2 vs each opponent (both sides collect samples)
+        for opp in opponent_agents:
+            run_cross_play(m2_agent, opp, MAIN_CROSS_PLAY_GAMES)
+            total_games += MAIN_CROSS_PLAY_GAMES
 
-    # Periodic evaluation (no training)
-    if (epoch + 1) % EVAL_EVERY == 0:
-        evaluate(m2_agent, opponent_agents, EVAL_GAMES_PER_MATCHUP)
+        # Train all agents on their replay buffers
+        for agent in all_agents:
+            train_agent(agent)
 
-    elapsed = time.time() - run_start
-    epoch_secs = time.time() - epoch_start
-    remaining = elapsed / (epoch + 1) * (MAIN_EPOCHS - epoch - 1)
-    print(
-        f"Games: {total_games} | Epoch: {epoch_secs/60:.1f}m | "
-        f"Elapsed: {elapsed/60:.1f}m | ETA: {remaining/60:.1f}m",
-        flush=True
-    )
+        # Checkpoint all agents
+        for agent in all_agents:
+            agent.save_checkpoint()
+
+        # Periodic evaluation (no training)
+        if (epoch + 1) % EVAL_EVERY == 0:
+            evaluate(m2_agent, opponent_agents, EVAL_GAMES_PER_MATCHUP)
+
+        elapsed = time.time() - run_start
+        epoch_secs = time.time() - epoch_start
+        remaining = elapsed / (epoch + 1) * (MAIN_EPOCHS - epoch - 1)
+        print(
+            f"Games: {total_games} | Epoch: {epoch_secs/60:.1f}m | "
+            f"Elapsed: {elapsed/60:.1f}m | ETA: {remaining/60:.1f}m",
+            flush=True
+        )
