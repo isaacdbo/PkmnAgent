@@ -17,3 +17,7 @@ Miniconda*
 *.pth
 
 submission.zip
+submission.tar.gz
+
+# Test caches
+.pytest_cache/
