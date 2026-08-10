@@ -1,0 +1,2091 @@
+[m2] self-play 0%   [m2] Loaded: checkpoints/m2/model_2026-08-08_08-50.pth
+[dragapult] Loaded: checkpoints/dragapult/model_2026-08-08_08-50.pth
+[grimmsnarl] Loaded: checkpoints/grimmsnarl/model_2026-08-08_08-50.pth
+[lucario] Loaded: checkpoints/lucario/model_2026-08-08_08-50.pth
+[mega_lopunny] Loaded: checkpoints/mega_lopunny/model_2026-08-08_08-50.pth
+[slop_box] Loaded: checkpoints/slop_box/model_2026-08-08_08-50.pth
+=== Warm-up Phase (1 epochs) ===
+--- Warm-up Epoch 1/1 ---
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1355
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:1084|9-16:138|17-32:61|33-64:72|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/66)|3-5:0.00%(0/22)|6+:0.00%(0/1267)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2] self-play 33%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=980
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:790|9-16:104|17-32:45|33-64:41|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/126)|3-5:0.00%(0/88)|6+:0.00%(0/766)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2] self-play 66%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1111
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:911|9-16:132|17-32:26|33-64:42|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/81)|3-5:0.00%(0/129)|6+:0.00%(0/901)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2] self-play 100%   
+[dragapult] self-play 0%   [m2] Training (577 samples, 4 batches)...
+[m2] Done (4 batches).
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=173
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:81|9-16:57|17-32:23|33-64:12|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/30)|3-5:0.00%(0/37)|6+:0.00%(0/106)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[dragapult] self-play 33%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=572
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:171|9-16:117|17-32:198|33-64:86|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/20)|3-5:0.00%(0/13)|6+:0.00%(0/539)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[dragapult] self-play 66%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=573
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:135|9-16:96|17-32:219|33-64:123|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/24)|3-5:0.00%(0/17)|6+:0.00%(0/532)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[dragapult] self-play 100%   
+[grimmsnarl] self-play 0%   [dragapult] Training (224 samples, 1 batches)...
+[dragapult] Done (1 batches).
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=996
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:689|9-16:189|17-32:81|33-64:37|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/31)|3-5:0.00%(0/26)|6+:0.00%(0/939)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[grimmsnarl] self-play 33%   [TRUNC] turn=15 ctx=MAIN opts=70 kept=64 dropped_types={ABILITY:1,ATTACH:4,RETREAT:1}
+[TRUNC] turn=17 ctx=MAIN opts=82 kept=64 dropped_types={ABILITY:1,ATTACH:16,RETREAT:1}
+[TRUNC] turn=29 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:3,RETREAT:1}
+[TRUNC] turn=31 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:3,RETREAT:1}
+[TRUNC] turn=31 ctx=MAIN opts=75 kept=64 dropped_types={ABILITY:1,ATTACH:9,RETREAT:1}
+[TRUNC] turn=33 ctx=MAIN opts=75 kept=64 dropped_types={ABILITY:1,ATTACH:9,RETREAT:1}
+[TRUNC] turn=33 ctx=MAIN opts=81 kept=64 dropped_types={ABILITY:1,ATTACH:15,RETREAT:1}
+[TRUNC] turn=35 ctx=MAIN opts=81 kept=64 dropped_types={ABILITY:1,ATTACH:15,RETREAT:1}
+[TRUNC] turn=35 ctx=MAIN opts=87 kept=64 dropped_types={ABILITY:1,ATTACH:21,RETREAT:1}
+[TRUNC] turn=37 ctx=MAIN opts=87 kept=64 dropped_types={ABILITY:1,ATTACH:21,RETREAT:1}
+[TRUNC] turn=39 ctx=MAIN opts=87 kept=64 dropped_types={ABILITY:1,ATTACH:21,RETREAT:1}
+[TRUNC] turn=37 ctx=MAIN opts=93 kept=64 dropped_types={ABILITY:1,ATTACH:27,RETREAT:1}
+[TRUNC] turn=39 ctx=MAIN opts=93 kept=64 dropped_types={ABILITY:1,ATTACH:27,RETREAT:1}
+[TRUNC] turn=39 ctx=MAIN opts=99 kept=64 dropped_types={ABILITY:1,ATTACH:33,RETREAT:1}
+[TRUNC] turn=41 ctx=MAIN opts=99 kept=64 dropped_types={ABILITY:1,ATTACH:33,RETREAT:1}
+[TRUNC] turn=41 ctx=MAIN opts=105 kept=64 dropped_types={ABILITY:1,ATTACH:39,RETREAT:1}
+[TRUNC] turn=43 ctx=MAIN opts=105 kept=64 dropped_types={ABILITY:1,ATTACH:39,RETREAT:1}
+[TRUNC] turn=43 ctx=MAIN opts=111 kept=64 dropped_types={ABILITY:1,ATTACH:45,RETREAT:1}
+[TRUNC] turn=45 ctx=MAIN opts=111 kept=64 dropped_types={ABILITY:1,ATTACH:45,RETREAT:1}
+[TRUNC] turn=45 ctx=MAIN opts=117 kept=64 dropped_types={ABILITY:1,ATTACH:51,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=117 kept=64 dropped_types={ABILITY:1,ATTACH:51,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=123 kept=64 dropped_types={ABILITY:1,ATTACH:57,RETREAT:1}
+[TRUNC] turn=49 ctx=MAIN opts=129 kept=64 dropped_types={ABILITY:1,ATTACH:63,RETREAT:1}
+[TRUNC] turn=51 ctx=MAIN opts=135 kept=64 dropped_types={ABILITY:1,ATTACH:69,RETREAT:1}
+[TRUNC] turn=53 ctx=MAIN opts=141 kept=64 dropped_types={ABILITY:1,ATTACH:75,RETREAT:1}
+[TRUNC] turn=55 ctx=MAIN opts=147 kept=64 dropped_types={ABILITY:1,ATTACH:81,RETREAT:1}
+[TRUNC] turn=57 ctx=MAIN opts=147 kept=64 dropped_types={ABILITY:1,ATTACH:81,RETREAT:1}
+[TRUNC] turn=59 ctx=MAIN opts=146 kept=64 dropped_types={ATTACH:81,RETREAT:1}
+[TRUNC] turn=59 ctx=MAIN opts=152 kept=64 dropped_types={ATTACH:87,RETREAT:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=742
+TRUNC_FIRED=29
+TRUNC_FIRE_RATE=3.91%
+TRUNC_OPTCOUNT_HIST=1-8:308|9-16:252|17-32:128|33-64:25|65-128:22|129-256:7|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/49)|3-5:0.00%(0/133)|6+:5.18%(29/560)
+TRUNC_DROPPED_BY_TYPE=ABILITY:27,ATTACH:1121,RETREAT:29
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[grimmsnarl] self-play 66%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=776
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:451|9-16:233|17-32:76|33-64:16|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/101)|3-5:0.00%(0/112)|6+:0.00%(0/563)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[grimmsnarl] self-play 100%   
+[lucario] self-play 0%   [grimmsnarl] Training (425 samples, 3 batches)...
+[grimmsnarl] Done (3 batches).
+[TRUNC] turn=55 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:5}
+[TRUNC] turn=59 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=60 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:7}
+[TRUNC] turn=61 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=62 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=63 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=64 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:11}
+[TRUNC] turn=65 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:11,PLAY:1}
+[TRUNC] turn=67 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:11,PLAY:2}
+[TRUNC] turn=66 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:13}
+[TRUNC] turn=67 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=69 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:13,PLAY:2}
+[TRUNC] turn=98 ctx=MAIN opts=65 kept=64 dropped_types={ATTACH:1}
+[TRUNC] turn=98 ctx=MAIN opts=65 kept=64 dropped_types={ATTACH:1}
+[TRUNC] turn=100 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:5}
+[TRUNC] turn=102 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=104 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:13}
+[TRUNC] turn=106 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:17}
+[TRUNC] turn=108 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=110 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:2}
+[TRUNC] turn=110 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1256
+TRUNC_FIRED=23
+TRUNC_FIRE_RATE=1.83%
+TRUNC_OPTCOUNT_HIST=1-8:504|9-16:229|17-32:319|33-64:181|65-128:23|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/34)|3-5:0.00%(0/19)|6+:1.91%(23/1203)
+TRUNC_DROPPED_BY_TYPE=ATTACH:167,PLAY:15
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[lucario] self-play 33%   [TRUNC] turn=43 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=45 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:6}
+[TRUNC] turn=47 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=49 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:12}
+[TRUNC] turn=51 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=53 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:18}
+[TRUNC] turn=55 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=56 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=56 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=56 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=56 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=56 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=56 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=56 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:2}
+[TRUNC] turn=60 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:1,PLAY:3}
+[TRUNC] turn=58 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=60 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:2}
+[TRUNC] turn=62 ctx=MAIN opts=100 kept=64 dropped_types={ATTACH:33,PLAY:3}
+[TRUNC] turn=60 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=62 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:2}
+[TRUNC] turn=64 ctx=MAIN opts=100 kept=64 dropped_types={ATTACH:33,PLAY:3}
+[TRUNC] turn=85 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=87 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:2}
+[TRUNC] turn=85 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=86 ctx=MAIN opts=65 kept=64 dropped_types={ATTACH:1}
+[TRUNC] turn=87 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=89 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:5,PLAY:2}
+[TRUNC] turn=88 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:5}
+[TRUNC] turn=89 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=91 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:2}
+[TRUNC] turn=90 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=91 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=93 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:13,PLAY:2}
+[TRUNC] turn=92 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:13}
+[TRUNC] turn=93 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=95 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:17,PLAY:2}
+[TRUNC] turn=94 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:17}
+[TRUNC] turn=95 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=96 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=98 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:2}
+[TRUNC] turn=97 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:25,PLAY:1}
+[TRUNC] turn=98 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=99 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[TRUNC] turn=123 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=125 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:2}
+[TRUNC] turn=124 ctx=MAIN opts=65 kept=64 dropped_types={ATTACH:1}
+[TRUNC] turn=125 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=127 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:5,PLAY:2}
+[TRUNC] turn=126 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:5}
+[TRUNC] turn=127 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=129 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:2}
+[TRUNC] turn=128 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=129 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=131 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:13,PLAY:2}
+[TRUNC] turn=130 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:13}
+[TRUNC] turn=131 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=132 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:17}
+[TRUNC] turn=133 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=134 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=135 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:25,PLAY:1}
+[TRUNC] turn=136 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=137 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[TRUNC] turn=138 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=139 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=140 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=141 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:37,PLAY:1}
+[TRUNC] turn=142 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:12,PLAY:1}
+[TRUNC] turn=144 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:12,PLAY:2}
+[TRUNC] turn=143 ctx=MAIN opts=106 kept=64 dropped_types={ATTACH:41,PLAY:1}
+[TRUNC] turn=144 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:15,PLAY:1}
+[TRUNC] turn=146 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:15,PLAY:2}
+[TRUNC] turn=145 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,PLAY:1}
+[TRUNC] turn=146 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=148 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:2}
+[TRUNC] turn=147 ctx=MAIN opts=114 kept=64 dropped_types={ATTACH:49,PLAY:1}
+[TRUNC] turn=148 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=150 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:21,PLAY:2}
+[TRUNC] turn=149 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:53,PLAY:1}
+[TRUNC] turn=150 ctx=MAIN opts=89 kept=64 dropped_types={ATTACH:24,PLAY:1}
+[TRUNC] turn=152 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:24,PLAY:2}
+[TRUNC] turn=151 ctx=MAIN opts=122 kept=64 dropped_types={ATTACH:57,PLAY:1}
+[TRUNC] turn=152 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,PLAY:1}
+[TRUNC] turn=154 ctx=MAIN opts=93 kept=64 dropped_types={ATTACH:27,PLAY:2}
+[TRUNC] turn=153 ctx=MAIN opts=126 kept=64 dropped_types={ATTACH:61,PLAY:1}
+[TRUNC] turn=154 ctx=MAIN opts=95 kept=64 dropped_types={ATTACH:30,PLAY:1}
+[TRUNC] turn=156 ctx=MAIN opts=96 kept=64 dropped_types={ATTACH:30,PLAY:2}
+[TRUNC] turn=155 ctx=MAIN opts=130 kept=64 dropped_types={ATTACH:65,PLAY:1}
+[TRUNC] turn=156 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=158 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:2}
+[TRUNC] turn=157 ctx=MAIN opts=134 kept=64 dropped_types={ATTACH:69,PLAY:1}
+[TRUNC] turn=158 ctx=MAIN opts=101 kept=64 dropped_types={ATTACH:36,PLAY:1}
+[TRUNC] turn=160 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:36,PLAY:2}
+[TRUNC] turn=159 ctx=MAIN opts=138 kept=64 dropped_types={ATTACH:73,PLAY:1}
+[TRUNC] turn=160 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:39,PLAY:1}
+[TRUNC] turn=162 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:39,PLAY:2}
+[TRUNC] turn=161 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=161 ctx=MAIN opts=67 kept=64 dropped_types={ABILITY:2,ATTACH:1}
+[TRUNC] turn=162 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=163 ctx=MAIN opts=71 kept=64 dropped_types={ABILITY:2,ATTACH:5}
+[TRUNC] turn=185 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:2,PLAY:1}
+[TRUNC] turn=187 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:2,PLAY:2}
+[TRUNC] turn=189 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:2,PLAY:3}
+[TRUNC] turn=187 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=189 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:7,PLAY:2}
+[TRUNC] turn=191 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:7,PLAY:3}
+[TRUNC] turn=188 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=190 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:2}
+[TRUNC] turn=192 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:1,PLAY:3}
+[TRUNC] turn=189 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:12,PLAY:1}
+[TRUNC] turn=191 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:12,PLAY:2}
+[TRUNC] turn=193 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:12,PLAY:3}
+[TRUNC] turn=190 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=192 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:5,PLAY:2}
+[TRUNC] turn=194 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:5,PLAY:3}
+[TRUNC] turn=191 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=193 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:17,PLAY:2}
+[TRUNC] turn=195 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:17,PLAY:3}
+[TRUNC] turn=192 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=194 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:2}
+[TRUNC] turn=196 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:9,PLAY:3}
+[TRUNC] turn=193 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:22,PLAY:1}
+[TRUNC] turn=194 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=196 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:13,PLAY:2}
+[TRUNC] turn=198 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:13,PLAY:3}
+[TRUNC] turn=195 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,PLAY:1}
+[TRUNC] turn=197 ctx=MAIN opts=93 kept=64 dropped_types={ATTACH:27,PLAY:2}
+[TRUNC] turn=196 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=198 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:17,PLAY:2}
+[TRUNC] turn=200 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:17,PLAY:3}
+[TRUNC] turn=197 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:32,PLAY:1}
+[TRUNC] turn=199 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:32,PLAY:2}
+[TRUNC] turn=198 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=200 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:21,PLAY:2}
+[TRUNC] turn=202 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:21,PLAY:3}
+[TRUNC] turn=199 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:37,PLAY:1}
+[TRUNC] turn=201 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:37,PLAY:2}
+[TRUNC] turn=200 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:25,PLAY:1}
+[TRUNC] turn=202 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:25,PLAY:2}
+[TRUNC] turn=204 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:25,PLAY:3}
+[TRUNC] turn=201 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=203 ctx=MAIN opts=108 kept=64 dropped_types={ATTACH:42,PLAY:2}
+[TRUNC] turn=205 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:42,PLAY:3}
+[TRUNC] turn=202 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[TRUNC] turn=204 ctx=MAIN opts=95 kept=64 dropped_types={ATTACH:29,PLAY:2}
+[TRUNC] turn=206 ctx=MAIN opts=96 kept=64 dropped_types={ATTACH:29,PLAY:3}
+[TRUNC] turn=203 ctx=MAIN opts=112 kept=64 dropped_types={ATTACH:47,PLAY:1}
+[TRUNC] turn=205 ctx=MAIN opts=113 kept=64 dropped_types={ATTACH:47,PLAY:2}
+[TRUNC] turn=207 ctx=MAIN opts=114 kept=64 dropped_types={ATTACH:47,PLAY:3}
+[TRUNC] turn=204 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=206 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:2}
+[TRUNC] turn=205 ctx=MAIN opts=117 kept=64 dropped_types={ATTACH:52,PLAY:1}
+[TRUNC] turn=207 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:52,PLAY:2}
+[TRUNC] turn=205 ctx=MAIN opts=65 kept=64 dropped_types={ABILITY:1}
+[TRUNC] turn=206 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:37,PLAY:1}
+[TRUNC] turn=207 ctx=MAIN opts=70 kept=64 dropped_types={ABILITY:2,ATTACH:4}
+[TRUNC] turn=205 ctx=MAIN opts=71 kept=64 dropped_types={ABILITY:2,ATTACH:5}
+[TRUNC] turn=207 ctx=MAIN opts=122 kept=64 dropped_types={ATTACH:57,PLAY:1}
+[TRUNC] turn=209 ctx=MAIN opts=123 kept=64 dropped_types={ATTACH:57,PLAY:2}
+[TRUNC] turn=211 ctx=MAIN opts=124 kept=64 dropped_types={ATTACH:57,PLAY:3}
+[TRUNC] turn=207 ctx=MAIN opts=66 kept=64 dropped_types={ABILITY:2}
+[TRUNC] turn=208 ctx=MAIN opts=106 kept=64 dropped_types={ATTACH:41,PLAY:1}
+[TRUNC] turn=209 ctx=MAIN opts=71 kept=64 dropped_types={ABILITY:2,ATTACH:5}
+[TRUNC] turn=210 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:41,PLAY:2}
+[TRUNC] turn=211 ctx=MAIN opts=72 kept=64 dropped_types={ABILITY:2,ATTACH:5,PLAY:1}
+[TRUNC] turn=209 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:62,PLAY:1}
+[TRUNC] turn=211 ctx=MAIN opts=128 kept=64 dropped_types={ATTACH:62,PLAY:2}
+[TRUNC] turn=213 ctx=MAIN opts=129 kept=64 dropped_types={ATTACH:62,PLAY:3}
+[TRUNC] turn=209 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:2,EVOLVE:2}
+[TRUNC] turn=210 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,PLAY:1}
+[TRUNC] turn=211 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:2,EVOLVE:2,PLAY:1}
+[TRUNC] turn=212 ctx=MAIN opts=111 kept=64 dropped_types={ATTACH:45,PLAY:2}
+[TRUNC] turn=213 ctx=MAIN opts=70 kept=64 dropped_types={ABILITY:2,EVOLVE:2,PLAY:2}
+[TRUNC] turn=211 ctx=MAIN opts=132 kept=64 dropped_types={ATTACH:67,PLAY:1}
+[TRUNC] turn=213 ctx=MAIN opts=133 kept=64 dropped_types={ATTACH:67,PLAY:2}
+[TRUNC] turn=215 ctx=MAIN opts=134 kept=64 dropped_types={ATTACH:67,PLAY:3}
+[TRUNC] turn=211 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:2,EVOLVE:2,PLAY:1}
+[TRUNC] turn=212 ctx=MAIN opts=114 kept=64 dropped_types={ATTACH:49,PLAY:1}
+[TRUNC] turn=213 ctx=MAIN opts=70 kept=64 dropped_types={ABILITY:2,EVOLVE:2,PLAY:2}
+[TRUNC] turn=214 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:49,PLAY:2}
+[TRUNC] turn=215 ctx=MAIN opts=71 kept=64 dropped_types={ABILITY:2,EVOLVE:2,PLAY:3}
+[TRUNC] turn=213 ctx=MAIN opts=137 kept=64 dropped_types={ATTACH:72,PLAY:1}
+[TRUNC] turn=215 ctx=MAIN opts=138 kept=64 dropped_types={ATTACH:72,PLAY:2}
+[TRUNC] turn=217 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:72,PLAY:3}
+[TRUNC] turn=213 ctx=MAIN opts=74 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:2,PLAY:1}
+[TRUNC] turn=214 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:53,PLAY:1}
+[TRUNC] turn=215 ctx=MAIN opts=75 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:2,PLAY:2}
+[TRUNC] turn=216 ctx=MAIN opts=119 kept=64 dropped_types={ATTACH:53,PLAY:2}
+[TRUNC] turn=217 ctx=MAIN opts=80 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:2}
+[TRUNC] turn=215 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=217 ctx=MAIN opts=143 kept=64 dropped_types={ATTACH:77,PLAY:2}
+[TRUNC] turn=215 ctx=MAIN opts=75 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:2,PLAY:2}
+[TRUNC] turn=216 ctx=MAIN opts=122 kept=64 dropped_types={ATTACH:57,PLAY:1}
+[TRUNC] turn=217 ctx=MAIN opts=77 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:4,PLAY:2}
+[TRUNC] turn=218 ctx=MAIN opts=123 kept=64 dropped_types={ATTACH:57,PLAY:2}
+[TRUNC] turn=219 ctx=MAIN opts=82 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:4,PLAY:2}
+[TRUNC] turn=217 ctx=MAIN opts=147 kept=64 dropped_types={ATTACH:82,PLAY:1}
+[TRUNC] turn=219 ctx=MAIN opts=148 kept=64 dropped_types={ATTACH:82,PLAY:2}
+[TRUNC] turn=217 ctx=MAIN opts=76 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:2,PLAY:3}
+[TRUNC] turn=218 ctx=MAIN opts=126 kept=64 dropped_types={ATTACH:61,PLAY:1}
+[TRUNC] turn=219 ctx=MAIN opts=81 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:3}
+[TRUNC] turn=220 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:61,PLAY:2}
+[TRUNC] turn=221 ctx=MAIN opts=82 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:4}
+[TRUNC] turn=219 ctx=MAIN opts=152 kept=64 dropped_types={ATTACH:87,PLAY:1}
+[TRUNC] turn=221 ctx=MAIN opts=153 kept=64 dropped_types={ATTACH:87,PLAY:2}
+[TRUNC] turn=223 ctx=MAIN opts=154 kept=64 dropped_types={ATTACH:87,PLAY:3}
+[TRUNC] turn=219 ctx=MAIN opts=77 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:2,PLAY:4}
+[TRUNC] turn=220 ctx=MAIN opts=130 kept=64 dropped_types={ATTACH:65,PLAY:1}
+[TRUNC] turn=221 ctx=MAIN opts=78 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:2,PLAY:5}
+[TRUNC] turn=222 ctx=MAIN opts=131 kept=64 dropped_types={ATTACH:65,PLAY:2}
+[TRUNC] turn=223 ctx=MAIN opts=80 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:4,PLAY:5}
+[TRUNC] turn=221 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:92,PLAY:1}
+[TRUNC] turn=223 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:92,PLAY:2}
+[TRUNC] turn=221 ctx=MAIN opts=77 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:2,PLAY:4}
+[TRUNC] turn=222 ctx=MAIN opts=134 kept=64 dropped_types={ATTACH:69,PLAY:1}
+[TRUNC] turn=223 ctx=MAIN opts=79 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:4,PLAY:4}
+[TRUNC] turn=224 ctx=MAIN opts=135 kept=64 dropped_types={ATTACH:69,PLAY:2}
+[TRUNC] turn=225 ctx=MAIN opts=80 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:4,PLAY:5}
+[TRUNC] turn=223 ctx=MAIN opts=162 kept=64 dropped_types={ATTACH:97,PLAY:1}
+[TRUNC] turn=223 ctx=MAIN opts=78 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:2,PLAY:5}
+[TRUNC] turn=224 ctx=MAIN opts=138 kept=64 dropped_types={ATTACH:73,PLAY:1}
+[TRUNC] turn=225 ctx=MAIN opts=80 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:4,PLAY:5}
+[TRUNC] turn=226 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:73,PLAY:2}
+[TRUNC] turn=227 ctx=MAIN opts=81 kept=64 dropped_types={ABILITY:2,ATTACH:5,EVOLVE:4,PLAY:6}
+[TRUNC] turn=225 ctx=MAIN opts=167 kept=64 dropped_types={ATTACH:102,PLAY:1}
+[TRUNC] turn=226 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:4}
+[TRUNC] turn=227 ctx=MAIN opts=168 kept=64 dropped_types={ATTACH:102,PLAY:2}
+[TRUNC] turn=228 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,PLAY:1}
+[TRUNC] turn=225 ctx=MAIN opts=83 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:5}
+[TRUNC] turn=226 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=227 ctx=MAIN opts=84 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:6}
+[TRUNC] turn=228 ctx=MAIN opts=143 kept=64 dropped_types={ATTACH:77,PLAY:2}
+[TRUNC] turn=229 ctx=MAIN opts=89 kept=64 dropped_types={ABILITY:2,ATTACH:15,EVOLVE:2,PLAY:6}
+[TRUNC] turn=226 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=227 ctx=MAIN opts=172 kept=64 dropped_types={ATTACH:107,PLAY:1}
+[TRUNC] turn=228 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=227 ctx=MAIN opts=84 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:6}
+[TRUNC] turn=228 ctx=MAIN opts=146 kept=64 dropped_types={ATTACH:81,PLAY:1}
+[TRUNC] turn=229 ctx=MAIN opts=89 kept=64 dropped_types={ABILITY:2,ATTACH:15,EVOLVE:2,PLAY:6}
+[TRUNC] turn=230 ctx=MAIN opts=147 kept=64 dropped_types={ATTACH:81,PLAY:2}
+[TRUNC] turn=231 ctx=MAIN opts=94 kept=64 dropped_types={ABILITY:2,ATTACH:20,EVOLVE:2,PLAY:6}
+[TRUNC] turn=228 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:2}
+[TRUNC] turn=229 ctx=MAIN opts=177 kept=64 dropped_types={ATTACH:112,PLAY:1}
+[TRUNC] turn=230 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:4,PLAY:2}
+[TRUNC] turn=229 ctx=MAIN opts=85 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:7}
+[TRUNC] turn=230 ctx=MAIN opts=150 kept=64 dropped_types={ATTACH:85,PLAY:1}
+[TRUNC] turn=231 ctx=MAIN opts=86 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:8}
+[TRUNC] turn=232 ctx=MAIN opts=151 kept=64 dropped_types={ATTACH:85,PLAY:2}
+[TRUNC] turn=233 ctx=MAIN opts=88 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:4,PLAY:8}
+[TRUNC] turn=230 ctx=MAIN opts=67 kept=64 dropped_types={PLAY:3}
+[TRUNC] turn=231 ctx=MAIN opts=182 kept=64 dropped_types={ATTACH:117,PLAY:1}
+[TRUNC] turn=232 ctx=MAIN opts=68 kept=64 dropped_types={PLAY:4}
+[TRUNC] turn=231 ctx=MAIN opts=85 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:7}
+[TRUNC] turn=232 ctx=MAIN opts=154 kept=64 dropped_types={ATTACH:89,PLAY:1}
+[TRUNC] turn=233 ctx=MAIN opts=85 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:7}
+[TRUNC] turn=234 ctx=MAIN opts=155 kept=64 dropped_types={ATTACH:89,PLAY:2}
+[TRUNC] turn=235 ctx=MAIN opts=86 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:8}
+[TRUNC] turn=232 ctx=MAIN opts=68 kept=64 dropped_types={PLAY:4}
+[TRUNC] turn=233 ctx=MAIN opts=187 kept=64 dropped_types={ATTACH:122,PLAY:1}
+[TRUNC] turn=234 ctx=MAIN opts=69 kept=64 dropped_types={PLAY:5}
+[TRUNC] turn=233 ctx=MAIN opts=86 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:8}
+[TRUNC] turn=234 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=235 ctx=MAIN opts=87 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:9}
+[TRUNC] turn=236 ctx=MAIN opts=159 kept=64 dropped_types={ATTACH:93,PLAY:2}
+[TRUNC] turn=237 ctx=MAIN opts=78 kept=64 dropped_types={ABILITY:2,ATTACH:9,PLAY:3}
+[TRUNC] turn=234 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:4,PLAY:4}
+[TRUNC] turn=235 ctx=MAIN opts=192 kept=64 dropped_types={ATTACH:127,PLAY:1}
+[TRUNC] turn=236 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:4,EVOLVE:2,PLAY:4}
+[TRUNC] turn=235 ctx=MAIN opts=87 kept=64 dropped_types={ABILITY:2,ATTACH:10,EVOLVE:2,PLAY:9}
+[TRUNC] turn=236 ctx=MAIN opts=162 kept=64 dropped_types={ATTACH:97,PLAY:1}
+[TRUNC] turn=237 ctx=MAIN opts=78 kept=64 dropped_types={ABILITY:2,ATTACH:9,PLAY:3}
+[TRUNC] turn=238 ctx=MAIN opts=163 kept=64 dropped_types={ATTACH:97,PLAY:2}
+[TRUNC] turn=236 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:4,PLAY:5}
+[TRUNC] turn=237 ctx=MAIN opts=197 kept=64 dropped_types={ATTACH:132,PLAY:1}
+[TRUNC] turn=238 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:4,PLAY:6}
+[TRUNC] turn=237 ctx=MAIN opts=78 kept=64 dropped_types={ABILITY:2,ATTACH:9,PLAY:3}
+[TRUNC] turn=238 ctx=MAIN opts=166 kept=64 dropped_types={ATTACH:101,PLAY:1}
+[TRUNC] turn=237 ctx=MAIN opts=84 kept=64 dropped_types={ABILITY:2,ATTACH:15,EVOLVE:2,PLAY:1}
+[TRUNC] turn=238 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:4,PLAY:5}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1582
+TRUNC_FIRED=279
+TRUNC_FIRE_RATE=17.64%
+TRUNC_OPTCOUNT_HIST=1-8:262|9-16:291|17-32:353|33-64:397|65-128:231|129-256:48|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/39)|3-5:0.00%(0/16)|6+:18.27%(279/1527)
+TRUNC_DROPPED_BY_TYPE=ABILITY:101,ATTACH:8195,EVOLVE:98,PLAY:543
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[lucario] self-play 66%   [TRUNC] turn=31 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=32 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=33 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=34 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=35 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=36 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=37 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=38 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=39 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=40 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=41 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=42 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=43 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=44 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=45 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=46 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=47 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:51}
+[TRUNC] turn=48 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:51}
+[TRUNC] turn=49 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=50 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=50 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=50 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=52 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=50 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=52 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=51 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=52 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=54 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=53 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=54 ctx=MAIN opts=133 kept=64 dropped_types={ATTACH:69}
+[TRUNC] turn=55 ctx=MAIN opts=66 kept=64 dropped_types={ABILITY:1,ATTACH:1}
+[TRUNC] turn=56 ctx=MAIN opts=133 kept=64 dropped_types={ATTACH:69}
+[TRUNC] turn=55 ctx=MAIN opts=133 kept=64 dropped_types={ATTACH:69}
+[TRUNC] turn=55 ctx=MAIN opts=66 kept=64 dropped_types={ABILITY:1,ATTACH:1}
+[TRUNC] turn=56 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=57 ctx=MAIN opts=67 kept=64 dropped_types={ABILITY:1,ATTACH:1,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=57 ctx=MAIN opts=67 kept=64 dropped_types={ABILITY:1,ATTACH:1,EVOLVE:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=695
+TRUNC_FIRED=38
+TRUNC_FIRE_RATE=5.47%
+TRUNC_OPTCOUNT_HIST=1-8:363|9-16:123|17-32:86|33-64:85|65-128:33|129-256:5|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/35)|3-5:0.00%(0/113)|6+:6.95%(38/547)
+TRUNC_DROPPED_BY_TYPE=ABILITY:4,ATTACH:1492,EVOLVE:1,PLAY:1
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[lucario] self-play 100%   
+[mega_lopunny] self-play 0%   [lucario] Training (593 samples, 4 batches)...
+[lucario] Done (4 batches).
+[TRUNC] turn=24 ctx=MAIN opts=65 kept=64 dropped_types={RETREAT:1}
+[TRUNC] turn=24 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:3,PLAY:1,RETREAT:1}
+[TRUNC] turn=26 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:8,PLAY:1,RETREAT:1}
+[TRUNC] turn=28 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:8,PLAY:2,RETREAT:1}
+[TRUNC] turn=28 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:13,PLAY:1,RETREAT:1}
+[TRUNC] turn=30 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:13,PLAY:2,RETREAT:1}
+[TRUNC] turn=32 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:13,PLAY:3,RETREAT:1}
+[TRUNC] turn=30 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=30 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=30 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=30 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=32 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=35 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=35 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=35 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=35 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=37 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=37 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=37 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=41 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:6,PLAY:2}
+[TRUNC] turn=41 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:2}
+[TRUNC] turn=45 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:9,PLAY:3}
+[TRUNC] turn=43 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:12,PLAY:1}
+[TRUNC] turn=45 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:12,PLAY:2}
+[TRUNC] turn=44 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:2,PLAY:1}
+[TRUNC] turn=44 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:2,PLAY:1}
+[TRUNC] turn=45 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:15,PLAY:1}
+[TRUNC] turn=47 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:15,PLAY:2}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=46 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=48 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:8,PLAY:1,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=52 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:18,PLAY:2,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=52 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:18,PLAY:2,RETREAT:1}
+[TRUNC] turn=52 ctx=MAIN opts=89 kept=64 dropped_types={ATTACH:23,PLAY:1,RETREAT:1}
+[TRUNC] turn=54 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=54 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=54 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=54 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=54 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=54 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=54 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=54 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:28,PLAY:1,RETREAT:1}
+[TRUNC] turn=58 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:1,RETREAT:1}
+[TRUNC] turn=58 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:1,RETREAT:1}
+[TRUNC] turn=60 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:38,PLAY:1,RETREAT:1}
+[TRUNC] turn=60 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:38,PLAY:1,RETREAT:1}
+[TRUNC] turn=60 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:38,PLAY:1,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:43,PLAY:1,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:43,PLAY:1,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:43,PLAY:1,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:43,PLAY:1,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:43,PLAY:1,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:43,PLAY:1,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:43,PLAY:1,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:43,PLAY:1,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:22,PLAY:1,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:22,PLAY:1,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:22,PLAY:1,RETREAT:1}
+[TRUNC] turn=64 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:43,PLAY:1,RETREAT:1}
+[TRUNC] turn=66 ctx=MAIN opts=147 kept=64 dropped_types={ATTACH:82,RETREAT:1}
+[TRUNC] turn=68 ctx=MAIN opts=67 kept=64 dropped_types={PLAY:2,RETREAT:1}
+[TRUNC] turn=68 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,RETREAT:1}
+[TRUNC] turn=68 ctx=MAIN opts=171 kept=64 dropped_types={ATTACH:106,RETREAT:1}
+[TRUNC] turn=68 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=68 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:6}
+[TRUNC] turn=70 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=68 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:6}
+[TRUNC] turn=70 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,EVOLVE:1}
+[TRUNC] turn=68 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:6}
+[TRUNC] turn=70 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:7,EVOLVE:2}
+[TRUNC] turn=70 ctx=MAIN opts=175 kept=64 dropped_types={ATTACH:111}
+[TRUNC] turn=70 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=71 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,RETREAT:1}
+[TRUNC] turn=72 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=72 ctx=MAIN opts=181 kept=64 dropped_types={ATTACH:117}
+[TRUNC] turn=72 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:7,PLAY:2}
+[TRUNC] turn=73 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:11,RETREAT:1}
+[TRUNC] turn=73 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:11,RETREAT:1}
+[TRUNC] turn=73 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:11,RETREAT:1}
+[TRUNC] turn=73 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:11,RETREAT:1}
+[TRUNC] turn=75 ctx=MAIN opts=100 kept=64 dropped_types={ATTACH:35,RETREAT:1}
+[TRUNC] turn=75 ctx=MAIN opts=100 kept=64 dropped_types={ATTACH:35,RETREAT:1}
+[TRUNC] turn=75 ctx=MAIN opts=100 kept=64 dropped_types={ATTACH:35,RETREAT:1}
+[TRUNC] turn=75 ctx=MAIN opts=100 kept=64 dropped_types={ATTACH:35,RETREAT:1}
+[TRUNC] turn=75 ctx=MAIN opts=100 kept=64 dropped_types={ATTACH:35,RETREAT:1}
+[TRUNC] turn=75 ctx=MAIN opts=100 kept=64 dropped_types={ATTACH:35,RETREAT:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1191
+TRUNC_FIRED=143
+TRUNC_FIRE_RATE=12.01%
+TRUNC_OPTCOUNT_HIST=1-8:616|9-16:124|17-32:194|33-64:114|65-128:139|129-256:4|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/49)|3-5:0.00%(0/64)|6+:13.27%(143/1078)
+TRUNC_DROPPED_BY_TYPE=ATTACH:2746,EVOLVE:3,PLAY:134,RETREAT:79
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[mega_lopunny] self-play 33%   [TRUNC] turn=44 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=58 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,ATTACH:3}
+[TRUNC] turn=58 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,ATTACH:3}
+[TRUNC] turn=58 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,ATTACH:3}
+[TRUNC] turn=58 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,ATTACH:3}
+[TRUNC] turn=60 ctx=MAIN opts=74 kept=64 dropped_types={ABILITY:1,ATTACH:9}
+[TRUNC] turn=62 ctx=MAIN opts=80 kept=64 dropped_types={ABILITY:1,ATTACH:15}
+[TRUNC] turn=64 ctx=MAIN opts=80 kept=64 dropped_types={ABILITY:1,ATTACH:15}
+[TRUNC] turn=66 ctx=MAIN opts=80 kept=64 dropped_types={ABILITY:1,ATTACH:15}
+[TRUNC] turn=68 ctx=MAIN opts=86 kept=64 dropped_types={ABILITY:1,ATTACH:21}
+[TRUNC] turn=70 ctx=MAIN opts=92 kept=64 dropped_types={ABILITY:1,ATTACH:27}
+[TRUNC] turn=72 ctx=MAIN opts=86 kept=64 dropped_types={ABILITY:1,ATTACH:21}
+[TRUNC] turn=74 ctx=MAIN opts=92 kept=64 dropped_types={ABILITY:1,ATTACH:27}
+[TRUNC] turn=76 ctx=MAIN opts=98 kept=64 dropped_types={ABILITY:1,ATTACH:33}
+[TRUNC] turn=78 ctx=MAIN opts=104 kept=64 dropped_types={ABILITY:1,ATTACH:39}
+[TRUNC] turn=80 ctx=MAIN opts=110 kept=64 dropped_types={ABILITY:1,ATTACH:45}
+[TRUNC] turn=80 ctx=MAIN opts=110 kept=64 dropped_types={ABILITY:1,ATTACH:45}
+[TRUNC] turn=80 ctx=MAIN opts=110 kept=64 dropped_types={ABILITY:1,ATTACH:45}
+[TRUNC] turn=82 ctx=MAIN opts=116 kept=64 dropped_types={ABILITY:1,ATTACH:51}
+[TRUNC] turn=84 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=86 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=88 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=89 ctx=MAIN opts=65 kept=64 dropped_types={RETREAT:1}
+[TRUNC] turn=90 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=91 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:1,RETREAT:1}
+[TRUNC] turn=92 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=93 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:3,PLAY:1,RETREAT:1}
+[TRUNC] turn=94 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=95 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:5,PLAY:1,RETREAT:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1068
+TRUNC_FIRED=29
+TRUNC_FIRE_RATE=2.72%
+TRUNC_OPTCOUNT_HIST=1-8:357|9-16:232|17-32:312|33-64:138|65-128:29|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/31)|3-5:0.00%(0/27)|6+:2.87%(29/1010)
+TRUNC_DROPPED_BY_TYPE=ABILITY:18,ATTACH:588,PLAY:3,RETREAT:4
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[mega_lopunny] self-play 66%   [TRUNC] turn=24 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:22,PLAY:1,RETREAT:1}
+[TRUNC] turn=24 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:22,PLAY:1,RETREAT:1}
+[TRUNC] turn=24 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:22,PLAY:1,RETREAT:1}
+[TRUNC] turn=24 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:22,PLAY:1,RETREAT:1}
+[TRUNC] turn=24 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:22,PLAY:1,RETREAT:1}
+[TRUNC] turn=26 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:20,PLAY:1,RETREAT:1}
+[TRUNC] turn=26 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:20,PLAY:1,RETREAT:1}
+[TRUNC] turn=26 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:20,PLAY:1,RETREAT:1}
+[TRUNC] turn=26 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:20,PLAY:1,RETREAT:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=26 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=28 ctx=MAIN opts=141 kept=64 dropped_types={ATTACH:76,RETREAT:1}
+[TRUNC] turn=28 ctx=MAIN opts=141 kept=64 dropped_types={ATTACH:76,RETREAT:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=849
+TRUNC_FIRED=26
+TRUNC_FIRE_RATE=3.06%
+TRUNC_OPTCOUNT_HIST=1-8:477|9-16:184|17-32:124|33-64:38|65-128:24|129-256:2|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/42)|3-5:0.00%(0/46)|6+:3.42%(26/761)
+TRUNC_DROPPED_BY_TYPE=ATTACH:612,PLAY:24,RETREAT:11
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[mega_lopunny] self-play 100%   
+[slop_box] self-play 0%   [mega_lopunny] Training (522 samples, 4 batches)...
+[mega_lopunny] Done (4 batches).
+[TRUNC] turn=56 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=56 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=56 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:2}
+[TRUNC] turn=58 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=60 ctx=MAIN opts=151 kept=64 dropped_types={ATTACH:87}
+[TRUNC] turn=60 ctx=MAIN opts=151 kept=64 dropped_types={ATTACH:87}
+[TRUNC] turn=60 ctx=MAIN opts=151 kept=64 dropped_types={ATTACH:87}
+[TRUNC] turn=60 ctx=MAIN opts=151 kept=64 dropped_types={ATTACH:87}
+[TRUNC] turn=60 ctx=MAIN opts=151 kept=64 dropped_types={ATTACH:87}
+[TRUNC] turn=60 ctx=MAIN opts=151 kept=64 dropped_types={ATTACH:87}
+[TRUNC] turn=61 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=62 ctx=MAIN opts=145 kept=64 dropped_types={ATTACH:81}
+[TRUNC] turn=63 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=63 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=63 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=64 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=64 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=64 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=64 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=64 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=64 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=64 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=64 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=64 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,RETREAT:1}
+[TRUNC] turn=64 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,RETREAT:1}
+[TRUNC] turn=65 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,RETREAT:1}
+[TRUNC] turn=66 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,RETREAT:1}
+[TRUNC] turn=66 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,RETREAT:1}
+[TRUNC] turn=66 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:39,RETREAT:1}
+[TRUNC] turn=68 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,RETREAT:1}
+[TRUNC] turn=68 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,RETREAT:1}
+[TRUNC] turn=68 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,RETREAT:1}
+[TRUNC] turn=69 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:39,RETREAT:1}
+[TRUNC] turn=69 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:39,RETREAT:1}
+[TRUNC] turn=70 ctx=MAIN opts=140 kept=64 dropped_types={ATTACH:75,RETREAT:1}
+[TRUNC] turn=71 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,RETREAT:1}
+[TRUNC] turn=72 ctx=MAIN opts=146 kept=64 dropped_types={ATTACH:81,RETREAT:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1035
+TRUNC_FIRED=77
+TRUNC_FIRE_RATE=7.44%
+TRUNC_OPTCOUNT_HIST=1-8:409|9-16:75|17-32:271|33-64:203|65-128:52|129-256:25|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/27)|3-5:0.00%(0/18)|6+:7.78%(77/990)
+TRUNC_DROPPED_BY_TYPE=ATTACH:3123,PLAY:48,RETREAT:15
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[slop_box] self-play 33%   [TRUNC] turn=22 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:3,PLAY:1,RETREAT:1}
+[TRUNC] turn=24 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:3,PLAY:1,RETREAT:1}
+[TRUNC] turn=24 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:2,PLAY:1,RETREAT:1}
+[TRUNC] turn=24 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:2,PLAY:1,RETREAT:1}
+[TRUNC] turn=24 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:2,PLAY:1,RETREAT:1}
+[TRUNC] turn=24 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:2,PLAY:1,RETREAT:1}
+[TRUNC] turn=24 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:2,PLAY:1,RETREAT:1}
+[TRUNC] turn=26 ctx=MAIN opts=87 kept=64 dropped_types={ABILITY:1,ATTACH:21,RETREAT:1}
+[TRUNC] turn=26 ctx=MAIN opts=87 kept=64 dropped_types={ABILITY:1,ATTACH:21,RETREAT:1}
+[TRUNC] turn=26 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:8,PLAY:1,RETREAT:1}
+[TRUNC] turn=26 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:7,PLAY:1,RETREAT:1}
+[TRUNC] turn=26 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:7,PLAY:1,RETREAT:1}
+[TRUNC] turn=26 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:7,PLAY:1,RETREAT:1}
+[TRUNC] turn=27 ctx=MAIN opts=88 kept=64 dropped_types={ABILITY:1,ATTACH:22,RETREAT:1}
+[TRUNC] turn=27 ctx=MAIN opts=75 kept=64 dropped_types={ABILITY:1,ATTACH:8,PLAY:1,RETREAT:1}
+[TRUNC] turn=27 ctx=MAIN opts=75 kept=64 dropped_types={ABILITY:1,ATTACH:8,PLAY:1,RETREAT:1}
+[TRUNC] turn=27 ctx=MAIN opts=75 kept=64 dropped_types={ABILITY:1,ATTACH:8,PLAY:1,RETREAT:1}
+[TRUNC] turn=27 ctx=MAIN opts=75 kept=64 dropped_types={ABILITY:1,ATTACH:8,PLAY:1,RETREAT:1}
+[TRUNC] turn=27 ctx=MAIN opts=75 kept=64 dropped_types={ABILITY:1,ATTACH:8,PLAY:1,RETREAT:1}
+[TRUNC] turn=27 ctx=MAIN opts=75 kept=64 dropped_types={ABILITY:1,ATTACH:8,PLAY:1,RETREAT:1}
+[TRUNC] turn=28 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,RETREAT:1}
+[TRUNC] turn=28 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,RETREAT:1}
+[TRUNC] turn=30 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:40,RETREAT:1}
+[TRUNC] turn=30 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:40,RETREAT:1}
+[TRUNC] turn=30 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:40,RETREAT:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=829
+TRUNC_FIRED=25
+TRUNC_FIRE_RATE=3.02%
+TRUNC_OPTCOUNT_HIST=1-8:440|9-16:140|17-32:163|33-64:61|65-128:25|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/33)|3-5:0.00%(0/15)|6+:3.20%(25/781)
+TRUNC_DROPPED_BY_TYPE=ABILITY:14,ATTACH:319,PLAY:17,RETREAT:25
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[slop_box] self-play 66%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=605
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:406|9-16:122|17-32:55|33-64:22|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/33)|3-5:0.00%(0/22)|6+:0.00%(0/550)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[slop_box] self-play 100%   
+[m2] self-play 0%   [slop_box] Training (417 samples, 3 batches)...
+[slop_box] Done (3 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-08_08-54.pth
+[dragapult] Saved: checkpoints/dragapult/model_2026-08-08_08-54.pth
+[grimmsnarl] Saved: checkpoints/grimmsnarl/model_2026-08-08_08-54.pth
+[lucario] Saved: checkpoints/lucario/model_2026-08-08_08-54.pth
+[mega_lopunny] Saved: checkpoints/mega_lopunny/model_2026-08-08_08-54.pth
+[slop_box] Saved: checkpoints/slop_box/model_2026-08-08_08-54.pth
+=== Main Phase (2 epochs) ===
+--- Main Epoch 1/2 ---
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1081
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:743|9-16:138|17-32:83|33-64:117|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/116)|3-5:0.00%(0/92)|6+:0.00%(0/873)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2] self-play 33%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1173
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:969|9-16:98|17-32:74|33-64:32|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/112)|3-5:0.00%(0/123)|6+:0.00%(0/938)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2] self-play 66%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1150
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:916|9-16:161|17-32:56|33-64:17|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/55)|3-5:0.00%(0/155)|6+:0.00%(0/940)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2] self-play 100%   
+[dragapult] self-play 0%   [TRUNC] turn=53 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=55 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:2}
+[TRUNC] turn=53 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=55 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:2}
+[TRUNC] turn=57 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:1,PLAY:3}
+[TRUNC] turn=55 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:3,PLAY:2}
+[TRUNC] turn=59 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:3,PLAY:3}
+[TRUNC] turn=57 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:5,PLAY:2}
+[TRUNC] turn=61 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:5,PLAY:3}
+[TRUNC] turn=59 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:7,PLAY:2}
+[TRUNC] turn=61 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=63 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:2}
+[TRUNC] turn=63 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:11,PLAY:1}
+[TRUNC] turn=65 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:11,PLAY:2}
+[TRUNC] turn=65 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=67 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:13,PLAY:2}
+[TRUNC] turn=67 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:15,PLAY:1}
+[TRUNC] turn=69 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=71 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:19,PLAY:1}
+[TRUNC] turn=73 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=75 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:23,PLAY:1}
+[TRUNC] turn=77 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:25,PLAY:1}
+[TRUNC] turn=79 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,PLAY:1}
+[TRUNC] turn=81 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[TRUNC] turn=83 ctx=MAIN opts=96 kept=64 dropped_types={ATTACH:31,PLAY:1}
+[TRUNC] turn=85 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=87 ctx=MAIN opts=100 kept=64 dropped_types={ATTACH:35,PLAY:1}
+[TRUNC] turn=89 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:37,PLAY:1}
+[TRUNC] turn=91 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:39,PLAY:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=576
+TRUNC_FIRED=32
+TRUNC_FIRE_RATE=5.56%
+TRUNC_OPTCOUNT_HIST=1-8:83|9-16:76|17-32:196|33-64:189|65-128:32|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/30)|3-5:0.00%(0/19)|6+:6.07%(32/527)
+TRUNC_DROPPED_BY_TYPE=ATTACH:458,PLAY:46
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[dragapult] self-play 50%   [TRUNC] turn=56 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:2}
+[TRUNC] turn=56 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:2}
+[TRUNC] turn=60 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:1,PLAY:3}
+[TRUNC] turn=58 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=60 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:3,PLAY:2}
+[TRUNC] turn=62 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:3,PLAY:3}
+[TRUNC] turn=60 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=62 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:5,PLAY:2}
+[TRUNC] turn=64 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:5,PLAY:3}
+[TRUNC] turn=62 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=64 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:7,PLAY:2}
+[TRUNC] turn=66 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:7,PLAY:3}
+[TRUNC] turn=64 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=66 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:2}
+[TRUNC] turn=68 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:9,PLAY:3}
+[TRUNC] turn=66 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:11,PLAY:1}
+[TRUNC] turn=68 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:11,PLAY:2}
+[TRUNC] turn=70 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:11,PLAY:3}
+[TRUNC] turn=68 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=70 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:13,PLAY:2}
+[TRUNC] turn=72 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:13,PLAY:3}
+[TRUNC] turn=70 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:15,PLAY:1}
+[TRUNC] turn=72 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:15,PLAY:2}
+[TRUNC] turn=74 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:15,PLAY:3}
+[TRUNC] turn=72 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=74 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:17,PLAY:2}
+[TRUNC] turn=76 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:17,PLAY:3}
+[TRUNC] turn=74 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:19,PLAY:1}
+[TRUNC] turn=76 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:19,PLAY:2}
+[TRUNC] turn=78 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:19,PLAY:3}
+[TRUNC] turn=76 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=78 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:21,PLAY:2}
+[TRUNC] turn=80 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:21,PLAY:3}
+[TRUNC] turn=78 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:23,PLAY:1}
+[TRUNC] turn=80 ctx=MAIN opts=89 kept=64 dropped_types={ATTACH:23,PLAY:2}
+[TRUNC] turn=82 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:23,PLAY:3}
+[TRUNC] turn=80 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:25,PLAY:1}
+[TRUNC] turn=82 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,PLAY:1}
+[TRUNC] turn=84 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[TRUNC] turn=86 ctx=MAIN opts=96 kept=64 dropped_types={ATTACH:31,PLAY:1}
+[TRUNC] turn=88 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=90 ctx=MAIN opts=100 kept=64 dropped_types={ATTACH:35,PLAY:1}
+[TRUNC] turn=92 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:37,PLAY:1}
+[TRUNC] turn=94 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:37,PLAY:2}
+[TRUNC] turn=94 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:39,PLAY:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=579
+TRUNC_FIRED=47
+TRUNC_FIRE_RATE=8.12%
+TRUNC_OPTCOUNT_HIST=1-8:174|9-16:68|17-32:164|33-64:126|65-128:47|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/26)|3-5:0.00%(0/17)|6+:8.77%(47/536)
+TRUNC_DROPPED_BY_TYPE=ATTACH:725,PLAY:85
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[dragapult] self-play 100%   
+[grimmsnarl] self-play 0%   [TRUNC] turn=19 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,ATTACH:3}
+[TRUNC] turn=21 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,ATTACH:3}
+[TRUNC] turn=23 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,ATTACH:3}
+[TRUNC] turn=25 ctx=MAIN opts=70 kept=64 dropped_types={ABILITY:1,ATTACH:4,RETREAT:1}
+[TRUNC] turn=25 ctx=MAIN opts=70 kept=64 dropped_types={ABILITY:1,ATTACH:4,RETREAT:1}
+[TRUNC] turn=25 ctx=MAIN opts=70 kept=64 dropped_types={ABILITY:1,ATTACH:4,RETREAT:1}
+[TRUNC] turn=27 ctx=MAIN opts=76 kept=64 dropped_types={ABILITY:1,ATTACH:10,RETREAT:1}
+[TRUNC] turn=27 ctx=MAIN opts=76 kept=64 dropped_types={ABILITY:1,ATTACH:10,RETREAT:1}
+[TRUNC] turn=27 ctx=MAIN opts=76 kept=64 dropped_types={ABILITY:1,ATTACH:10,RETREAT:1}
+[TRUNC] turn=29 ctx=MAIN opts=82 kept=64 dropped_types={ABILITY:1,ATTACH:16,RETREAT:1}
+[TRUNC] turn=31 ctx=MAIN opts=82 kept=64 dropped_types={ABILITY:1,ATTACH:16,RETREAT:1}
+[TRUNC] turn=31 ctx=MAIN opts=82 kept=64 dropped_types={ABILITY:1,ATTACH:16,RETREAT:1}
+[TRUNC] turn=31 ctx=MAIN opts=88 kept=64 dropped_types={ABILITY:1,ATTACH:22,RETREAT:1}
+[TRUNC] turn=33 ctx=MAIN opts=88 kept=64 dropped_types={ABILITY:1,ATTACH:22,RETREAT:1}
+[TRUNC] turn=33 ctx=MAIN opts=88 kept=64 dropped_types={ABILITY:1,ATTACH:22,RETREAT:1}
+[TRUNC] turn=33 ctx=MAIN opts=94 kept=64 dropped_types={ABILITY:1,ATTACH:28,RETREAT:1}
+[TRUNC] turn=35 ctx=MAIN opts=94 kept=64 dropped_types={ABILITY:1,ATTACH:28,RETREAT:1}
+[TRUNC] turn=35 ctx=MAIN opts=94 kept=64 dropped_types={ABILITY:1,ATTACH:28,RETREAT:1}
+[TRUNC] turn=34 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,ATTACH:3}
+[TRUNC] turn=34 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,ATTACH:3}
+[TRUNC] turn=35 ctx=MAIN opts=100 kept=64 dropped_types={ABILITY:1,ATTACH:34,RETREAT:1}
+[TRUNC] turn=37 ctx=MAIN opts=100 kept=64 dropped_types={ABILITY:1,ATTACH:34,RETREAT:1}
+[TRUNC] turn=37 ctx=MAIN opts=100 kept=64 dropped_types={ABILITY:1,ATTACH:34,RETREAT:1}
+[TRUNC] turn=36 ctx=MAIN opts=74 kept=64 dropped_types={ABILITY:1,ATTACH:9}
+[TRUNC] turn=36 ctx=MAIN opts=74 kept=64 dropped_types={ABILITY:1,ATTACH:9}
+[TRUNC] turn=37 ctx=MAIN opts=106 kept=64 dropped_types={ABILITY:1,ATTACH:40,RETREAT:1}
+[TRUNC] turn=38 ctx=MAIN opts=80 kept=64 dropped_types={ABILITY:1,ATTACH:15}
+[TRUNC] turn=38 ctx=MAIN opts=80 kept=64 dropped_types={ABILITY:1,ATTACH:15}
+[TRUNC] turn=39 ctx=MAIN opts=112 kept=64 dropped_types={ABILITY:1,ATTACH:46,RETREAT:1}
+[TRUNC] turn=41 ctx=MAIN opts=112 kept=64 dropped_types={ABILITY:1,ATTACH:46,RETREAT:1}
+[TRUNC] turn=41 ctx=MAIN opts=112 kept=64 dropped_types={ABILITY:1,ATTACH:46,RETREAT:1}
+[TRUNC] turn=40 ctx=MAIN opts=86 kept=64 dropped_types={ABILITY:1,ATTACH:21}
+[TRUNC] turn=40 ctx=MAIN opts=86 kept=64 dropped_types={ABILITY:1,ATTACH:21}
+[TRUNC] turn=41 ctx=MAIN opts=118 kept=64 dropped_types={ABILITY:1,ATTACH:52,RETREAT:1}
+[TRUNC] turn=43 ctx=MAIN opts=118 kept=64 dropped_types={ABILITY:1,ATTACH:52,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=92 kept=64 dropped_types={ABILITY:1,ATTACH:27}
+[TRUNC] turn=42 ctx=MAIN opts=92 kept=64 dropped_types={ABILITY:1,ATTACH:27}
+[TRUNC] turn=43 ctx=MAIN opts=124 kept=64 dropped_types={ABILITY:1,ATTACH:58,RETREAT:1}
+[TRUNC] turn=45 ctx=MAIN opts=124 kept=64 dropped_types={ABILITY:1,ATTACH:58,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=98 kept=64 dropped_types={ABILITY:1,ATTACH:33}
+[TRUNC] turn=44 ctx=MAIN opts=98 kept=64 dropped_types={ABILITY:1,ATTACH:33}
+[TRUNC] turn=45 ctx=MAIN opts=130 kept=64 dropped_types={ABILITY:1,ATTACH:64,RETREAT:1}
+[TRUNC] turn=46 ctx=MAIN opts=104 kept=64 dropped_types={ABILITY:1,ATTACH:39}
+[TRUNC] turn=46 ctx=MAIN opts=104 kept=64 dropped_types={ABILITY:1,ATTACH:39}
+[TRUNC] turn=47 ctx=MAIN opts=136 kept=64 dropped_types={ABILITY:1,ATTACH:70,RETREAT:1}
+[TRUNC] turn=49 ctx=MAIN opts=136 kept=64 dropped_types={ABILITY:1,ATTACH:70,RETREAT:1}
+[TRUNC] turn=48 ctx=MAIN opts=110 kept=64 dropped_types={ABILITY:1,ATTACH:45}
+[TRUNC] turn=48 ctx=MAIN opts=110 kept=64 dropped_types={ABILITY:1,ATTACH:45}
+[TRUNC] turn=49 ctx=MAIN opts=142 kept=64 dropped_types={ABILITY:1,ATTACH:76,RETREAT:1}
+[TRUNC] turn=51 ctx=MAIN opts=142 kept=64 dropped_types={ABILITY:1,ATTACH:76,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=116 kept=64 dropped_types={ABILITY:1,ATTACH:51}
+[TRUNC] turn=50 ctx=MAIN opts=116 kept=64 dropped_types={ABILITY:1,ATTACH:51}
+[TRUNC] turn=51 ctx=MAIN opts=148 kept=64 dropped_types={ABILITY:1,ATTACH:82,RETREAT:1}
+[TRUNC] turn=53 ctx=MAIN opts=147 kept=64 dropped_types={ATTACH:82,RETREAT:1}
+[TRUNC] turn=53 ctx=MAIN opts=147 kept=64 dropped_types={ATTACH:82,RETREAT:1}
+[TRUNC] turn=52 ctx=MAIN opts=122 kept=64 dropped_types={ABILITY:1,ATTACH:57}
+[TRUNC] turn=52 ctx=MAIN opts=122 kept=64 dropped_types={ABILITY:1,ATTACH:57}
+[TRUNC] turn=53 ctx=MAIN opts=153 kept=64 dropped_types={ATTACH:88,RETREAT:1}
+[TRUNC] turn=54 ctx=MAIN opts=128 kept=64 dropped_types={ABILITY:1,ATTACH:63}
+[TRUNC] turn=54 ctx=MAIN opts=128 kept=64 dropped_types={ABILITY:1,ATTACH:63}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=975
+TRUNC_FIRED=60
+TRUNC_FIRE_RATE=6.15%
+TRUNC_OPTCOUNT_HIST=1-8:434|9-16:207|17-32:129|33-64:145|65-128:51|129-256:9|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/64)|3-5:0.00%(0/125)|6+:7.63%(60/786)
+TRUNC_DROPPED_BY_TYPE=ABILITY:57,ATTACH:2165,RETREAT:35
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[grimmsnarl] self-play 50%   [TRUNC] turn=30 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=32 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=32 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=34 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=34 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=36 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=36 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=38 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:51}
+[TRUNC] turn=40 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:51}
+[TRUNC] turn=40 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:51}
+[TRUNC] turn=42 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=42 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=44 ctx=MAIN opts=122 kept=64 dropped_types={ABILITY:1,ATTACH:57}
+[TRUNC] turn=44 ctx=MAIN opts=122 kept=64 dropped_types={ABILITY:1,ATTACH:57}
+[TRUNC] turn=46 ctx=MAIN opts=128 kept=64 dropped_types={ABILITY:1,ATTACH:63}
+[TRUNC] turn=48 ctx=MAIN opts=134 kept=64 dropped_types={ABILITY:1,ATTACH:69}
+[TRUNC] turn=50 ctx=MAIN opts=140 kept=64 dropped_types={ABILITY:1,ATTACH:75}
+[TRUNC] turn=52 ctx=MAIN opts=146 kept=64 dropped_types={ABILITY:1,ATTACH:81}
+[TRUNC] turn=54 ctx=MAIN opts=152 kept=64 dropped_types={ABILITY:1,ATTACH:87}
+[TRUNC] turn=56 ctx=MAIN opts=158 kept=64 dropped_types={ABILITY:1,ATTACH:93}
+[TRUNC] turn=58 ctx=MAIN opts=164 kept=64 dropped_types={ABILITY:1,ATTACH:99}
+[TRUNC] turn=60 ctx=MAIN opts=170 kept=64 dropped_types={ABILITY:1,ATTACH:105}
+[TRUNC] turn=62 ctx=MAIN opts=176 kept=64 dropped_types={ABILITY:1,ATTACH:111}
+[TRUNC] turn=64 ctx=MAIN opts=182 kept=64 dropped_types={ABILITY:1,ATTACH:117}
+[TRUNC] turn=66 ctx=MAIN opts=188 kept=64 dropped_types={ABILITY:1,ATTACH:123}
+[TRUNC] turn=68 ctx=MAIN opts=193 kept=64 dropped_types={ATTACH:129}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=615
+TRUNC_FIRED=26
+TRUNC_FIRE_RATE=4.23%
+TRUNC_OPTCOUNT_HIST=1-8:227|9-16:151|17-32:172|33-64:39|65-128:15|129-256:11|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/33)|3-5:0.00%(0/27)|6+:4.68%(26/555)
+TRUNC_DROPPED_BY_TYPE=ABILITY:13,ATTACH:1776
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[grimmsnarl] self-play 100%   
+[lucario] self-play 0%   [TRUNC] turn=35 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=37 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:6}
+[TRUNC] turn=39 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=41 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:12}
+[TRUNC] turn=43 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=45 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:18}
+[TRUNC] turn=47 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=49 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:24}
+[TRUNC] turn=51 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=53 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:30}
+[TRUNC] turn=55 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=60 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:2}
+[TRUNC] turn=60 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=60 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=62 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:2}
+[TRUNC] turn=101 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,RETREAT:1}
+[TRUNC] turn=149 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=151 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=153 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:2,PLAY:1}
+[TRUNC] turn=155 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:2,PLAY:2}
+[TRUNC] turn=154 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=155 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=157 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:7,PLAY:2}
+[TRUNC] turn=156 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=157 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:12,PLAY:1}
+[TRUNC] turn=159 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:12,PLAY:2}
+[TRUNC] turn=158 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=160 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:5,PLAY:2}
+[TRUNC] turn=159 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=161 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:17,PLAY:2}
+[TRUNC] turn=160 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=162 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:7,PLAY:2}
+[TRUNC] turn=161 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:22,PLAY:1}
+[TRUNC] turn=163 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:22,PLAY:2}
+[TRUNC] turn=162 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=164 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:2}
+[TRUNC] turn=163 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,PLAY:1}
+[TRUNC] turn=165 ctx=MAIN opts=93 kept=64 dropped_types={ATTACH:27,PLAY:2}
+[TRUNC] turn=164 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:11,PLAY:1}
+[TRUNC] turn=165 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:32,PLAY:1}
+[TRUNC] turn=167 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:32,PLAY:2}
+[TRUNC] turn=166 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=167 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:37,PLAY:1}
+[TRUNC] turn=169 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:37,PLAY:2}
+[TRUNC] turn=168 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:15,PLAY:1}
+[TRUNC] turn=169 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=171 ctx=MAIN opts=108 kept=64 dropped_types={ATTACH:42,PLAY:2}
+[TRUNC] turn=168 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:2}
+[TRUNC] turn=170 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=171 ctx=MAIN opts=112 kept=64 dropped_types={ATTACH:47,PLAY:1}
+[TRUNC] turn=173 ctx=MAIN opts=113 kept=64 dropped_types={ATTACH:47,PLAY:2}
+[TRUNC] turn=170 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:2}
+[TRUNC] turn=172 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:19,PLAY:1}
+[TRUNC] turn=173 ctx=MAIN opts=117 kept=64 dropped_types={ATTACH:52,PLAY:1}
+[TRUNC] turn=172 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:2,PLAY:1}
+[TRUNC] turn=174 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=175 ctx=MAIN opts=122 kept=64 dropped_types={ATTACH:57,PLAY:1}
+[TRUNC] turn=174 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:2,PLAY:2}
+[TRUNC] turn=177 ctx=MAIN opts=123 kept=64 dropped_types={ATTACH:57,PLAY:2}
+[TRUNC] turn=176 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:23,PLAY:1}
+[TRUNC] turn=177 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:62,PLAY:1}
+[TRUNC] turn=176 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:2,PLAY:3}
+[TRUNC] turn=179 ctx=MAIN opts=128 kept=64 dropped_types={ATTACH:62,PLAY:2}
+[TRUNC] turn=178 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:25,PLAY:1}
+[TRUNC] turn=179 ctx=MAIN opts=132 kept=64 dropped_types={ATTACH:67,PLAY:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1313
+TRUNC_FIRED=72
+TRUNC_FIRE_RATE=5.48%
+TRUNC_OPTCOUNT_HIST=1-8:469|9-16:285|17-32:255|33-64:232|65-128:71|129-256:1|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/34)|3-5:0.00%(0/22)|6+:5.73%(72/1257)
+TRUNC_DROPPED_BY_TYPE=ATTACH:1255,PLAY:77,RETREAT:1
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[lucario] self-play 50%   [TRUNC] turn=78 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:1,RETREAT:1}
+[TRUNC] turn=78 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:1,RETREAT:1}
+[TRUNC] turn=101 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=103 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=103 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=107 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=107 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=107 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=107 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=107 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=107 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=107 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=107 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=109 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=109 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=111 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=113 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:21,PLAY:2}
+[TRUNC] turn=112 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=114 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:2}
+[TRUNC] turn=113 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:25,PLAY:1}
+[TRUNC] turn=114 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=116 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:5,PLAY:2}
+[TRUNC] turn=115 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[TRUNC] turn=117 ctx=MAIN opts=95 kept=64 dropped_types={ATTACH:29,PLAY:2}
+[TRUNC] turn=116 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=118 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:2}
+[TRUNC] turn=117 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=119 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:2}
+[TRUNC] turn=118 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=120 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:13,PLAY:2}
+[TRUNC] turn=119 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:37,PLAY:1}
+[TRUNC] turn=121 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:37,PLAY:2}
+[TRUNC] turn=120 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=122 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:17,PLAY:2}
+[TRUNC] turn=121 ctx=MAIN opts=106 kept=64 dropped_types={ATTACH:41,PLAY:1}
+[TRUNC] turn=123 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:41,PLAY:2}
+[TRUNC] turn=122 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=124 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:21,PLAY:2}
+[TRUNC] turn=123 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,PLAY:1}
+[TRUNC] turn=125 ctx=MAIN opts=111 kept=64 dropped_types={ATTACH:45,PLAY:2}
+[TRUNC] turn=124 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:25,PLAY:1}
+[TRUNC] turn=126 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:25,PLAY:2}
+[TRUNC] turn=125 ctx=MAIN opts=114 kept=64 dropped_types={ATTACH:49,PLAY:1}
+[TRUNC] turn=127 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:49,PLAY:2}
+[TRUNC] turn=126 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[TRUNC] turn=128 ctx=MAIN opts=95 kept=64 dropped_types={ATTACH:29,PLAY:2}
+[TRUNC] turn=127 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:53,PLAY:1}
+[TRUNC] turn=129 ctx=MAIN opts=119 kept=64 dropped_types={ATTACH:53,PLAY:2}
+[TRUNC] turn=128 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=130 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:2}
+[TRUNC] turn=129 ctx=MAIN opts=122 kept=64 dropped_types={ATTACH:57,PLAY:1}
+[TRUNC] turn=131 ctx=MAIN opts=123 kept=64 dropped_types={ATTACH:57,PLAY:2}
+[TRUNC] turn=130 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:37,PLAY:1}
+[TRUNC] turn=131 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:4}
+[TRUNC] turn=132 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:37,PLAY:2}
+[TRUNC] turn=131 ctx=MAIN opts=126 kept=64 dropped_types={ATTACH:61,PLAY:1}
+[TRUNC] turn=133 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:61,PLAY:2}
+[TRUNC] turn=135 ctx=MAIN opts=128 kept=64 dropped_types={ATTACH:61,PLAY:3}
+[TRUNC] turn=131 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=132 ctx=MAIN opts=106 kept=64 dropped_types={ATTACH:41,PLAY:1}
+[TRUNC] turn=133 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:2}
+[TRUNC] turn=134 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:41,PLAY:2}
+[TRUNC] turn=133 ctx=MAIN opts=130 kept=64 dropped_types={ATTACH:65,PLAY:1}
+[TRUNC] turn=135 ctx=MAIN opts=131 kept=64 dropped_types={ATTACH:65,PLAY:2}
+[TRUNC] turn=137 ctx=MAIN opts=132 kept=64 dropped_types={ATTACH:65,PLAY:3}
+[TRUNC] turn=133 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:2}
+[TRUNC] turn=134 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,PLAY:1}
+[TRUNC] turn=135 ctx=MAIN opts=67 kept=64 dropped_types={PLAY:3}
+[TRUNC] turn=136 ctx=MAIN opts=111 kept=64 dropped_types={ATTACH:45,PLAY:2}
+[TRUNC] turn=135 ctx=MAIN opts=134 kept=64 dropped_types={ATTACH:69,PLAY:1}
+[TRUNC] turn=137 ctx=MAIN opts=135 kept=64 dropped_types={ATTACH:69,PLAY:2}
+[TRUNC] turn=135 ctx=MAIN opts=67 kept=64 dropped_types={PLAY:3}
+[TRUNC] turn=136 ctx=MAIN opts=114 kept=64 dropped_types={ATTACH:49,PLAY:1}
+[TRUNC] turn=137 ctx=MAIN opts=68 kept=64 dropped_types={PLAY:4}
+[TRUNC] turn=138 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:49,PLAY:2}
+[TRUNC] turn=139 ctx=MAIN opts=69 kept=64 dropped_types={PLAY:5}
+[TRUNC] turn=137 ctx=MAIN opts=138 kept=64 dropped_types={ATTACH:73,PLAY:1}
+[TRUNC] turn=139 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:73,PLAY:2}
+[TRUNC] turn=137 ctx=MAIN opts=68 kept=64 dropped_types={PLAY:4}
+[TRUNC] turn=138 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:53,PLAY:1}
+[TRUNC] turn=139 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:4,PLAY:4}
+[TRUNC] turn=140 ctx=MAIN opts=119 kept=64 dropped_types={ATTACH:53,PLAY:2}
+[TRUNC] turn=139 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=139 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=139 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=139 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=139 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=141 ctx=MAIN opts=143 kept=64 dropped_types={ATTACH:77,PLAY:2}
+[TRUNC] turn=143 ctx=MAIN opts=144 kept=64 dropped_types={ATTACH:77,PLAY:3}
+[TRUNC] turn=139 ctx=MAIN opts=69 kept=64 dropped_types={PLAY:5}
+[TRUNC] turn=140 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:53,PLAY:1}
+[TRUNC] turn=141 ctx=MAIN opts=70 kept=64 dropped_types={PLAY:6}
+[TRUNC] turn=142 ctx=MAIN opts=119 kept=64 dropped_types={ATTACH:53,PLAY:2}
+[TRUNC] turn=141 ctx=MAIN opts=146 kept=64 dropped_types={ATTACH:81,PLAY:1}
+[TRUNC] turn=143 ctx=MAIN opts=147 kept=64 dropped_types={ATTACH:81,PLAY:2}
+[TRUNC] turn=141 ctx=MAIN opts=70 kept=64 dropped_types={PLAY:6}
+[TRUNC] turn=142 ctx=MAIN opts=122 kept=64 dropped_types={ATTACH:57,PLAY:1}
+[TRUNC] turn=143 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:4,PLAY:6}
+[TRUNC] turn=144 ctx=MAIN opts=123 kept=64 dropped_types={ATTACH:57,PLAY:2}
+[TRUNC] turn=145 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:4,PLAY:7}
+[TRUNC] turn=143 ctx=MAIN opts=150 kept=64 dropped_types={ATTACH:85,PLAY:1}
+[TRUNC] turn=145 ctx=MAIN opts=151 kept=64 dropped_types={ATTACH:85,PLAY:2}
+[TRUNC] turn=143 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:4,PLAY:6}
+[TRUNC] turn=144 ctx=MAIN opts=126 kept=64 dropped_types={ATTACH:61,PLAY:1}
+[TRUNC] turn=145 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:4,PLAY:7}
+[TRUNC] turn=146 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:61,PLAY:2}
+[TRUNC] turn=147 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:4,PLAY:8}
+[TRUNC] turn=145 ctx=MAIN opts=154 kept=64 dropped_types={ATTACH:89,PLAY:1}
+[TRUNC] turn=147 ctx=MAIN opts=155 kept=64 dropped_types={ATTACH:89,PLAY:2}
+[TRUNC] turn=145 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:4,PLAY:7}
+[TRUNC] turn=146 ctx=MAIN opts=130 kept=64 dropped_types={ATTACH:65,PLAY:1}
+[TRUNC] turn=147 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:4,PLAY:8}
+[TRUNC] turn=147 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=171 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=173 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=173 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=173 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=173 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=173 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=173 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=173 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=173 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=173 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=173 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=174 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=176 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:2}
+[TRUNC] turn=175 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=176 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=177 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=178 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=180 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:2}
+[TRUNC] turn=179 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=180 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=182 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:13,PLAY:2}
+[TRUNC] turn=181 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=182 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=184 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:17,PLAY:2}
+[TRUNC] turn=183 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:25,PLAY:1}
+[TRUNC] turn=184 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=186 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:21,PLAY:2}
+[TRUNC] turn=185 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[TRUNC] turn=186 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:25,PLAY:1}
+[TRUNC] turn=188 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:25,PLAY:2}
+[TRUNC] turn=187 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=188 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[TRUNC] turn=190 ctx=MAIN opts=95 kept=64 dropped_types={ATTACH:29,PLAY:2}
+[TRUNC] turn=189 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:37,PLAY:1}
+[TRUNC] turn=191 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:37,PLAY:2}
+[TRUNC] turn=190 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=192 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:2}
+[TRUNC] turn=191 ctx=MAIN opts=106 kept=64 dropped_types={ATTACH:41,PLAY:1}
+[TRUNC] turn=192 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:37,PLAY:1}
+[TRUNC] turn=194 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:37,PLAY:2}
+[TRUNC] turn=193 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,PLAY:1}
+[TRUNC] turn=194 ctx=MAIN opts=106 kept=64 dropped_types={ATTACH:41,PLAY:1}
+[TRUNC] turn=196 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:41,PLAY:2}
+[TRUNC] turn=195 ctx=MAIN opts=114 kept=64 dropped_types={ATTACH:49,PLAY:1}
+[TRUNC] turn=196 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,PLAY:1}
+[TRUNC] turn=197 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:53,PLAY:1}
+[TRUNC] turn=197 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:53,PLAY:1}
+[TRUNC] turn=197 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:53,PLAY:1}
+[TRUNC] turn=197 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:53,PLAY:1}
+[TRUNC] turn=197 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:53,PLAY:1}
+[TRUNC] turn=197 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:53,PLAY:1}
+[TRUNC] turn=197 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:53,PLAY:1}
+[TRUNC] turn=197 ctx=MAIN opts=118 kept=64 dropped_types={ATTACH:53,PLAY:1}
+[TRUNC] turn=221 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=223 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:2}
+[TRUNC] turn=223 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=225 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:5,PLAY:2}
+[TRUNC] turn=225 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=225 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=227 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:2}
+[TRUNC] turn=226 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=227 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=227 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=228 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=229 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=229 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=230 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=231 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=231 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=232 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=233 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:25,PLAY:1}
+[TRUNC] turn=233 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:25,PLAY:1}
+[TRUNC] turn=234 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=235 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[TRUNC] turn=235 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[TRUNC] turn=235 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[TRUNC] turn=235 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[TRUNC] turn=235 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1769
+TRUNC_FIRED=198
+TRUNC_FIRE_RATE=11.19%
+TRUNC_OPTCOUNT_HIST=1-8:413|9-16:275|17-32:450|33-64:433|65-128:176|129-256:22|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/34)|3-5:0.00%(0/27)|6+:11.59%(198/1708)
+TRUNC_DROPPED_BY_TYPE=ATTACH:5646,PLAY:326,RETREAT:2
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[lucario] self-play 100%   
+[mega_lopunny] self-play 0%   [TRUNC] turn=51 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=53 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=55 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:2}
+[TRUNC] turn=59 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:12,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:15,PLAY:1}
+[TRUNC] turn=63 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=65 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=65 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=65 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=67 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,PLAY:1}
+[TRUNC] turn=69 ctx=MAIN opts=95 kept=64 dropped_types={ATTACH:30,PLAY:1}
+[TRUNC] turn=71 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=73 ctx=MAIN opts=101 kept=64 dropped_types={ATTACH:36,PLAY:1}
+[TRUNC] turn=75 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:39,PLAY:1}
+[TRUNC] turn=77 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=79 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,PLAY:1}
+[TRUNC] turn=81 ctx=MAIN opts=113 kept=64 dropped_types={ATTACH:48,PLAY:1}
+[TRUNC] turn=83 ctx=MAIN opts=116 kept=64 dropped_types={ATTACH:51,PLAY:1}
+[TRUNC] turn=85 ctx=MAIN opts=119 kept=64 dropped_types={ATTACH:54,PLAY:1}
+[TRUNC] turn=87 ctx=MAIN opts=122 kept=64 dropped_types={ATTACH:57,PLAY:1}
+[TRUNC] turn=89 ctx=MAIN opts=125 kept=64 dropped_types={ATTACH:60,PLAY:1}
+[TRUNC] turn=117 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=119 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=121 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=123 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=125 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:12,PLAY:1}
+[TRUNC] turn=127 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:15,PLAY:1}
+[TRUNC] turn=129 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=131 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=133 ctx=MAIN opts=89 kept=64 dropped_types={ATTACH:24,PLAY:1}
+[TRUNC] turn=135 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,PLAY:1}
+[TRUNC] turn=137 ctx=MAIN opts=95 kept=64 dropped_types={ATTACH:30,PLAY:1}
+[TRUNC] turn=139 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=141 ctx=MAIN opts=101 kept=64 dropped_types={ATTACH:36,PLAY:1}
+[TRUNC] turn=143 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:39,PLAY:1}
+[TRUNC] turn=145 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=147 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,PLAY:1}
+[TRUNC] turn=149 ctx=MAIN opts=113 kept=64 dropped_types={ATTACH:48,PLAY:1}
+[TRUNC] turn=151 ctx=MAIN opts=116 kept=64 dropped_types={ATTACH:51,PLAY:1}
+[TRUNC] turn=153 ctx=MAIN opts=119 kept=64 dropped_types={ATTACH:54,PLAY:1}
+[TRUNC] turn=155 ctx=MAIN opts=122 kept=64 dropped_types={ATTACH:57,PLAY:1}
+[TRUNC] turn=155 ctx=MAIN opts=122 kept=64 dropped_types={ATTACH:57,PLAY:1}
+[TRUNC] turn=155 ctx=MAIN opts=122 kept=64 dropped_types={ATTACH:57,PLAY:1}
+[TRUNC] turn=157 ctx=MAIN opts=125 kept=64 dropped_types={ATTACH:60,PLAY:1}
+[TRUNC] turn=157 ctx=MAIN opts=125 kept=64 dropped_types={ATTACH:60,PLAY:1}
+[TRUNC] turn=157 ctx=MAIN opts=125 kept=64 dropped_types={ATTACH:60,PLAY:1}
+[TRUNC] turn=159 ctx=MAIN opts=128 kept=64 dropped_types={ATTACH:63,PLAY:1}
+[TRUNC] turn=161 ctx=MAIN opts=131 kept=64 dropped_types={ATTACH:66,PLAY:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1043
+TRUNC_FIRED=52
+TRUNC_FIRE_RATE=4.99%
+TRUNC_OPTCOUNT_HIST=1-8:290|9-16:137|17-32:305|33-64:259|65-128:51|129-256:1|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/31)|3-5:0.00%(0/22)|6+:5.25%(52/990)
+TRUNC_DROPPED_BY_TYPE=ATTACH:1668,PLAY:53
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[mega_lopunny] self-play 50%   [TRUNC] turn=33 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:1,RETREAT:1}
+[TRUNC] turn=35 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:3,PLAY:1,RETREAT:1}
+[TRUNC] turn=37 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:6,PLAY:1,RETREAT:1}
+[TRUNC] turn=37 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:6,PLAY:1,RETREAT:1}
+[TRUNC] turn=37 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:6,PLAY:1,RETREAT:1}
+[TRUNC] turn=39 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:6,PLAY:2,RETREAT:1}
+[TRUNC] turn=39 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:1,RETREAT:1}
+[TRUNC] turn=41 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:9,PLAY:2,RETREAT:1}
+[TRUNC] turn=41 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:12,PLAY:1,RETREAT:1}
+[TRUNC] turn=43 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:12,PLAY:2,RETREAT:1}
+[TRUNC] turn=43 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:15,PLAY:1,RETREAT:1}
+[TRUNC] turn=45 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:21,PLAY:1,RETREAT:1}
+[TRUNC] turn=50 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=50 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=52 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=52 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=52 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=52 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=52 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=52 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=52 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=54 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=56 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:6,PLAY:2}
+[TRUNC] turn=56 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:12,PLAY:1}
+[TRUNC] turn=60 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:12,PLAY:2}
+[TRUNC] turn=60 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:15,PLAY:1}
+[TRUNC] turn=62 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:15,PLAY:2}
+[TRUNC] turn=62 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=64 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:2}
+[TRUNC] turn=71 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,ATTACH:2,PLAY:1}
+[TRUNC] turn=73 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:2,PLAY:2}
+[TRUNC] turn=73 ctx=MAIN opts=73 kept=64 dropped_types={ABILITY:1,ATTACH:7,PLAY:1}
+[TRUNC] turn=75 ctx=MAIN opts=74 kept=64 dropped_types={ABILITY:1,ATTACH:7,PLAY:2}
+[TRUNC] turn=75 ctx=MAIN opts=78 kept=64 dropped_types={ABILITY:1,ATTACH:12,PLAY:1}
+[TRUNC] turn=77 ctx=MAIN opts=79 kept=64 dropped_types={ABILITY:1,ATTACH:12,PLAY:2}
+[TRUNC] turn=77 ctx=MAIN opts=83 kept=64 dropped_types={ABILITY:1,ATTACH:17,PLAY:1}
+[TRUNC] turn=79 ctx=MAIN opts=84 kept=64 dropped_types={ABILITY:1,ATTACH:17,PLAY:2}
+[TRUNC] turn=79 ctx=MAIN opts=88 kept=64 dropped_types={ABILITY:1,ATTACH:22,PLAY:1}
+[TRUNC] turn=81 ctx=MAIN opts=89 kept=64 dropped_types={ABILITY:1,ATTACH:22,PLAY:2}
+[TRUNC] turn=81 ctx=MAIN opts=93 kept=64 dropped_types={ABILITY:1,ATTACH:27,PLAY:1}
+[TRUNC] turn=83 ctx=MAIN opts=94 kept=64 dropped_types={ABILITY:1,ATTACH:27,PLAY:2}
+[TRUNC] turn=83 ctx=MAIN opts=98 kept=64 dropped_types={ABILITY:1,ATTACH:32,PLAY:1}
+[TRUNC] turn=85 ctx=MAIN opts=99 kept=64 dropped_types={ABILITY:1,ATTACH:32,PLAY:2}
+[TRUNC] turn=85 ctx=MAIN opts=103 kept=64 dropped_types={ABILITY:1,ATTACH:37,PLAY:1}
+[TRUNC] turn=87 ctx=MAIN opts=104 kept=64 dropped_types={ABILITY:1,ATTACH:37,PLAY:2}
+[TRUNC] turn=87 ctx=MAIN opts=108 kept=64 dropped_types={ABILITY:1,ATTACH:42,PLAY:1}
+[TRUNC] turn=89 ctx=MAIN opts=109 kept=64 dropped_types={ABILITY:1,ATTACH:42,PLAY:2}
+[TRUNC] turn=89 ctx=MAIN opts=113 kept=64 dropped_types={ABILITY:1,ATTACH:47,PLAY:1}
+[TRUNC] turn=91 ctx=MAIN opts=114 kept=64 dropped_types={ABILITY:1,ATTACH:47,PLAY:2}
+[TRUNC] turn=90 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=91 ctx=MAIN opts=118 kept=64 dropped_types={ABILITY:1,ATTACH:52,PLAY:1}
+[TRUNC] turn=93 ctx=MAIN opts=119 kept=64 dropped_types={ABILITY:1,ATTACH:52,PLAY:2}
+[TRUNC] turn=92 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=93 ctx=MAIN opts=123 kept=64 dropped_types={ABILITY:1,ATTACH:57,PLAY:1}
+[TRUNC] turn=95 ctx=MAIN opts=124 kept=64 dropped_types={ABILITY:1,ATTACH:57,PLAY:2}
+[TRUNC] turn=94 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=95 ctx=MAIN opts=128 kept=64 dropped_types={ABILITY:1,ATTACH:62,PLAY:1}
+[TRUNC] turn=97 ctx=MAIN opts=129 kept=64 dropped_types={ABILITY:1,ATTACH:62,PLAY:2}
+[TRUNC] turn=96 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=97 ctx=MAIN opts=133 kept=64 dropped_types={ABILITY:1,ATTACH:67,PLAY:1}
+[TRUNC] turn=99 ctx=MAIN opts=134 kept=64 dropped_types={ABILITY:1,ATTACH:67,PLAY:2}
+[TRUNC] turn=98 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:12,PLAY:1}
+[TRUNC] turn=99 ctx=MAIN opts=138 kept=64 dropped_types={ABILITY:1,ATTACH:72,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=139 kept=64 dropped_types={ABILITY:1,ATTACH:72,PLAY:2}
+[TRUNC] turn=100 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:15,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=143 kept=64 dropped_types={ABILITY:1,ATTACH:77,PLAY:1}
+[TRUNC] turn=103 ctx=MAIN opts=144 kept=64 dropped_types={ABILITY:1,ATTACH:77,PLAY:2}
+[TRUNC] turn=102 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=103 ctx=MAIN opts=148 kept=64 dropped_types={ABILITY:1,ATTACH:82,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=149 kept=64 dropped_types={ABILITY:1,ATTACH:82,PLAY:2}
+[TRUNC] turn=107 ctx=MAIN opts=150 kept=64 dropped_types={ABILITY:1,ATTACH:82,PLAY:3}
+[TRUNC] turn=104 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=153 kept=64 dropped_types={ABILITY:1,ATTACH:87,PLAY:1}
+[TRUNC] turn=107 ctx=MAIN opts=154 kept=64 dropped_types={ABILITY:1,ATTACH:87,PLAY:2}
+[TRUNC] turn=109 ctx=MAIN opts=155 kept=64 dropped_types={ABILITY:1,ATTACH:87,PLAY:3}
+[TRUNC] turn=106 ctx=MAIN opts=89 kept=64 dropped_types={ATTACH:24,PLAY:1}
+[TRUNC] turn=107 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,ATTACH:3}
+[TRUNC] turn=107 ctx=MAIN opts=158 kept=64 dropped_types={ABILITY:1,ATTACH:92,PLAY:1}
+[TRUNC] turn=109 ctx=MAIN opts=159 kept=64 dropped_types={ABILITY:1,ATTACH:92,PLAY:2}
+[TRUNC] turn=108 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,PLAY:1}
+[TRUNC] turn=109 ctx=MAIN opts=65 kept=64 dropped_types={ABILITY:1}
+[TRUNC] turn=109 ctx=MAIN opts=163 kept=64 dropped_types={ABILITY:1,ATTACH:97,PLAY:1}
+[TRUNC] turn=111 ctx=MAIN opts=164 kept=64 dropped_types={ABILITY:1,ATTACH:97,PLAY:2}
+[TRUNC] turn=113 ctx=MAIN opts=165 kept=64 dropped_types={ABILITY:1,ATTACH:97,PLAY:3}
+[TRUNC] turn=109 ctx=MAIN opts=65 kept=64 dropped_types={ABILITY:1}
+[TRUNC] turn=110 ctx=MAIN opts=95 kept=64 dropped_types={ATTACH:30,PLAY:1}
+[TRUNC] turn=111 ctx=MAIN opts=70 kept=64 dropped_types={ABILITY:1,ATTACH:5}
+[TRUNC] turn=109 ctx=MAIN opts=65 kept=64 dropped_types={ABILITY:1}
+[TRUNC] turn=111 ctx=MAIN opts=168 kept=64 dropped_types={ABILITY:1,ATTACH:102,PLAY:1}
+[TRUNC] turn=113 ctx=MAIN opts=169 kept=64 dropped_types={ABILITY:1,ATTACH:102,PLAY:2}
+[TRUNC] turn=115 ctx=MAIN opts=170 kept=64 dropped_types={ABILITY:1,ATTACH:102,PLAY:3}
+[TRUNC] turn=111 ctx=MAIN opts=66 kept=64 dropped_types={ABILITY:1,PLAY:1}
+[TRUNC] turn=112 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=113 ctx=MAIN opts=67 kept=64 dropped_types={ABILITY:1,PLAY:2}
+[TRUNC] turn=113 ctx=MAIN opts=173 kept=64 dropped_types={ABILITY:1,ATTACH:107,PLAY:1}
+[TRUNC] turn=115 ctx=MAIN opts=174 kept=64 dropped_types={ABILITY:1,ATTACH:107,PLAY:2}
+[TRUNC] turn=113 ctx=MAIN opts=67 kept=64 dropped_types={ABILITY:1,PLAY:2}
+[TRUNC] turn=114 ctx=MAIN opts=101 kept=64 dropped_types={ATTACH:36,PLAY:1}
+[TRUNC] turn=115 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,PLAY:3}
+[TRUNC] turn=115 ctx=MAIN opts=178 kept=64 dropped_types={ABILITY:1,ATTACH:112,PLAY:1}
+[TRUNC] turn=117 ctx=MAIN opts=179 kept=64 dropped_types={ABILITY:1,ATTACH:112,PLAY:2}
+[TRUNC] turn=115 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,PLAY:3}
+[TRUNC] turn=116 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:39,PLAY:1}
+[TRUNC] turn=117 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,PLAY:4}
+[TRUNC] turn=117 ctx=MAIN opts=183 kept=64 dropped_types={ABILITY:1,ATTACH:117,PLAY:1}
+[TRUNC] turn=119 ctx=MAIN opts=184 kept=64 dropped_types={ABILITY:1,ATTACH:117,PLAY:2}
+[TRUNC] turn=121 ctx=MAIN opts=185 kept=64 dropped_types={ABILITY:1,ATTACH:117,PLAY:3}
+[TRUNC] turn=117 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,PLAY:4}
+[TRUNC] turn=118 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=119 ctx=MAIN opts=70 kept=64 dropped_types={ABILITY:1,PLAY:5}
+[TRUNC] turn=119 ctx=MAIN opts=188 kept=64 dropped_types={ABILITY:1,ATTACH:122,PLAY:1}
+[TRUNC] turn=121 ctx=MAIN opts=189 kept=64 dropped_types={ABILITY:1,ATTACH:122,PLAY:2}
+[TRUNC] turn=123 ctx=MAIN opts=190 kept=64 dropped_types={ABILITY:1,ATTACH:122,PLAY:3}
+[TRUNC] turn=119 ctx=MAIN opts=70 kept=64 dropped_types={ABILITY:1,PLAY:5}
+[TRUNC] turn=120 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,PLAY:1}
+[TRUNC] turn=121 ctx=MAIN opts=75 kept=64 dropped_types={ABILITY:1,ATTACH:5,PLAY:5}
+[TRUNC] turn=121 ctx=MAIN opts=193 kept=64 dropped_types={ABILITY:1,ATTACH:127,PLAY:1}
+[TRUNC] turn=123 ctx=MAIN opts=194 kept=64 dropped_types={ABILITY:1,ATTACH:127,PLAY:2}
+[TRUNC] turn=125 ctx=MAIN opts=195 kept=64 dropped_types={ABILITY:1,ATTACH:127,PLAY:3}
+[TRUNC] turn=121 ctx=MAIN opts=75 kept=64 dropped_types={ABILITY:1,ATTACH:5,PLAY:5}
+[TRUNC] turn=122 ctx=MAIN opts=113 kept=64 dropped_types={ATTACH:48,PLAY:1}
+[TRUNC] turn=123 ctx=MAIN opts=76 kept=64 dropped_types={ABILITY:1,ATTACH:5,PLAY:6}
+[TRUNC] turn=123 ctx=MAIN opts=198 kept=64 dropped_types={ABILITY:1,ATTACH:132,PLAY:1}
+[TRUNC] turn=125 ctx=MAIN opts=199 kept=64 dropped_types={ABILITY:1,ATTACH:132,PLAY:2}
+[TRUNC] turn=123 ctx=MAIN opts=80 kept=64 dropped_types={ABILITY:1,ATTACH:10,PLAY:5}
+[TRUNC] turn=124 ctx=MAIN opts=116 kept=64 dropped_types={ATTACH:51,PLAY:1}
+[TRUNC] turn=125 ctx=MAIN opts=81 kept=64 dropped_types={ABILITY:1,ATTACH:10,PLAY:6}
+[TRUNC] turn=125 ctx=MAIN opts=203 kept=64 dropped_types={ABILITY:1,ATTACH:137,PLAY:1}
+[TRUNC] turn=127 ctx=MAIN opts=204 kept=64 dropped_types={ABILITY:1,ATTACH:137,PLAY:2}
+[TRUNC] turn=129 ctx=MAIN opts=204 kept=64 dropped_types={ATTACH:137,PLAY:3}
+[TRUNC] turn=125 ctx=MAIN opts=81 kept=64 dropped_types={ABILITY:1,ATTACH:10,PLAY:6}
+[TRUNC] turn=126 ctx=MAIN opts=119 kept=64 dropped_types={ATTACH:54,PLAY:1}
+[TRUNC] turn=127 ctx=MAIN opts=82 kept=64 dropped_types={ABILITY:1,ATTACH:10,PLAY:7}
+[TRUNC] turn=127 ctx=MAIN opts=208 kept=64 dropped_types={ABILITY:1,ATTACH:142,PLAY:1}
+[TRUNC] turn=129 ctx=MAIN opts=208 kept=64 dropped_types={ATTACH:142,PLAY:2}
+[TRUNC] turn=127 ctx=MAIN opts=82 kept=64 dropped_types={ABILITY:1,ATTACH:10,PLAY:7}
+[TRUNC] turn=128 ctx=MAIN opts=122 kept=64 dropped_types={ATTACH:57,PLAY:1}
+[TRUNC] turn=129 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:2}
+[TRUNC] turn=129 ctx=MAIN opts=212 kept=64 dropped_types={ATTACH:147,PLAY:1}
+[TRUNC] turn=129 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=130 ctx=MAIN opts=125 kept=64 dropped_types={ATTACH:60,PLAY:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=961
+TRUNC_FIRED=143
+TRUNC_FIRE_RATE=14.88%
+TRUNC_OPTCOUNT_HIST=1-8:281|9-16:142|17-32:181|33-64:214|65-128:101|129-256:42|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/39)|3-5:0.00%(0/18)|6+:15.82%(143/904)
+TRUNC_DROPPED_BY_TYPE=ABILITY:86,ATTACH:6173,PLAY:250,RETREAT:13
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[mega_lopunny] self-play 100%   
+[slop_box] self-play 0%   [TRUNC] turn=31 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:13}
+[TRUNC] turn=31 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:13}
+[TRUNC] turn=31 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:13}
+[TRUNC] turn=32 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=32 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=32 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=32 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=32 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=32 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=32 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=32 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=32 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=34 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:7,PLAY:2}
+[TRUNC] turn=34 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=34 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=34 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=34 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=34 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=34 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=36 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=36 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=36 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=36 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=36 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=38 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=38 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=38 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=38 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=40 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=39 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=40 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=40 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:22,RETREAT:1}
+[TRUNC] turn=40 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:22,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:40,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:40,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:40,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:40,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:40,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:40,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:40,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:40,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=117 kept=64 dropped_types={ATTACH:52,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=117 kept=64 dropped_types={ATTACH:52,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=117 kept=64 dropped_types={ATTACH:52,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=117 kept=64 dropped_types={ATTACH:52,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=117 kept=64 dropped_types={ATTACH:52,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=117 kept=64 dropped_types={ATTACH:52,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=117 kept=64 dropped_types={ATTACH:52,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=117 kept=64 dropped_types={ATTACH:52,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=117 kept=64 dropped_types={ATTACH:52,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=117 kept=64 dropped_types={ATTACH:52,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=117 kept=64 dropped_types={ATTACH:52,RETREAT:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=984
+TRUNC_FIRED=52
+TRUNC_FIRE_RATE=5.28%
+TRUNC_OPTCOUNT_HIST=1-8:480|9-16:168|17-32:181|33-64:103|65-128:52|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/30)|3-5:0.00%(0/25)|6+:5.60%(52/929)
+TRUNC_DROPPED_BY_TYPE=ATTACH:1267,PLAY:11,RETREAT:22
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[slop_box] self-play 50%   [TRUNC] turn=35 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=37 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=37 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:3,PLAY:1}
+[TRUNC] turn=37 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:3,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:3,PLAY:1}
+[TRUNC] turn=40 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:1,RETREAT:1}
+[TRUNC] turn=40 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:1,RETREAT:1}
+[TRUNC] turn=41 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:3,PLAY:1}
+[TRUNC] turn=42 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:3,PLAY:1,RETREAT:1}
+[TRUNC] turn=43 ctx=MAIN opts=72 kept=64 dropped_types={ABILITY:1,ATTACH:6,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=44 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:3,PLAY:1,RETREAT:1}
+[TRUNC] turn=45 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=45 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=45 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=45 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=47 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:12,PLAY:1}
+[TRUNC] turn=47 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:12,PLAY:1}
+[TRUNC] turn=47 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:12,PLAY:1}
+[TRUNC] turn=49 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:15,PLAY:1}
+[TRUNC] turn=49 ctx=MAIN opts=81 kept=64 dropped_types={ABILITY:1,ATTACH:15,PLAY:1}
+[TRUNC] turn=49 ctx=MAIN opts=81 kept=64 dropped_types={ABILITY:1,ATTACH:15,PLAY:1}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=51 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=52 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=52 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=52 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=52 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=52 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=52 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=52 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=53 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=53 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=53 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=53 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=53 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=53 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=53 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=53 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=53 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=53 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=53 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=55 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=54 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:10,RETREAT:1}
+[TRUNC] turn=54 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:10,RETREAT:1}
+[TRUNC] turn=54 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:10,RETREAT:1}
+[TRUNC] turn=54 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:10,RETREAT:1}
+[TRUNC] turn=55 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=55 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=55 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=55 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=55 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=55 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=56 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=56 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=57 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=57 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=57 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=57 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=57 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=57 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=57 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=57 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=59 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=58 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=58 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=58 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=58 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=58 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=58 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,RETREAT:1}
+[TRUNC] turn=59 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=59 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=59 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=59 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=59 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=59 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=59 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=59 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=59 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=59 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=59 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=60 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=60 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=60 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=60 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=60 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=60 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=60 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=60 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=61 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=61 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=61 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=61 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=61 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=61 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=61 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=61 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=61 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=61 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=61 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=62 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=62 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=63 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=63 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=63 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=63 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=63 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=63 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=63 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=64 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:37,RETREAT:1}
+[TRUNC] turn=65 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=65 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=65 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=65 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=65 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=66 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,RETREAT:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=1127
+TRUNC_FIRED=157
+TRUNC_FIRE_RATE=13.93%
+TRUNC_OPTCOUNT_HIST=1-8:533|9-16:122|17-32:238|33-64:77|65-128:120|129-256:37|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/30)|3-5:0.00%(0/22)|6+:14.60%(157/1075)
+TRUNC_DROPPED_BY_TYPE=ABILITY:7,ATTACH:6236,PLAY:23,RETREAT:40
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[slop_box] self-play 100%   
+[m2 vs dragapult] 0%   [TRUNC] turn=42 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=744
+TRUNC_FIRED=7
+TRUNC_FIRE_RATE=0.94%
+TRUNC_OPTCOUNT_HIST=1-8:472|9-16:96|17-32:109|33-64:60|65-128:7|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/69)|3-5:0.00%(0/66)|6+:1.15%(7/609)
+TRUNC_DROPPED_BY_TYPE=ATTACH:28,RETREAT:7
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2 vs dragapult] 50%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=584
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:423|9-16:78|17-32:64|33-64:19|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/64)|3-5:0.00%(0/86)|6+:0.00%(0/434)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2 vs dragapult] 100%   
+[m2 vs grimmsnarl] 0%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=762
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:554|9-16:127|17-32:72|33-64:9|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/59)|3-5:0.00%(0/87)|6+:0.00%(0/616)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2 vs grimmsnarl] 50%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=580
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:424|9-16:62|17-32:78|33-64:16|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/115)|3-5:0.00%(0/101)|6+:0.00%(0/364)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2 vs grimmsnarl] 100%   
+[m2 vs lucario] 0%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=652
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:522|9-16:102|17-32:12|33-64:16|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/73)|3-5:0.00%(0/67)|6+:0.00%(0/512)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2 vs lucario] 50%   [TRUNC] turn=41 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=63 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=828
+TRUNC_FIRED=15
+TRUNC_FIRE_RATE=1.81%
+TRUNC_OPTCOUNT_HIST=1-8:537|9-16:128|17-32:102|33-64:46|65-128:15|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/114)|3-5:0.00%(0/95)|6+:2.42%(15/619)
+TRUNC_DROPPED_BY_TYPE=ATTACH:45,RETREAT:15
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2 vs lucario] 100%   
+[m2 vs mega_lopunny] 0%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=797
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:541|9-16:124|17-32:104|33-64:28|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/36)|3-5:0.00%(0/31)|6+:0.00%(0/730)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2 vs mega_lopunny] 50%   [TRUNC] turn=42 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+[TRUNC] turn=42 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:16,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:16,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:16,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:16,RETREAT:1}
+[TRUNC] turn=44 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:16,RETREAT:1}
+[TRUNC] turn=46 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:10,RETREAT:1}
+[TRUNC] turn=46 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:10,RETREAT:1}
+[TRUNC] turn=46 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:10,RETREAT:1}
+[TRUNC] turn=46 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:10,RETREAT:1}
+[TRUNC] turn=46 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:10,RETREAT:1}
+[TRUNC] turn=46 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:10,RETREAT:1}
+[TRUNC] turn=46 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:10,RETREAT:1}
+[TRUNC] turn=46 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:10,RETREAT:1}
+[TRUNC] turn=46 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:10,RETREAT:1}
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=927
+TRUNC_FIRED=19
+TRUNC_FIRE_RATE=2.05%
+TRUNC_OPTCOUNT_HIST=1-8:651|9-16:70|17-32:134|33-64:53|65-128:19|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/109)|3-5:0.00%(0/68)|6+:2.53%(19/750)
+TRUNC_DROPPED_BY_TYPE=ATTACH:190,RETREAT:19
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2 vs mega_lopunny] 100%   
+[m2 vs slop_box] 0%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=1
+TRUNC_TOTAL_NODES=838
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:552|9-16:166|17-32:67|33-64:53|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/34)|3-5:0.00%(0/26)|6+:0.00%(0/778)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+=== DIAG_DUMP_END ===
+[m2 vs slop_box] 50%   Traceback (most recent call last):
+  File "/mnt/c/Users/isaas/OneDrive - Vrije Universiteit Amsterdam/Desktop/Important Docs/Me/My Games/Pokemon Agent/RLTRM2.py", line 1173, in <module>
+    run_cross_play(m2_agent, opp, MAIN_CROSS_PLAY_GAMES)
+  File "/mnt/c/Users/isaas/OneDrive - Vrije Universiteit Amsterdam/Desktop/Important Docs/Me/My Games/Pokemon Agent/RLTRM2.py", line 996, in run_cross_play
+    selected, sample = mcts_agent(obs, agent.deck, agent.model, opp_deck_sample)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/isaas/OneDrive - Vrije Universiteit Amsterdam/Desktop/Important Docs/Me/My Games/Pokemon Agent/RLTRM2.py", line 751, in mcts_agent
+    next_node, _ = create_node(current, ss, your_index, your_deck, model)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/isaas/OneDrive - Vrije Universiteit Amsterdam/Desktop/Important Docs/Me/My Games/Pokemon Agent/RLTRM2.py", line 612, in create_node
+    value_pred, policy_logits = eval_nn(sv_enc, sv_dec, model)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/isaas/OneDrive - Vrije Universiteit Amsterdam/Desktop/Important Docs/Me/My Games/Pokemon Agent/RLTRM2.py", line 502, in eval_nn
+    value, policy = model(
+                    ^^^^^^
+  File "/home/isaas/miniconda3/envs/pkmnagent/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isaas/miniconda3/envs/pkmnagent/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/isaas/OneDrive - Vrije Universiteit Amsterdam/Desktop/Important Docs/Me/My Games/Pokemon Agent/RLTRM2.py", line 134, in forward
+    encoder_out = self.encoder(v)
+                  ^^^^^^^^^^^^^^^
+  File "/home/isaas/miniconda3/envs/pkmnagent/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isaas/miniconda3/envs/pkmnagent/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isaas/miniconda3/envs/pkmnagent/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 538, in forward
+    output = mod(
+             ^^^^
+  File "/home/isaas/miniconda3/envs/pkmnagent/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isaas/miniconda3/envs/pkmnagent/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isaas/miniconda3/envs/pkmnagent/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 950, in forward
+    + self._sa_block(x, src_mask, src_key_padding_mask, is_causal=is_causal)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isaas/miniconda3/envs/pkmnagent/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 964, in _sa_block
+    x = self.self_attn(
+        ^^^^^^^^^^^^^^^
+  File "/home/isaas/miniconda3/envs/pkmnagent/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isaas/miniconda3/envs/pkmnagent/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isaas/miniconda3/envs/pkmnagent/lib/python3.11/site-packages/torch/nn/modules/activation.py", line 1494, in forward
+    attn_output, attn_output_weights = F.multi_head_attention_forward(
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/isaas/miniconda3/envs/pkmnagent/lib/python3.11/site-packages/torch/nn/functional.py", line 7088, in multi_head_attention_forward
+    attn_output = linear(attn_output, out_proj_weight, out_proj_bias)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

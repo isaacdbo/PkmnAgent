@@ -1,0 +1,1211 @@
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=4 generated_lens=[4] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=4 generated_lens=[4] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=3 max=3 generated_lens=[3] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=3 max=3 generated_lens=[3] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=3 max=3 generated_lens=[3] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=4 generated_lens=[4] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=4 generated_lens=[4] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=29 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=29 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=31 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:2}
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=44 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=44 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=44 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=44 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=46 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=48 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=50 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=52 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=54 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=56 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:17,PLAY:1}
+[TRUNC] turn=58 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=60 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:25,PLAY:1}
+[TRUNC] turn=62 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:29,PLAY:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=64 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=66 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=67 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:1,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:1,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:1,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:1,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:1,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:1,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:1,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:1,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:1,RETREAT:1}
+[TRUNC] turn=68 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=69 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:3,PLAY:1,RETREAT:1}
+[TRUNC] turn=69 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:3,PLAY:1,RETREAT:1}
+[TRUNC] turn=70 ctx=MAIN opts=133 kept=64 dropped_types={ATTACH:69}
+[TRUNC] turn=71 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:6,PLAY:1,RETREAT:1}
+[TRUNC] turn=71 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:6,PLAY:1,RETREAT:1}
+[TRUNC] turn=72 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[TRUNC] turn=73 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=73 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=73 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:1,RETREAT:1}
+[TRUNC] turn=73 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:1,RETREAT:1}
+[TRUNC] turn=73 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:1,RETREAT:1}
+[TRUNC] turn=73 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:1,RETREAT:1}
+[TRUNC] turn=73 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:1,RETREAT:1}
+[TRUNC] turn=73 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:1,RETREAT:1}
+[TRUNC] turn=74 ctx=MAIN opts=133 kept=64 dropped_types={ATTACH:69}
+[TRUNC] turn=75 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:12,PLAY:1,RETREAT:1}
+[TRUNC] turn=75 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:12,PLAY:1,RETREAT:1}
+[TRUNC] turn=75 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:12,PLAY:1,RETREAT:1}
+[TRUNC] turn=75 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:12,PLAY:1,RETREAT:1}
+[TRUNC] turn=75 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:12,PLAY:1,RETREAT:1}
+[TRUNC] turn=76 ctx=MAIN opts=133 kept=64 dropped_types={ATTACH:69}
+[TRUNC] turn=77 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:15,PLAY:1,RETREAT:1}
+[TRUNC] turn=77 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:15,PLAY:1,RETREAT:1}
+[TRUNC] turn=77 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:15,PLAY:1,RETREAT:1}
+[TRUNC] turn=77 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:15,PLAY:1,RETREAT:1}
+[TRUNC] turn=77 ctx=MAIN opts=81 kept=64 dropped_types={ATTACH:15,PLAY:1,RETREAT:1}
+[TRUNC] turn=79 ctx=MAIN opts=82 kept=64 dropped_types={ATTACH:15,PLAY:2,RETREAT:1}
+[TRUNC] turn=79 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=79 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:18,PLAY:1,RETREAT:1}
+[TRUNC] turn=81 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:18,PLAY:2,RETREAT:1}
+[TRUNC] turn=81 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:21,PLAY:1,RETREAT:1}
+[TRUNC] turn=81 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:21,PLAY:1,RETREAT:1}
+[TRUNC] turn=83 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:21,PLAY:2,RETREAT:1}
+[TRUNC] turn=83 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:24,PLAY:1,RETREAT:1}
+[TRUNC] turn=83 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:24,PLAY:1,RETREAT:1}
+[TRUNC] turn=84 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=85 ctx=MAIN opts=93 kept=64 dropped_types={ATTACH:27,PLAY:1,RETREAT:1}
+[TRUNC] turn=85 ctx=MAIN opts=93 kept=64 dropped_types={ATTACH:27,PLAY:1,RETREAT:1}
+[TRUNC] turn=87 ctx=MAIN opts=94 kept=64 dropped_types={ATTACH:27,PLAY:2,RETREAT:1}
+[TRUNC] turn=86 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=87 ctx=MAIN opts=96 kept=64 dropped_types={ATTACH:30,PLAY:1,RETREAT:1}
+[TRUNC] turn=87 ctx=MAIN opts=96 kept=64 dropped_types={ATTACH:30,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=88 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=89 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:1,RETREAT:1}
+[TRUNC] turn=89 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:1,RETREAT:1}
+[TRUNC] turn=90 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=91 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:36,PLAY:1,RETREAT:1}
+[TRUNC] turn=91 ctx=MAIN opts=102 kept=64 dropped_types={ATTACH:36,PLAY:1,RETREAT:1}
+[TRUNC] turn=92 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=93 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:39,PLAY:1,RETREAT:1}
+[TRUNC] turn=93 ctx=MAIN opts=105 kept=64 dropped_types={ATTACH:39,PLAY:1,RETREAT:1}
+[TRUNC] turn=94 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=95 ctx=MAIN opts=108 kept=64 dropped_types={ATTACH:42,PLAY:1,RETREAT:1}
+[TRUNC] turn=95 ctx=MAIN opts=108 kept=64 dropped_types={ATTACH:42,PLAY:1,RETREAT:1}
+[TRUNC] turn=95 ctx=MAIN opts=108 kept=64 dropped_types={ATTACH:42,PLAY:1,RETREAT:1}
+[TRUNC] turn=95 ctx=MAIN opts=108 kept=64 dropped_types={ATTACH:42,PLAY:1,RETREAT:1}
+[TRUNC] turn=95 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=95 ctx=MAIN opts=108 kept=64 dropped_types={ATTACH:42,PLAY:1,RETREAT:1}
+[TRUNC] turn=95 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=95 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=95 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=95 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=95 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=96 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=96 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=96 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=96 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=95 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:5}
+[TRUNC] turn=96 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=97 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=97 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=97 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=97 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=97 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=97 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=97 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=97 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=97 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=97 ctx=MAIN opts=142 kept=64 dropped_types={ATTACH:77,PLAY:1}
+[TRUNC] turn=98 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,RETREAT:1}
+[TRUNC] turn=99 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=99 ctx=MAIN opts=146 kept=64 dropped_types={ATTACH:81,PLAY:1}
+[TRUNC] turn=99 ctx=MAIN opts=146 kept=64 dropped_types={ATTACH:81,PLAY:1}
+[TRUNC] turn=99 ctx=MAIN opts=146 kept=64 dropped_types={ATTACH:81,PLAY:1}
+[TRUNC] turn=99 ctx=MAIN opts=146 kept=64 dropped_types={ATTACH:81,PLAY:1}
+[TRUNC] turn=99 ctx=MAIN opts=146 kept=64 dropped_types={ATTACH:81,PLAY:1}
+[TRUNC] turn=99 ctx=MAIN opts=146 kept=64 dropped_types={ATTACH:81,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=147 kept=64 dropped_types={ATTACH:81,PLAY:2}
+[TRUNC] turn=100 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:39,RETREAT:1}
+[TRUNC] turn=99 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:5,EVOLVE:1,PLAY:2}
+[TRUNC] turn=100 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:39,RETREAT:1}
+[TRUNC] turn=101 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=150 kept=64 dropped_types={ATTACH:85,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=150 kept=64 dropped_types={ATTACH:85,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=150 kept=64 dropped_types={ATTACH:85,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=150 kept=64 dropped_types={ATTACH:85,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=150 kept=64 dropped_types={ATTACH:85,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=150 kept=64 dropped_types={ATTACH:85,PLAY:1}
+[TRUNC] turn=101 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=102 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,RETREAT:1}
+[TRUNC] turn=103 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:2}
+[TRUNC] turn=103 ctx=MAIN opts=154 kept=64 dropped_types={ATTACH:89,PLAY:1}
+[TRUNC] turn=103 ctx=MAIN opts=154 kept=64 dropped_types={ATTACH:89,PLAY:1}
+[TRUNC] turn=103 ctx=MAIN opts=154 kept=64 dropped_types={ATTACH:89,PLAY:1}
+[TRUNC] turn=103 ctx=MAIN opts=154 kept=64 dropped_types={ATTACH:89,PLAY:1}
+[TRUNC] turn=103 ctx=MAIN opts=154 kept=64 dropped_types={ATTACH:89,PLAY:1}
+[TRUNC] turn=103 ctx=MAIN opts=154 kept=64 dropped_types={ATTACH:89,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=155 kept=64 dropped_types={ATTACH:89,PLAY:2}
+[TRUNC] turn=103 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:2}
+[TRUNC] turn=104 ctx=MAIN opts=116 kept=64 dropped_types={ATTACH:51,RETREAT:1}
+[TRUNC] turn=103 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:5,EVOLVE:1,PLAY:4}
+[TRUNC] turn=104 ctx=MAIN opts=116 kept=64 dropped_types={ATTACH:51,RETREAT:1}
+[TRUNC] turn=105 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:4,PLAY:2}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,PLAY:1}
+[TRUNC] turn=105 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:2}
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=28 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=3 max=3 generated_lens=[3] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=3 max=3 generated_lens=[3] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=29 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,ATTACH:3}
+[TRUNC] turn=29 ctx=MAIN opts=68 kept=64 dropped_types={ABILITY:1,ATTACH:3}
+[TRUNC] turn=29 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=29 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=31 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=31 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=31 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=31 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=33 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=33 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=33 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=35 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=37 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=35 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=37 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=43 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=45 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=44 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=45 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=46 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=47 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=48 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=49 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=50 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=51 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=52 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=53 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=54 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=55 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=55 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=55 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=56 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=71 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=71 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=71 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=71 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=73 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=71 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=73 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=73 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=73 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=73 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=73 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=75 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=73 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=75 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=75 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=77 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=77 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=79 ctx=MAIN opts=85 kept=64 dropped_types={ATTACH:21}
+[TRUNC] turn=78 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=80 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=82 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=79 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=81 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:27}
+[TRUNC] turn=80 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=82 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=84 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=81 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=81 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=83 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=81 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=83 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=85 ctx=MAIN opts=97 kept=64 dropped_types={ATTACH:33}
+[TRUNC] turn=82 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=84 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=86 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=83 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=85 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=87 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=84 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=86 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=88 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:15}
+[TRUNC] turn=85 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=85 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=87 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=85 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=85 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=85 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=85 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=87 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=87 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:51}
+[TRUNC] turn=89 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:51}
+[TRUNC] turn=89 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:51}
+[TRUNC] turn=89 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=91 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=93 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=91 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=91 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=91 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=91 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=91 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=91 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=91 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=91 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=91 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=93 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=91 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=93 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=93 ctx=MAIN opts=133 kept=64 dropped_types={ATTACH:69}
+[TRUNC] turn=95 ctx=MAIN opts=133 kept=64 dropped_types={ATTACH:69}
+[TRUNC] turn=95 ctx=MAIN opts=133 kept=64 dropped_types={ATTACH:69}
+[TRUNC] turn=95 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=4 generated_lens=[4] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=4 generated_lens=[4] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=35 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=37 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=37 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=37 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=37 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=37 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=37 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=41 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=41 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=41 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=41 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=41 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:2}
+[TRUNC] turn=43 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=43 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=78 kept=64 dropped_types={ATTACH:13,PLAY:1}
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=55 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=55 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=55 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:2}
+[TRUNC] turn=57 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:3,PLAY:2}
+[TRUNC] turn=57 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=59 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:3,PLAY:2}
+[TRUNC] turn=59 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:5,PLAY:2}
+[TRUNC] turn=61 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=61 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=63 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=63 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=63 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=63 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=63 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=63 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=63 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=63 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=63 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=65 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:2}
+[TRUNC] turn=65 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:11,PLAY:1}
+[TRUNC] turn=65 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:11,PLAY:1}
+[TRUNC] turn=65 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:11,PLAY:1}
+[TRUNC] turn=65 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:11,PLAY:1}
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=76 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:39}
+[TRUNC] turn=78 ctx=MAIN opts=109 kept=64 dropped_types={ATTACH:45}
+[TRUNC] turn=80 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:51}
+[TRUNC] turn=82 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=84 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=86 ctx=MAIN opts=121 kept=64 dropped_types={ATTACH:57}
+[TRUNC] turn=88 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:63}
+[TRUNC] turn=90 ctx=MAIN opts=133 kept=64 dropped_types={ATTACH:69}
+[TRUNC] turn=92 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:75}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=94 ctx=MAIN opts=133 kept=64 dropped_types={ATTACH:69}
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=55 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=55 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=55 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=55 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=55 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=55 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=55 ctx=MAIN opts=66 kept=64 dropped_types={ATTACH:1,PLAY:1}
+[TRUNC] turn=57 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:2}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:1,PLAY:3}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=3 max=3 generated_lens=[3] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=3 max=3 generated_lens=[3] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=3 max=3 generated_lens=[3] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_BENCH min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=3 max=3 generated_lens=[3] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=3 max=3 generated_lens=[3] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=3 max=3 generated_lens=[3] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=21 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:3,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=23 ctx=MAIN opts=75 kept=64 dropped_types={ABILITY:1,ATTACH:9,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=25 ctx=MAIN opts=81 kept=64 dropped_types={ABILITY:1,ATTACH:15,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=27 ctx=MAIN opts=87 kept=64 dropped_types={ABILITY:1,ATTACH:21,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=29 ctx=MAIN opts=93 kept=64 dropped_types={ABILITY:1,ATTACH:27,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=31 ctx=MAIN opts=99 kept=64 dropped_types={ABILITY:1,ATTACH:33,RETREAT:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=33 ctx=MAIN opts=105 kept=64 dropped_types={ABILITY:1,ATTACH:39,RETREAT:1}
+[TRUNC] turn=35 ctx=MAIN opts=105 kept=64 dropped_types={ABILITY:1,ATTACH:39,RETREAT:1}
+[TRUNC] turn=35 ctx=MAIN opts=111 kept=64 dropped_types={ABILITY:1,ATTACH:45,RETREAT:1}
+[TRUNC] turn=37 ctx=MAIN opts=111 kept=64 dropped_types={ABILITY:1,ATTACH:45,RETREAT:1}
+[TRUNC] turn=37 ctx=MAIN opts=117 kept=64 dropped_types={ABILITY:1,ATTACH:51,RETREAT:1}
+[TRUNC] turn=39 ctx=MAIN opts=117 kept=64 dropped_types={ABILITY:1,ATTACH:51,RETREAT:1}
+[TRUNC] turn=39 ctx=MAIN opts=123 kept=64 dropped_types={ABILITY:1,ATTACH:57,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=41 ctx=MAIN opts=129 kept=64 dropped_types={ABILITY:1,ATTACH:63,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=43 ctx=MAIN opts=135 kept=64 dropped_types={ABILITY:1,ATTACH:69,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=45 ctx=MAIN opts=141 kept=64 dropped_types={ABILITY:1,ATTACH:75,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=141 kept=64 dropped_types={ABILITY:1,ATTACH:75,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=47 ctx=MAIN opts=147 kept=64 dropped_types={ABILITY:1,ATTACH:81,RETREAT:1}
+[TRUNC] turn=49 ctx=MAIN opts=147 kept=64 dropped_types={ABILITY:1,ATTACH:81,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=49 ctx=MAIN opts=153 kept=64 dropped_types={ABILITY:1,ATTACH:87,RETREAT:1}
+[TRUNC] turn=51 ctx=MAIN opts=153 kept=64 dropped_types={ABILITY:1,ATTACH:87,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=57 ctx=MAIN opts=69 kept=64 dropped_types={ABILITY:1,ATTACH:3,RETREAT:1}
+[TRUNC] turn=57 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=57 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=59 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=59 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,RETREAT:1}
+[TRUNC] turn=61 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:15,RETREAT:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=63 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,RETREAT:1}
+[TRUNC] turn=65 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,RETREAT:1}
+[TRUNC] turn=69 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,RETREAT:1}
+[TRUNC] turn=68 ctx=MAIN opts=70 kept=64 dropped_types={ATTACH:5,PLAY:1}
+[TRUNC] turn=69 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:39,RETREAT:1}
+[TRUNC] turn=70 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,PLAY:1}
+[TRUNC] turn=71 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,RETREAT:1}
+[TRUNC] turn=71 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,RETREAT:1}
+[TRUNC] turn=71 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,RETREAT:1}
+[TRUNC] turn=73 ctx=MAIN opts=110 kept=64 dropped_types={ATTACH:45,RETREAT:1}
+[TRUNC] turn=72 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:42,PLAY:1}
+[TRUNC] turn=73 ctx=MAIN opts=116 kept=64 dropped_types={ATTACH:51,RETREAT:1}
+[TRUNC] turn=73 ctx=MAIN opts=116 kept=64 dropped_types={ATTACH:51,RETREAT:1}
+[TRUNC] turn=75 ctx=MAIN opts=116 kept=64 dropped_types={ATTACH:51,RETREAT:1}
+[TRUNC] turn=75 ctx=MAIN opts=122 kept=64 dropped_types={ATTACH:57,RETREAT:1}
+[TRUNC] turn=77 ctx=MAIN opts=122 kept=64 dropped_types={ATTACH:57,RETREAT:1}
+[TRUNC] turn=77 ctx=MAIN opts=128 kept=64 dropped_types={ATTACH:63,RETREAT:1}
+[TRUNC] turn=79 ctx=MAIN opts=128 kept=64 dropped_types={ATTACH:63,RETREAT:1}
+[TRUNC] turn=79 ctx=MAIN opts=134 kept=64 dropped_types={ATTACH:69,RETREAT:1}
+[TRUNC] turn=81 ctx=MAIN opts=134 kept=64 dropped_types={ATTACH:69,RETREAT:1}
+[TRUNC] turn=81 ctx=MAIN opts=140 kept=64 dropped_types={ATTACH:75,RETREAT:1}
+[TRUNC] turn=83 ctx=MAIN opts=140 kept=64 dropped_types={ATTACH:75,RETREAT:1}
+[TRUNC] turn=83 ctx=MAIN opts=146 kept=64 dropped_types={ATTACH:81,RETREAT:1}
+[TRUNC] turn=85 ctx=MAIN opts=146 kept=64 dropped_types={ATTACH:81,RETREAT:1}
+[TRUNC] turn=85 ctx=MAIN opts=152 kept=64 dropped_types={ATTACH:87,RETREAT:1}
+[TRUNC] turn=87 ctx=MAIN opts=152 kept=64 dropped_types={ATTACH:87,RETREAT:1}
+[TRUNC] turn=87 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,RETREAT:1}
+[TRUNC] turn=89 ctx=MAIN opts=158 kept=64 dropped_types={ATTACH:93,RETREAT:1}
+[TRUNC] turn=89 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=89 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=89 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=89 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=89 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=89 ctx=MAIN opts=157 kept=64 dropped_types={ATTACH:93}
+[TRUNC] turn=91 ctx=MAIN opts=163 kept=64 dropped_types={ATTACH:99}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=91 ctx=MAIN opts=163 kept=64 dropped_types={ATTACH:99}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=91 ctx=MAIN opts=163 kept=64 dropped_types={ATTACH:99}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=91 ctx=MAIN opts=163 kept=64 dropped_types={ATTACH:99}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=91 ctx=MAIN opts=163 kept=64 dropped_types={ATTACH:99}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=91 ctx=MAIN opts=163 kept=64 dropped_types={ATTACH:99}
+[TRUNC] turn=91 ctx=MAIN opts=163 kept=64 dropped_types={ATTACH:99}
+[TRUNC] turn=91 ctx=MAIN opts=163 kept=64 dropped_types={ATTACH:99}
+[TRUNC] turn=93 ctx=MAIN opts=163 kept=64 dropped_types={ATTACH:99}
+[TRUNC] turn=93 ctx=MAIN opts=169 kept=64 dropped_types={ATTACH:105}
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=5 generated_lens=[5] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=27 ctx=MAIN opts=65 kept=64 dropped_types={PLAY:1}
+[TRUNC] turn=29 ctx=MAIN opts=66 kept=64 dropped_types={PLAY:2}
+[TRUNC] turn=29 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,PLAY:1}
+[TRUNC] turn=31 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,PLAY:1}
+[TRUNC] turn=33 ctx=MAIN opts=74 kept=64 dropped_types={ATTACH:9,PLAY:1}
+[TRUNC] turn=35 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:12,PLAY:1}
+[TRUNC] turn=37 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:15,PLAY:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=39 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=39 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=39 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:18,PLAY:1}
+[TRUNC] turn=41 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=41 ctx=MAIN opts=86 kept=64 dropped_types={ATTACH:21,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=89 kept=64 dropped_types={ATTACH:24,PLAY:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=43 ctx=MAIN opts=89 kept=64 dropped_types={ATTACH:24,PLAY:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=43 ctx=MAIN opts=89 kept=64 dropped_types={ATTACH:24,PLAY:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=43 ctx=MAIN opts=89 kept=64 dropped_types={ATTACH:24,PLAY:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=43 ctx=MAIN opts=89 kept=64 dropped_types={ATTACH:24,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=89 kept=64 dropped_types={ATTACH:24,PLAY:1}
+[TRUNC] turn=43 ctx=MAIN opts=89 kept=64 dropped_types={ATTACH:24,PLAY:1}
+[TRUNC] turn=45 ctx=MAIN opts=90 kept=64 dropped_types={ATTACH:24,PLAY:2}
+[TRUNC] turn=45 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,PLAY:1}
+[TRUNC] turn=45 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,PLAY:1}
+[TRUNC] turn=45 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:27,PLAY:1}
+[TRUNC] turn=47 ctx=MAIN opts=93 kept=64 dropped_types={ATTACH:27,PLAY:2}
+[TRUNC] turn=47 ctx=MAIN opts=95 kept=64 dropped_types={ATTACH:30,PLAY:1}
+[TRUNC] turn=47 ctx=MAIN opts=95 kept=64 dropped_types={ATTACH:30,PLAY:1}
+[TRUNC] turn=49 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=49 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=49 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=49 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=49 ctx=MAIN opts=98 kept=64 dropped_types={ATTACH:33,PLAY:1}
+[TRUNC] turn=51 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:2}
+[TRUNC] turn=51 ctx=MAIN opts=130 kept=64 dropped_types={ATTACH:65,PLAY:1}
+[TRUNC] turn=53 ctx=MAIN opts=131 kept=64 dropped_types={ATTACH:65,PLAY:2}
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=60 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+[TRUNC] turn=60 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:3,RETREAT:1}
+[TRUNC] turn=60 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:4,RETREAT:1}
+[TRUNC] turn=60 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=60 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=60 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=60 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD_ENERGY_CARD min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=73 ctx=MAIN opts=65 kept=64 dropped_types={RETREAT:1}
+[TRUNC] turn=73 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:2,PLAY:1,RETREAT:1}
+[TRUNC] turn=75 ctx=MAIN opts=69 kept=64 dropped_types={ATTACH:2,PLAY:2,RETREAT:1}
+[TRUNC] turn=74 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:3}
+[TRUNC] turn=75 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:6,PLAY:1,RETREAT:1}
+[TRUNC] turn=77 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:6,PLAY:2,RETREAT:1}
+[TRUNC] turn=76 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:9}
+[TRUNC] turn=77 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:10,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=SETUP_BENCH_POKEMON min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=TO_HAND min=0 max=2 generated_lens=[2] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=27 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:2,RETREAT:1}
+[TRUNC] turn=29 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:7,RETREAT:1}
+[TRUNC] turn=31 ctx=MAIN opts=77 kept=64 dropped_types={ATTACH:12,RETREAT:1}
+[TRUNC] turn=33 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:1,PLAY:1,RETREAT:1}
+[TRUNC] turn=35 ctx=MAIN opts=68 kept=64 dropped_types={ATTACH:1,PLAY:2,RETREAT:1}
+[TRUNC] turn=35 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:5,PLAY:1,RETREAT:1}
+[TRUNC] turn=37 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:5,PLAY:2,RETREAT:1}
+[TRUNC] turn=37 ctx=MAIN opts=75 kept=64 dropped_types={ATTACH:9,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=39 ctx=MAIN opts=76 kept=64 dropped_types={ATTACH:9,PLAY:2,RETREAT:1}
+[TRUNC] turn=39 ctx=MAIN opts=79 kept=64 dropped_types={ATTACH:13,PLAY:1,RETREAT:1}
+[TRUNC] turn=41 ctx=MAIN opts=80 kept=64 dropped_types={ATTACH:13,PLAY:2,RETREAT:1}
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=41 ctx=MAIN opts=83 kept=64 dropped_types={ATTACH:17,PLAY:1,RETREAT:1}
+[TRUNC] turn=43 ctx=MAIN opts=84 kept=64 dropped_types={ATTACH:17,PLAY:2,RETREAT:1}
+[MULTISELECT] ctx=TO_DECK min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=43 ctx=MAIN opts=87 kept=64 dropped_types={ATTACH:21,PLAY:1,RETREAT:1}
+[TRUNC] turn=45 ctx=MAIN opts=88 kept=64 dropped_types={ATTACH:21,PLAY:2,RETREAT:1}
+[TRUNC] turn=45 ctx=MAIN opts=91 kept=64 dropped_types={ATTACH:25,PLAY:1,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=92 kept=64 dropped_types={ATTACH:25,PLAY:2,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=95 kept=64 dropped_types={ATTACH:29,PLAY:1,RETREAT:1}
+[TRUNC] turn=47 ctx=MAIN opts=95 kept=64 dropped_types={ATTACH:29,PLAY:1,RETREAT:1}
+[TRUNC] turn=49 ctx=MAIN opts=96 kept=64 dropped_types={ATTACH:29,PLAY:2,RETREAT:1}
+[TRUNC] turn=49 ctx=MAIN opts=99 kept=64 dropped_types={ATTACH:33,PLAY:1,RETREAT:1}
+[TRUNC] turn=51 ctx=MAIN opts=103 kept=64 dropped_types={ATTACH:37,PLAY:1,RETREAT:1}
+[TRUNC] turn=53 ctx=MAIN opts=104 kept=64 dropped_types={ATTACH:37,PLAY:2,RETREAT:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=53 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:41,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=53 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:41,PLAY:1,RETREAT:1}
+[TRUNC] turn=55 ctx=MAIN opts=108 kept=64 dropped_types={ATTACH:41,PLAY:2,RETREAT:1}
+[TRUNC] turn=53 ctx=MAIN opts=107 kept=64 dropped_types={ATTACH:41,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=55 ctx=MAIN opts=111 kept=64 dropped_types={ATTACH:45,PLAY:1,RETREAT:1}
+[TRUNC] turn=57 ctx=MAIN opts=112 kept=64 dropped_types={ATTACH:45,PLAY:2,RETREAT:1}
+[TRUNC] turn=57 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:49,PLAY:1,RETREAT:1}
+[TRUNC] turn=59 ctx=MAIN opts=116 kept=64 dropped_types={ATTACH:49,PLAY:2,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=59 ctx=MAIN opts=115 kept=64 dropped_types={ATTACH:49,PLAY:1,RETREAT:1}
+[TRUNC] turn=61 ctx=MAIN opts=116 kept=64 dropped_types={ATTACH:49,PLAY:2,RETREAT:1}
+[TRUNC] turn=61 ctx=MAIN opts=119 kept=64 dropped_types={ATTACH:53,PLAY:1,RETREAT:1}
+[TRUNC] turn=63 ctx=MAIN opts=120 kept=64 dropped_types={ATTACH:53,PLAY:2,RETREAT:1}
+[TRUNC] turn=63 ctx=MAIN opts=123 kept=64 dropped_types={ATTACH:57,PLAY:1,RETREAT:1}
+[TRUNC] turn=65 ctx=MAIN opts=124 kept=64 dropped_types={ATTACH:57,PLAY:2,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=65 kept=64 dropped_types={RETREAT:1}
+[TRUNC] turn=65 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:61,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=65 ctx=MAIN opts=127 kept=64 dropped_types={ATTACH:61,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=67 ctx=MAIN opts=131 kept=64 dropped_types={ATTACH:65,PLAY:1,RETREAT:1}
+[TRUNC] turn=67 ctx=MAIN opts=131 kept=64 dropped_types={ATTACH:65,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=69 ctx=MAIN opts=135 kept=64 dropped_types={ATTACH:69,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=73 ctx=MAIN opts=65 kept=64 dropped_types={RETREAT:1}
+[TRUNC] turn=71 ctx=MAIN opts=139 kept=64 dropped_types={ATTACH:73,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=73 ctx=MAIN opts=143 kept=64 dropped_types={ATTACH:77,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=75 ctx=MAIN opts=147 kept=64 dropped_types={ATTACH:81,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=77 ctx=MAIN opts=151 kept=64 dropped_types={ATTACH:85,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=79 ctx=MAIN opts=67 kept=64 dropped_types={ATTACH:2,RETREAT:1}
+[TRUNC] turn=81 ctx=MAIN opts=71 kept=64 dropped_types={ATTACH:6,RETREAT:1}
+[TRUNC] turn=79 ctx=MAIN opts=151 kept=64 dropped_types={ATTACH:85,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=81 ctx=MAIN opts=65 kept=64 dropped_types={RETREAT:1}
+[TRUNC] turn=79 ctx=MAIN opts=72 kept=64 dropped_types={ATTACH:1,PLAY:6,RETREAT:1}
+[TRUNC] turn=81 ctx=MAIN opts=155 kept=64 dropped_types={ATTACH:89,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=81 ctx=MAIN opts=65 kept=64 dropped_types={RETREAT:1}
+[TRUNC] turn=81 ctx=MAIN opts=73 kept=64 dropped_types={ATTACH:1,PLAY:7,RETREAT:1}
+[TRUNC] turn=83 ctx=MAIN opts=159 kept=64 dropped_types={ATTACH:93,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=83 ctx=MAIN opts=159 kept=64 dropped_types={ATTACH:93,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=DISCARD min=2 max=2 generated_lens=[2] shorter_legal_exists=False shorter_missed=False
+[TRUNC] turn=83 ctx=MAIN opts=159 kept=64 dropped_types={ATTACH:93,PLAY:1,RETREAT:1}
+[TRUNC] turn=83 ctx=MAIN opts=159 kept=64 dropped_types={ATTACH:93,PLAY:1,RETREAT:1}
+[TRUNC] turn=83 ctx=MAIN opts=159 kept=64 dropped_types={ATTACH:93,PLAY:1,RETREAT:1}
+[MULTISELECT] ctx=TO_HAND min=0 max=3 generated_lens=[3] shorter_legal_exists=True shorter_missed=True
+[TRUNC] turn=83 ctx=MAIN opts=67 kept=64 dropped_types={PLAY:2,RETREAT:1}

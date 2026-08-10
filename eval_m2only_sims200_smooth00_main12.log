@@ -1,0 +1,97 @@
+nohup: ignoring input
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+EVAL_CANDIDATE=checkpoints/m2/model_2026-08-10_22-01.pth
+EVAL_CANDIDATE_DECK=M2Deck.xlsx
+EVAL_SIMULATIONS_PER_MOVE=200
+EVAL_GAMES_PER_OPPONENT=40
+EVAL_BASE_SEED=20260809
+
+=== PANEL: candidate vs sample_bot ===
+EVAL_GAME_DONE=1/40 p0=candidate p1=opponent result=0 reason=2 cause=deckout sec=27.00
+EVAL_GAME_DONE=2/40 p0=opponent p1=candidate result=1 reason=3 cause=other sec=25.55
+EVAL_GAME_DONE=3/40 p0=candidate p1=opponent result=1 reason=1 cause=prize sec=20.42
+EVAL_GAME_DONE=4/40 p0=opponent p1=candidate result=0 reason=1 cause=prize sec=20.71
+EVAL_GAME_DONE=5/40 p0=candidate p1=opponent result=1 reason=1 cause=prize sec=15.29
+EVAL_GAME_DONE=6/40 p0=opponent p1=candidate result=1 reason=3 cause=other sec=9.45
+EVAL_GAME_DONE=7/40 p0=candidate p1=opponent result=1 reason=1 cause=prize sec=13.14
+EVAL_GAME_DONE=8/40 p0=opponent p1=candidate result=1 reason=3 cause=other sec=21.70
+EVAL_GAME_DONE=9/40 p0=candidate p1=opponent result=0 reason=3 cause=other sec=13.34
+EVAL_GAME_DONE=10/40 p0=opponent p1=candidate result=0 reason=1 cause=prize sec=17.44
+EVAL_GAME_DONE=11/40 p0=candidate p1=opponent result=0 reason=3 cause=other sec=16.77
+EVAL_GAME_DONE=12/40 p0=opponent p1=candidate result=1 reason=3 cause=other sec=7.33
+EVAL_GAME_DONE=13/40 p0=candidate p1=opponent result=1 reason=1 cause=prize sec=25.50
+EVAL_GAME_DONE=14/40 p0=opponent p1=candidate result=1 reason=1 cause=prize sec=22.31
+EVAL_GAME_DONE=15/40 p0=candidate p1=opponent result=0 reason=3 cause=other sec=24.20
+EVAL_GAME_DONE=16/40 p0=opponent p1=candidate result=0 reason=1 cause=prize sec=21.23
+EVAL_GAME_DONE=17/40 p0=candidate p1=opponent result=1 reason=2 cause=deckout sec=24.61
+EVAL_GAME_DONE=18/40 p0=opponent p1=candidate result=1 reason=3 cause=other sec=5.58
+EVAL_GAME_DONE=19/40 p0=candidate p1=opponent result=1 reason=2 cause=deckout sec=24.17
+EVAL_GAME_DONE=20/40 p0=opponent p1=candidate result=1 reason=3 cause=other sec=8.22
+EVAL_GAME_DONE=21/40 p0=candidate p1=opponent result=1 reason=2 cause=deckout sec=34.29
+EVAL_GAME_DONE=22/40 p0=opponent p1=candidate result=1 reason=1 cause=prize sec=21.23
+EVAL_GAME_DONE=23/40 p0=candidate p1=opponent result=1 reason=1 cause=prize sec=27.38
+EVAL_GAME_DONE=24/40 p0=opponent p1=candidate result=1 reason=1 cause=prize sec=28.92
+EVAL_GAME_DONE=25/40 p0=candidate p1=opponent result=0 reason=3 cause=other sec=25.41
+EVAL_GAME_DONE=26/40 p0=opponent p1=candidate result=1 reason=1 cause=prize sec=18.88
+EVAL_GAME_DONE=27/40 p0=candidate p1=opponent result=0 reason=3 cause=other sec=8.73
+EVAL_GAME_DONE=28/40 p0=opponent p1=candidate result=1 reason=3 cause=other sec=20.47
+EVAL_GAME_DONE=29/40 p0=candidate p1=opponent result=0 reason=3 cause=other sec=14.73
+EVAL_GAME_DONE=30/40 p0=opponent p1=candidate result=0 reason=1 cause=prize sec=18.18
+EVAL_GAME_DONE=31/40 p0=candidate p1=opponent result=1 reason=1 cause=prize sec=21.74
+EVAL_GAME_DONE=32/40 p0=opponent p1=candidate result=1 reason=3 cause=other sec=13.62
+EVAL_GAME_DONE=33/40 p0=candidate p1=opponent result=0 reason=3 cause=other sec=7.32
+EVAL_GAME_DONE=34/40 p0=opponent p1=candidate result=0 reason=2 cause=deckout sec=29.12
+EVAL_GAME_DONE=35/40 p0=candidate p1=opponent result=1 reason=1 cause=prize sec=28.20
+EVAL_GAME_DONE=36/40 p0=opponent p1=candidate result=0 reason=1 cause=prize sec=14.56
+EVAL_GAME_DONE=37/40 p0=candidate p1=opponent result=1 reason=1 cause=prize sec=24.28
+EVAL_GAME_DONE=38/40 p0=opponent p1=candidate result=0 reason=2 cause=deckout sec=26.48
+EVAL_GAME_DONE=39/40 p0=candidate p1=opponent result=0 reason=1 cause=prize sec=24.70
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=40
+AGENT=UNKNOWN
+TRUNC_TOTAL_NODES=601194
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:441450|9-16:111362|17-32:44111|33-64:4271|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/68977)|3-5:0.00%(0/85065)|6+:0.00%(0/447152)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+MULTISELECT_FIXED_LEN=min=0,max=2:nodes=4098,shorter_legal=4098,shorter_generated=0,shorter_missed=4098|min=0,max=3:nodes=4551,shorter_legal=4551,shorter_generated=0,shorter_missed=4551|min=0,max=4:nodes=35,shorter_legal=35,shorter_generated=0,shorter_missed=35|min=0,max=5:nodes=482,shorter_legal=482,shorter_generated=0,shorter_missed=482|min=2,max=2:nodes=11494,shorter_legal=0,shorter_generated=0,shorter_missed=0|min=3,max=3:nodes=1739,shorter_legal=0,shorter_generated=0,shorter_missed=0
+MULTISELECT_SHORTER_MISSED=9166
+MULTISELECT_CTX_HIST=ATTACH_TO:3,DISCARD:10573,DISCARD_ENERGY_CARD:368,SETUP_BENCH_POKEMON:732,TO_HAND:10723
+GAME_LENGTH_HIST=1-15:10|16-25:16|26-40:13|41-60:1|61+:0
+WIN_BY_CAUSE=DECK_OUT:W=6,L=6,D=0|NO_ACTIVE:W=16,L=16,D=0|PRIZE:W=18,L=18,D=0
+TURN_NODE_DIST=1-2:11.47%(68977/601194)|3-5:14.15%(85065/601194)|6+:74.38%(447152/601194)
+SEARCH_MAX_DEPTH=25
+SEARCH_MEAN_DEPTH=6.1228
+MEAN_DEPTH=6.1228
+SIMS_CONTRIBUTED=625600
+SIMS_CONFIGURED=625600
+SIMS_CONTRIBUTED_PER_DECISION=200.0000
+SIMS_CONFIGURED_PER_DECISION=200.0000
+PRIZE_REWARD_REACHED=10.23%(320/3128)
+STALL_DRAW_PASS_TURNS=317
+STALL_SHUFFLE_WITH_RESOURCES=81
+MISSED_ATTACH=166
+SHAPING_BREAKDOWN=BOARD_DECK_DIFF:0.096083|DAMAGE_PRESSURE:0.006767|DISRUPTION:0.000018|ENERGY_DENIAL:0.003085|ITEM_LOCK_PENALTY:0.000000|KO_BONUS:0.001964|PARALYSIS:0.000000|PRIZE_DIFF:-0.019729|SLEEP:0.000000
+ROOT_OPTION_STATS=ABILITY:available=401,chosen=158,not_chosen=243,zero_visit_rate=15.46%(62/401),mean_opt_visit=15.93,mean_opt_q=-0.4052,mean_chosen_visit=134.53,mean_chosen_q=-0.0497|ATTACK:available=195,chosen=96,not_chosen=99,zero_visit_rate=10.26%(20/195),mean_opt_visit=20.92,mean_opt_q=-0.4773,mean_chosen_visit=135.31,mean_chosen_q=-0.0360|ENERGY_ATTACH:available=972,chosen=319,not_chosen=653,zero_visit_rate=20.88%(203/972),mean_opt_visit=11.37,mean_opt_q=-0.5173,mean_chosen_visit=134.63,mean_chosen_q=-0.0899
+ATTACH_PRIOR_DIST=special:n=724,attach_prior[mean=0.2343,min=0.0001,max=0.9995,hist=(<0.001:132,0.001-0.005:72,0.005-0.01:17,0.01-0.03:35,0.03-0.1:58,0.1-0.3:190,0.3-1.0:220,1.0:0)],chosen_prior[mean=0.4164,min=0.0000,max=0.9995,hist=(<0.001:99,0.001-0.005:14,0.005-0.01:19,0.01-0.03:8,0.03-0.1:55,0.1-0.3:134,0.3-1.0:395,1.0:0)]|plain:n=6736,attach_prior[mean=0.0278,min=0.0000,max=0.9974,hist=(<0.001:3670,0.001-0.005:449,0.005-0.01:102,0.01-0.03:507,0.03-0.1:1521,0.1-0.3:457,0.3-1.0:30,1.0:0)],chosen_prior[mean=0.4596,min=0.0000,max=0.9996,hist=(<0.001:376,0.001-0.005:67,0.005-0.01:57,0.01-0.03:69,0.03-0.1:1143,0.1-0.3:1266,0.3-1.0:3758,1.0:0)]
+SIM_KO_REACHED=4.83%(30238/625600)
+SIM_KO_DEPTH_MEAN=4.5737
+SIM_KO_DEPTH_MIN=1
+SIM_KO_DEPTH_MAX=17
+TRUE_RESULT_TALLY=P0_WINS=16,P1_WINS=24,DRAWS=0
+POLICY_TARGET_ZERO_FRACTION_MEAN=0.1699
+POLICY_TARGET_ENTROPY_MEAN=0.6336
+POLICY_TARGET_COUNT=3128
+ROOT_CHILD_COUNT=mean=6.63,median=5.0,n=3128,by_turn=(1-2:mean=6.08,median=4.0,n=506|3-5:mean=6.00,median=4.0,n=432|6+:mean=6.89,median=5.0,n=2190)
+ROOT_VISIT_HIST=0:27.10%(5622/20749)|1:23.93%(4965/20749)|2-4:7.22%(1499/20749)|5+:41.75%(8663/20749)
+ENERGY_DEV_RATE=35.29%(402/1139)
+GRASS_IN_DISCARD_RATE=40.19%(1257/3128)
+=== DIAG_DUMP_END ===
+EVAL_GAME_DONE=40/40 p0=opponent p1=candidate result=1 reason=3 cause=other sec=6.18
+OPP_WALL_SEC=778.41
+OPP_MEAN_SEC_PER_GAME=19.46
+OPP_sample_bot_CANDIDATE: wins=22 losses=18 draws=0 win_rate=55.0%(22/40) prize_decided=18/40 deckout_share=15.0%(6/40)
+OPP_sample_bot_OPPONENT: wins=18 losses=22 draws=0 win_rate=45.0%(18/40) prize_decided=18/40 deckout_share=15.0%(6/40)

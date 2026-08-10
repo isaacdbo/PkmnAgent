@@ -1,0 +1,85 @@
+H2H_SIMULATIONS_PER_MOVE=20
+H2H_NEW=checkpoints/m2/model_2026-08-09_03-38.pth
+H2H_OLD=checkpoints/m2/model_2026-08-08_09-48.pth
+H2H_GAMES=40
+H2H_BASE_SEED=20260809
+H2H_GAME_DONE=1/40 p0=new p1=old result=1 reason=2 cause=deckout sec=6.80
+H2H_GAME_DONE=2/40 p0=old p1=new result=0 reason=2 cause=deckout sec=5.88
+H2H_GAME_DONE=3/40 p0=new p1=old result=1 reason=2 cause=deckout sec=10.68
+H2H_GAME_DONE=4/40 p0=old p1=new result=0 reason=2 cause=deckout sec=8.82
+H2H_GAME_DONE=5/40 p0=new p1=old result=1 reason=2 cause=deckout sec=6.99
+H2H_GAME_DONE=6/40 p0=old p1=new result=0 reason=2 cause=deckout sec=10.26
+H2H_GAME_DONE=7/40 p0=new p1=old result=0 reason=3 cause=other sec=1.39
+H2H_GAME_DONE=8/40 p0=old p1=new result=1 reason=3 cause=other sec=5.65
+H2H_GAME_DONE=9/40 p0=new p1=old result=1 reason=2 cause=deckout sec=7.64
+H2H_GAME_DONE=10/40 p0=old p1=new result=0 reason=2 cause=deckout sec=7.03
+H2H_GAME_DONE=11/40 p0=new p1=old result=1 reason=2 cause=deckout sec=7.47
+H2H_GAME_DONE=12/40 p0=old p1=new result=1 reason=3 cause=other sec=3.12
+H2H_GAME_DONE=13/40 p0=new p1=old result=1 reason=2 cause=deckout sec=5.92
+H2H_GAME_DONE=14/40 p0=old p1=new result=1 reason=3 cause=other sec=4.87
+H2H_GAME_DONE=15/40 p0=new p1=old result=1 reason=2 cause=deckout sec=4.82
+H2H_GAME_DONE=16/40 p0=old p1=new result=0 reason=2 cause=deckout sec=8.59
+H2H_GAME_DONE=17/40 p0=new p1=old result=1 reason=2 cause=deckout sec=8.21
+H2H_GAME_DONE=18/40 p0=old p1=new result=0 reason=2 cause=deckout sec=12.86
+H2H_GAME_DONE=19/40 p0=new p1=old result=1 reason=2 cause=deckout sec=7.58
+H2H_GAME_DONE=20/40 p0=old p1=new result=1 reason=3 cause=other sec=2.80
+H2H_GAME_DONE=21/40 p0=new p1=old result=1 reason=2 cause=deckout sec=9.14
+H2H_GAME_DONE=22/40 p0=old p1=new result=1 reason=3 cause=other sec=0.83
+H2H_GAME_DONE=23/40 p0=new p1=old result=1 reason=2 cause=deckout sec=8.04
+H2H_GAME_DONE=24/40 p0=old p1=new result=0 reason=2 cause=deckout sec=7.57
+H2H_GAME_DONE=25/40 p0=new p1=old result=1 reason=2 cause=deckout sec=5.94
+H2H_GAME_DONE=26/40 p0=old p1=new result=0 reason=2 cause=deckout sec=6.11
+H2H_GAME_DONE=27/40 p0=new p1=old result=1 reason=2 cause=deckout sec=7.84
+H2H_GAME_DONE=28/40 p0=old p1=new result=0 reason=2 cause=deckout sec=6.29
+H2H_GAME_DONE=29/40 p0=new p1=old result=1 reason=2 cause=deckout sec=6.59
+H2H_GAME_DONE=30/40 p0=old p1=new result=0 reason=2 cause=deckout sec=8.74
+H2H_GAME_DONE=31/40 p0=new p1=old result=1 reason=2 cause=deckout sec=7.80
+H2H_GAME_DONE=32/40 p0=old p1=new result=0 reason=2 cause=deckout sec=5.74
+H2H_GAME_DONE=33/40 p0=new p1=old result=0 reason=3 cause=other sec=5.25
+H2H_GAME_DONE=34/40 p0=old p1=new result=1 reason=3 cause=other sec=4.98
+H2H_GAME_DONE=35/40 p0=new p1=old result=1 reason=2 cause=deckout sec=6.00
+H2H_GAME_DONE=36/40 p0=old p1=new result=1 reason=3 cause=other sec=3.54
+H2H_GAME_DONE=37/40 p0=new p1=old result=1 reason=2 cause=deckout sec=5.58
+H2H_GAME_DONE=38/40 p0=old p1=new result=0 reason=2 cause=deckout sec=5.48
+H2H_GAME_DONE=39/40 p0=new p1=old result=0 reason=3 cause=other sec=6.84
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=40
+TRUNC_TOTAL_NODES=111202
+TRUNC_FIRED=1181
+TRUNC_FIRE_RATE=1.06%
+TRUNC_OPTCOUNT_HIST=1-8:75443|9-16:17180|17-32:11523|33-64:5875|65-128:1108|129-256:73|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/6407)|3-5:0.00%(0/10252)|6+:1.25%(1181/94543)
+TRUNC_DROPPED_BY_TYPE=ABILITY:97,ATTACH:24550,EVOLVE:4,PLAY:254,RETREAT:235
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+MULTISELECT_FIXED_LEN=min=0,max=2:nodes=857,shorter_legal=857,shorter_generated=0,shorter_missed=857|min=0,max=3:nodes=655,shorter_legal=655,shorter_generated=0,shorter_missed=655|min=0,max=4:nodes=44,shorter_legal=44,shorter_generated=0,shorter_missed=44|min=0,max=5:nodes=471,shorter_legal=471,shorter_generated=0,shorter_missed=471|min=2,max=2:nodes=3791,shorter_legal=0,shorter_generated=0,shorter_missed=0
+MULTISELECT_SHORTER_MISSED=2027
+MULTISELECT_CTX_HIST=DISCARD:3602,DISCARD_ENERGY_CARD:217,SETUP_BENCH_POKEMON:600,TO_HAND:1399
+GAME_LENGTH_HIST=1-15:3|16-25:5|26-40:15|41-60:10|61+:7
+WIN_BY_CAUSE=DECK_OUT:W=30,L=30,D=0|NO_ACTIVE:W=10,L=10,D=0
+TURN_NODE_DIST=1-2:5.76%(6407/111202)|3-5:9.22%(10252/111202)|6+:85.02%(94543/111202)
+SEARCH_MAX_DEPTH=20
+SEARCH_MEAN_DEPTH=3.0762
+MEAN_DEPTH=3.0762
+SIMS_CONTRIBUTED=108200
+SIMS_CONFIGURED=108200
+SIMS_CONTRIBUTED_PER_DECISION=20.0000
+SIMS_CONFIGURED_PER_DECISION=20.0000
+PRIZE_REWARD_REACHED=1.48%(80/5410)
+STALL_DRAW_PASS_TURNS=968
+STALL_SHUFFLE_WITH_RESOURCES=158
+MISSED_ATTACH=1015
+SHAPING_BREAKDOWN=BOARD_DECK_DIFF:0.050435|DAMAGE_PRESSURE:0.001954|DISRUPTION:0.000084|ENERGY_DENIAL:0.000116|ITEM_LOCK_PENALTY:0.000000|KO_BONUS:0.000110|PARALYSIS:0.000000|PRIZE_DIFF:0.002028|SLEEP:0.000000
+ROOT_OPTION_STATS=ATTACK:available=105,chosen=34,not_chosen=71,zero_visit_rate=20.00%(21/105),mean_opt_visit=1.73,mean_opt_q=-0.2991,mean_chosen_visit=12.01,mean_chosen_q=0.1565|ENERGY_ATTACH:available=2331,chosen=426,not_chosen=1905,zero_visit_rate=49.59%(1156/2331),mean_opt_visit=0.62,mean_opt_q=-0.6448,mean_chosen_visit=13.02,mean_chosen_q=0.2300
+ATTACH_PRIOR_DIST=special:n=2433,attach_prior[mean=0.0608,min=0.0001,max=0.9988,hist=(<0.001:1643,0.001-0.005:129,0.005-0.01:52,0.01-0.03:60,0.03-0.1:178,0.1-0.3:155,0.3-1.0:216,1.0:0)],chosen_prior[mean=0.5026,min=0.0000,max=0.9988,hist=(<0.001:161,0.001-0.005:63,0.005-0.01:28,0.01-0.03:89,0.03-0.1:84,0.1-0.3:381,0.3-1.0:1627,1.0:0)]|plain:n=13914,attach_prior[mean=0.0279,min=0.0000,max=0.9990,hist=(<0.001:10133,0.001-0.005:685,0.005-0.01:186,0.01-0.03:593,0.03-0.1:1399,0.1-0.3:589,0.3-1.0:329,1.0:0)],chosen_prior[mean=0.5375,min=0.0000,max=0.9993,hist=(<0.001:615,0.001-0.005:223,0.005-0.01:88,0.01-0.03:310,0.03-0.1:1202,0.1-0.3:1749,0.3-1.0:9727,1.0:0)]
+SIM_KO_REACHED=0.77%(831/108200)
+SIM_KO_DEPTH_MEAN=3.0818
+SIM_KO_DEPTH_MIN=1
+SIM_KO_DEPTH_MAX=9
+TRUE_RESULT_TALLY=P0_WINS=16,P1_WINS=24,DRAWS=0
+=== DIAG_DUMP_END ===
+H2H_GAME_DONE=40/40 p0=old p1=new result=0 reason=2 cause=deckout sec=7.78
+H2H_WALL_SEC=263.65
+H2H_SEC_PER_GAME=6.59
+H2H_NEW: wins=10 losses=30 draws=0 win_rate=25.0%(10/40) prize_win=0 prize_loss=0 deckout_win=0 deckout_loss=30 other_win=10 other_loss=0
+H2H_OLD: wins=30 losses=10 draws=0 win_rate=75.0%(30/40) prize_win=0 prize_loss=0 deckout_win=30 deckout_loss=0 other_win=0 other_loss=10
