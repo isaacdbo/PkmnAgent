@@ -1,0 +1,102 @@
+=== py_compile ===
+PY_COMPILE_OK
+=== iono_rule deck id -> engine card name receipt ===
+  id=4 x22 -> Basic {L} Energy
+  id=265 x3 -> Iono’s Voltorb
+  id=268 x3 -> Iono’s Tadbulb
+  id=269 x3 -> Iono’s Bellibolt ex
+  id=270 x3 -> Iono’s Wattrel
+  id=271 x3 -> Iono’s Kilowattrel
+  id=1086 x3 -> Buddy-Buddy Poffin
+  id=1097 x2 -> Night Stretcher
+  id=1110 x1 -> Max Rod
+  id=1118 x1 -> Energy Retrieval
+  id=1121 x3 -> Ultra Ball
+  id=1152 x2 -> Poké Pad
+  id=1227 x4 -> Lillie's Determination
+  id=1233 x4 -> Canari
+  id=1254 x3 -> Levincia
+=== eval_panel smoke: random-init candidate vs iono_rule, 2 games, sims=3 ===
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+EVAL_CANDIDATE=RANDOM_INIT
+EVAL_CANDIDATE_DECK=M2Deck.xlsx
+EVAL_SIMULATIONS_PER_MOVE=3
+EVAL_GAMES_PER_OPPONENT=2
+EVAL_BASE_SEED=990001
+
+=== PANEL: candidate vs iono_rule ===
+EVAL_GAME_DONE=1/2 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=3 cause=other turn=3 cand_prizes=0 opp_prizes=1 sec=1.28
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=2
+AGENT=UNKNOWN
+TRUNC_TOTAL_NODES=48
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:33|9-16:8|17-32:7|33-64:0|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/34)|3-5:0.00%(0/9)|6+:0.00%(0/5)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+MULTISELECT_FIXED_LEN=NONE
+MULTISELECT_SHORTER_MISSED=0
+MULTISELECT_CTX_HIST=NONE
+GAME_LENGTH_HIST=1-15:2|16-25:0|26-40:0|41-60:0|61+:0
+WIN_BY_CAUSE=NO_ACTIVE:W=2,L=2,D=0
+TURN_NODE_DIST=1-2:70.83%(34/48)|3-5:18.75%(9/48)|6+:10.42%(5/48)
+SEARCH_MAX_DEPTH=3
+SEARCH_MEAN_DEPTH=1.4722
+MEAN_DEPTH=1.4722
+SIMS_CONTRIBUTED=36
+SIMS_CONFIGURED=36
+SIMS_CONTRIBUTED_PER_DECISION=3.0000
+SIMS_CONFIGURED_PER_DECISION=3.0000
+PRIZE_REWARD_REACHED=0.00%(0/12)
+STALL_DRAW_PASS_TURNS=7
+STALL_SHUFFLE_WITH_RESOURCES=0
+MISSED_ATTACH=4
+SHAPING_BREAKDOWN=BOARD_DECK_DIFF:-0.003958|DAMAGE_PRESSURE:0.000000|DISRUPTION:0.000000|ENERGY_DENIAL:0.000000|ITEM_LOCK_PENALTY:0.000000|KO_BONUS:0.000000|PARALYSIS:0.000000|PRIZE_DIFF:0.000000|SLEEP:0.000000
+ROOT_OPTION_STATS=ENERGY_ATTACH:available=5,chosen=1,not_chosen=4,zero_visit_rate=40.00%(2/5),mean_opt_visit=0.50,mean_opt_q=-0.1630,mean_chosen_visit=2.25,mean_chosen_q=0.1060
+ATTACH_PRIOR_DIST=special:n=0,attach_prior[mean=nan,min=0.0000,max=0.0000,hist=(<0.001:0,0.001-0.005:0,0.005-0.01:0,0.01-0.03:0,0.03-0.1:0,0.1-0.3:0,0.3-1.0:0,1.0:0)],chosen_prior[mean=nan,min=0.0000,max=0.0000,hist=(<0.001:0,0.001-0.005:0,0.005-0.01:0,0.01-0.03:0,0.03-0.1:0,0.1-0.3:0,0.3-1.0:0,1.0:0)]|plain:n=6,attach_prior[mean=0.2228,min=0.1213,max=0.2934,hist=(<0.001:0,0.001-0.005:0,0.005-0.01:0,0.01-0.03:0,0.03-0.1:0,0.1-0.3:6,0.3-1.0:0,1.0:0)],chosen_prior[mean=0.2917,min=0.1792,max=0.5162,hist=(<0.001:0,0.001-0.005:0,0.005-0.01:0,0.01-0.03:0,0.03-0.1:0,0.1-0.3:4,0.3-1.0:2,1.0:0)]
+SIM_KO_REACHED=0.00%(0/36)
+SIM_KO_DEPTH_MEAN=0.0000
+SIM_KO_DEPTH_MIN=0
+SIM_KO_DEPTH_MAX=0
+TRUE_RESULT_TALLY=P0_WINS=1,P1_WINS=1,DRAWS=0
+POLICY_TARGET_ZERO_FRACTION_MEAN=0.5658
+POLICY_TARGET_ENTROPY_MEAN=0.4868
+POLICY_TARGET_COUNT=12
+ROOT_CHILD_COUNT=mean=8.17,median=6.0,n=12,by_turn=(1-2:mean=8.20,median=5.0,n=10|3-5:mean=7.00,median=7.0,n=1|6+:mean=9.00,median=9.0,n=1)
+ROOT_VISIT_HIST=0:77.55%(76/98)|1:13.27%(13/98)|2-4:9.18%(9/98)|5+:0.00%(0/98)
+ENERGY_DEV_RATE=20.00%(1/5)
+GRASS_IN_DISCARD_RATE=0.00%(0/12)
+=== DIAG_DUMP_END ===
+EVAL_GAME_DONE=2/2 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=3 cause=other turn=7 cand_prizes=0 opp_prizes=2 sec=1.54
+OPP_WALL_SEC=2.85
+OPP_MEAN_SEC_PER_GAME=1.41
+OPP_iono_rule_CANDIDATE: wins=0 losses=2 draws=0 win_rate=0.0%(0/2) wilson95=[0.0%,65.8%] prize_decided=0/2 deckout_share=0.0%(0/2)
+OPP_iono_rule_OPPONENT: wins=2 losses=0 draws=0 win_rate=100.0%(2/2) wilson95=[34.2%,100.0%] prize_decided=0/2 deckout_share=0.0%(0/2)
+=== training smoke + benchmark: sims=50, 8+8 games, 8 workers ===
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+=== Warm-up Phase (1 epochs) ===
+--- Warm-up Epoch 1/1 ---
+[m2] self-play (8 workers) 0%   [CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[m2] self-play (8 workers) 12%   [m2] self-play (8 workers) 25%   [m2] self-play (8 workers) 37%   [m2] self-play (8 workers) 50%   [m2] self-play (8 workers) 62%   [m2] self-play (8 workers) 75%   [m2] self-play (8 workers) 87%   [m2] self-play (8 workers) 100%   
+[m2] Training (1440 samples, 11 batches)...
+[m2] Done (11 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-11_10-41.pth
+=== Main Phase (1 epochs) ===
+--- Main Epoch 1/1 ---
+[m2] self-play (8 workers) 0%   [m2] self-play (8 workers) 12%   [m2] self-play (8 workers) 25%   [m2] self-play (8 workers) 37%   [m2] self-play (8 workers) 50%   [m2] self-play (8 workers) 62%   [m2] self-play (8 workers) 75%   [m2] self-play (8 workers) 87%   [m2] self-play (8 workers) 100%   
+[m2] Training (2721 samples, 21 batches)...
+[m2] Done (21 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-11_10-58.pth
+Games: 16 | Epoch: 17.2m | Elapsed: 35.7m | ETA: 0.0m
+[STOP] Reached STOP_AFTER_MAIN_EPOCH=1; halting cleanly.
+BENCH_TRAIN_SMOKE_WALL_SEC=2213
