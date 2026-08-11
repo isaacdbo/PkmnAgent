@@ -1192,6 +1192,30 @@ def random_agent(obs_dict: dict) -> list[int]:
     obs = to_observation_class(obs_dict)
     return random.sample(list(range(len(obs.select.option))), obs.select.maxCount) # Select at random.
 
+
+def build_policy_targets_and_mask(policies: list[list[float]], action_counts: list[int],
+                                  device, label_smoothing: float = 0.0):
+    """Pad per-sample visit-count policies to a uniform width, build the
+    legal-action validity mask (1 = real action, 0 = padding), and optionally
+    mix in label smoothing restricted to legal slots. Padding targets stay
+    exactly 0, so illegal slots never receive target probability mass."""
+    max_actions = max(action_counts)
+    padded = [p + [0.0] * (max_actions - len(p)) for p in policies]
+    policy_targets = torch.tensor(padded, dtype=torch.float32, device=device)
+    mask = torch.zeros(len(action_counts), max_actions, device=device)
+    for i, count in enumerate(action_counts):
+        mask[i, :count] = 1.0
+    if label_smoothing > 0:
+        uniform_masked = mask / mask.sum(dim=-1, keepdim=True).clamp(min=1)
+        policy_targets = (1 - label_smoothing) * policy_targets + label_smoothing * uniform_masked
+    return policy_targets, mask
+
+
+def masked_policy_log_probs(out_dec: torch.Tensor, mask: torch.Tensor) -> torch.Tensor:
+    """Mask illegal/padding logits to -1e9 BEFORE log_softmax so the policy
+    distribution is normalised over legal actions only."""
+    return torch.nn.functional.log_softmax(out_dec + (mask - 1.0) * 1e9, dim=-1)
+
 # For displaying progress.
 def progress(count: int, text: str):
     current = 0
@@ -1706,34 +1730,23 @@ if __name__ == "__main__":
                 for _ in range(max_actions - s.action_count):
                     input_dec.offset.append(len(input_dec.index))  # empty word
 
-            # --- Policy targets: visit-count proportions π(a|s) ---
-            # Dynamic width (max_actions) avoids wasting compute on the 64 - max_actions
-            # columns that no sample in this batch actually uses.
-            padded_policy = [
-                s.policy + [0.0] * (max_actions - s.action_count) for s in batch
-            ]
-            policy_targets = torch.tensor(padded_policy, dtype=torch.float32, device=device)
+            # --- Policy targets + validity mask (module-level helper so the
+            # masking semantics are importable and unit-testable). Targets are
+            # visit-count proportions π(a|s); optional label smoothing mixes a
+            # uniform distribution over legal (non-padding) actions only — a
+            # currently-zero-visit action's target goes from exactly 0 to a
+            # fixed epsilon/action_count floor, which caps how far the CE loss
+            # can push that action's logit down. No-op at epsilon=0.
+            policy_targets, mask = build_policy_targets_and_mask(
+                [s.policy for s in batch], action_counts, device,
+                label_smoothing=POLICY_LABEL_SMOOTHING,
+            )
 
             # --- Value targets: outcome z ∈ {+1, 0, -1} ---
             # Shape (batch, 1) matches the model's value head output.
             value_targets = torch.tensor(
                 [s.value for s in batch], dtype=torch.float32, device=device
             ).unsqueeze(1)
-
-            # --- Validity mask: 1 for real actions, 0 for padding ---
-            mask = torch.zeros(batch_size, max_actions, device=device)
-            for i, count in enumerate(action_counts):
-                mask[i, :count] = 1.0
-
-            # --- Optional label smoothing: mix visit-count target with a
-            # uniform distribution over legal (non-padding) actions only.
-            # A currently-zero-visit action's target goes from exactly 0 to a
-            # fixed epsilon/action_count floor, which caps how far the CE loss
-            # can push that action's logit down (unlike an exact-zero target,
-            # which places no lower bound on it at all). No-op at epsilon=0.
-            if POLICY_LABEL_SMOOTHING > 0:
-                uniform_masked = mask / mask.sum(dim=-1, keepdim=True).clamp(min=1)
-                policy_targets = (1 - POLICY_LABEL_SMOOTHING) * policy_targets + POLICY_LABEL_SMOOTHING * uniform_masked
 
             # --- Forward pass ---
             # model returns (value_head, policy_head): (batch,1) and (batch, max_actions)
@@ -1756,8 +1769,7 @@ if __name__ == "__main__":
             # This keeps the MCTS prior well-calibrated: once trained, the policy head
             # will concentrate probability on the actions MCTS found most valuable,
             # so future searches need fewer simulations to reach good decisions.
-            masked_logits = out_dec + (mask - 1.0) * 1e9
-            log_probs = torch.nn.functional.log_softmax(masked_logits, dim=-1)
+            log_probs = masked_policy_log_probs(out_dec, mask)
             # CE = -∑_a π(a)·log q(a); unvisited actions contribute 0 since π=0.
             loss_policy = -(policy_targets * log_probs).sum(-1).mean()
 
