@@ -1,4 +1,4 @@
-# PkmnAgent reward harness
+# PkmnAgent reward and eval harness
 
 This repository uses the vendored real competition engine in `cg-lib` and its
 Search API surfaces from `RLTRM2.py`; the core random-baseline harness does not
@@ -10,11 +10,21 @@ Run a capped verification against the random actor:
 python -m reward_harness --games 40 --turn-cap 20 --seed 7
 ```
 
-The default turn cap is 20 turns. If a game exceeds the cap, the harness ends it
-with no winner and `terminal_only` scores the result as `0`. This prevents an
-agent from getting credit by stalling or by winning only after the runtime budget
-has been exceeded.
+The harness writes per-game diagnostics in the ledger: `win_cause`, turns,
+attack choices, and available attack actions. The summary includes win-rate,
+deck-out-rate, attack-rate, average turns, and capped games.
 
-The cap is a local-training and verification guardrail. It should be lifted
-later during self-play once strong opponents implicitly force fast wins.
+Organize raw eval output files into queryable metrics:
 
+```bash
+python -m eval_metrics path/to/eval-files-or-dir --out-dir results/eval-metrics
+```
+
+Outputs:
+
+- `results/eval-metrics/games.jsonl`: one normalized row per game
+- `results/eval-metrics/summary.json`: per-run/per-checkpoint/per-opponent metrics
+- `results/eval-metrics/summary.csv`: spreadsheet-friendly summary
+
+The loader accepts JSONL/JSON/CSV game rows and notebook-style lines like
+`vs sample_bot: 55% (11W / 9L / 0D)`.

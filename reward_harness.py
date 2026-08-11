@@ -41,6 +41,9 @@ class GameResult:
     turns: int
     capped: bool
     seconds: float
+    win_cause: str = "unknown"
+    attacks_chosen: int = 0
+    attacks_available: int = 0
 
     @property
     def terminal_only(self) -> float:
@@ -61,6 +64,8 @@ class EvalResult:
     avg_seconds_per_game: float
     avg_turns: float
     capped_games: int
+    deck_out_rate: float
+    attack_rate: float | None
 
 
 def read_deck(path: str | Path | None = None) -> list[int]:
@@ -148,6 +153,8 @@ def run_game(
     obs, _ = battle_start(deck0, deck1)
     turns = 0
     capped = False
+    attacks_chosen = 0
+    attacks_available = 0
     try:
         while obs["current"]["result"] < 0:
             current_turn = int(obs["current"]["turn"])
@@ -156,14 +163,20 @@ def run_game(
                 break
             turns = max(turns, current_turn)
             your_index = int(obs["current"]["yourIndex"])
+            attack_options = _attack_option_indices(obs)
             selected = agent0(obs) if your_index == 0 else agent1(obs)
+            if your_index == 0:
+                attacks_available += len(attack_options)
+                attacks_chosen += sum(1 for idx in selected if idx in attack_options)
             obs = battle_select(selected)
         raw_result = int(obs["current"]["result"])
+        win_cause = _result_cause(obs)
     finally:
         battle_finish()
 
     if capped:
         winner = None
+        win_cause = "capped"
     elif raw_result == 2:
         winner = None
     else:
@@ -173,6 +186,9 @@ def run_game(
         turns=turns,
         capped=capped,
         seconds=time.perf_counter() - start,
+        win_cause=win_cause,
+        attacks_chosen=attacks_chosen,
+        attacks_available=attacks_available,
     )
 
 
@@ -208,6 +224,7 @@ def evaluate_vs_random(
     ci_low, ci_high = wilson_interval(wins, games)
     total_seconds = sum(r.seconds for r in results)
     total_turns = sum(r.turns for r in results)
+    attack_available = sum(r.attacks_available for r in results)
     return (
         EvalResult(
             wins=wins,
@@ -220,9 +237,32 @@ def evaluate_vs_random(
             avg_seconds_per_game=total_seconds / games if games else 0.0,
             avg_turns=total_turns / games if games else 0.0,
             capped_games=sum(1 for r in results if r.capped),
+            deck_out_rate=sum(1 for r in results if r.win_cause == "deck_out") / games if games else 0.0,
+            attack_rate=sum(r.attacks_chosen for r in results) / attack_available if attack_available else None,
         ),
         results,
     )
+
+
+def _attack_option_indices(obs_dict: dict) -> set[int]:
+    from cg.api import to_observation_class
+
+    obs = to_observation_class(obs_dict)
+    if obs.select is None:
+        return set()
+    return {idx for idx, option in enumerate(obs.select.option) if int(option.type) == 13}
+
+
+def _result_cause(obs_dict: dict) -> str:
+    reason = obs_dict.get("current", {}).get("reason")
+    if reason is None:
+        return "unknown"
+    return {
+        1: "prize",
+        2: "deck_out",
+        3: "no_active",
+        4: "card_effect",
+    }.get(int(reason), str(reason))
 
 
 def wilson_interval(wins: int, games: int, alpha: float = 0.05) -> tuple[float, float]:
