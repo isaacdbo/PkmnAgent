@@ -1,0 +1,15 @@
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+=== Warm-up Phase (1 epochs) ===
+--- Warm-up Epoch 1/1 ---
+[m2] self-play 0%   [m2] self-play 50%   [m2] self-play 100%   
+[m2] Training (336 samples, 4 batches)...
+[m2] Done (4 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-11_04-49.pth
+=== Main Phase (1 epochs) ===
+--- Main Epoch 1/1 ---
+[m2] self-play 0%   [m2] self-play 50%   [m2] self-play 100%   
+[m2] Training (670 samples, 4 batches)...
+[m2] Done (4 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-11_04-50.pth
+Games: 4 | Epoch: 1.3m | Elapsed: 2.6m | ETA: 0.0m
+[STOP] Reached STOP_AFTER_MAIN_EPOCH=1; halting cleanly.
