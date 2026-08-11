@@ -1,0 +1,1627 @@
+{
+  "by_opponent": {
+    "old_m2(h2h)": {
+      "attack_chosen_decisions": 0,
+      "attack_legal_decisions": 0,
+      "attack_rate": null,
+      "decided": 40,
+      "deckout_loss_rate": 0.75,
+      "deckout_rate": 0.75,
+      "deckout_win_rate": 0.0,
+      "draws": 0,
+      "games": 40,
+      "games_with_cause": 40,
+      "games_with_turn": 0,
+      "losses": 30,
+      "prize_rate": 0.0,
+      "turns_mean": null,
+      "turns_to_loss_mean": null,
+      "turns_to_loss_median": null,
+      "turns_to_win_mean": null,
+      "turns_to_win_median": null,
+      "win_by_cause": {
+        "deckout": {
+          "D": 0,
+          "L": 30,
+          "W": 0
+        },
+        "other": {
+          "D": 0,
+          "L": 0,
+          "W": 10
+        }
+      },
+      "win_rate": 0.25,
+      "win_rate_ci_high": 0.40193961420768026,
+      "win_rate_ci_low": 0.14187118639096302,
+      "wins": 10
+    },
+    "sample_bot": {
+      "attack_chosen_decisions": 0,
+      "attack_legal_decisions": 0,
+      "attack_rate": null,
+      "decided": 280,
+      "deckout_loss_rate": 0.20714285714285716,
+      "deckout_rate": 0.2392857142857143,
+      "deckout_win_rate": 0.03214285714285714,
+      "draws": 0,
+      "games": 280,
+      "games_with_cause": 280,
+      "games_with_turn": 0,
+      "losses": 206,
+      "prize_rate": 0.3107142857142857,
+      "turns_mean": null,
+      "turns_to_loss_mean": null,
+      "turns_to_loss_median": null,
+      "turns_to_win_mean": null,
+      "turns_to_win_median": null,
+      "win_by_cause": {
+        "deckout": {
+          "D": 0,
+          "L": 58,
+          "W": 9
+        },
+        "other": {
+          "D": 0,
+          "L": 67,
+          "W": 59
+        },
+        "prize": {
+          "D": 0,
+          "L": 81,
+          "W": 6
+        }
+      },
+      "win_rate": 0.2642857142857143,
+      "win_rate_ci_high": 0.31887306547207034,
+      "win_rate_ci_low": 0.21607859187765507,
+      "wins": 74
+    }
+  },
+  "by_source": {
+    "eval_m2only_sims200_smooth00_main12.log": {
+      "attack_chosen_decisions": 0,
+      "attack_legal_decisions": 0,
+      "attack_rate": null,
+      "decided": 40,
+      "deckout_loss_rate": 0.125,
+      "deckout_rate": 0.15,
+      "deckout_win_rate": 0.025,
+      "draws": 0,
+      "games": 40,
+      "games_with_cause": 40,
+      "games_with_turn": 0,
+      "losses": 18,
+      "prize_rate": 0.45,
+      "turns_mean": null,
+      "turns_to_loss_mean": null,
+      "turns_to_loss_median": null,
+      "turns_to_win_mean": null,
+      "turns_to_win_median": null,
+      "win_by_cause": {
+        "deckout": {
+          "D": 0,
+          "L": 5,
+          "W": 1
+        },
+        "other": {
+          "D": 0,
+          "L": 0,
+          "W": 16
+        },
+        "prize": {
+          "D": 0,
+          "L": 13,
+          "W": 5
+        }
+      },
+      "win_rate": 0.55,
+      "win_rate_ci_high": 0.6929469218909508,
+      "win_rate_ci_low": 0.39829091798932054,
+      "wins": 22
+    },
+    "eval_panel_arm_B.log": {
+      "attack_chosen_decisions": 0,
+      "attack_legal_decisions": 0,
+      "attack_rate": null,
+      "decided": 40,
+      "deckout_loss_rate": 0.0,
+      "deckout_rate": 0.0,
+      "deckout_win_rate": 0.0,
+      "draws": 0,
+      "games": 40,
+      "games_with_cause": 40,
+      "games_with_turn": 0,
+      "losses": 40,
+      "prize_rate": 0.05,
+      "turns_mean": null,
+      "turns_to_loss_mean": null,
+      "turns_to_loss_median": null,
+      "turns_to_win_mean": null,
+      "turns_to_win_median": null,
+      "win_by_cause": {
+        "other": {
+          "D": 0,
+          "L": 38,
+          "W": 0
+        },
+        "prize": {
+          "D": 0,
+          "L": 2,
+          "W": 0
+        }
+      },
+      "win_rate": 0.0,
+      "win_rate_ci_high": 0.08762160119728664,
+      "win_rate_ci_low": 0.0,
+      "wins": 0
+    },
+    "eval_panel_arm_C.log": {
+      "attack_chosen_decisions": 0,
+      "attack_legal_decisions": 0,
+      "attack_rate": null,
+      "decided": 40,
+      "deckout_loss_rate": 0.2,
+      "deckout_rate": 0.225,
+      "deckout_win_rate": 0.025,
+      "draws": 0,
+      "games": 40,
+      "games_with_cause": 40,
+      "games_with_turn": 0,
+      "losses": 23,
+      "prize_rate": 0.35,
+      "turns_mean": null,
+      "turns_to_loss_mean": null,
+      "turns_to_loss_median": null,
+      "turns_to_win_mean": null,
+      "turns_to_win_median": null,
+      "win_by_cause": {
+        "deckout": {
+          "D": 0,
+          "L": 8,
+          "W": 1
+        },
+        "other": {
+          "D": 0,
+          "L": 1,
+          "W": 16
+        },
+        "prize": {
+          "D": 0,
+          "L": 14,
+          "W": 0
+        }
+      },
+      "win_rate": 0.425,
+      "win_rate_ci_high": 0.5780493145800892,
+      "win_rate_ci_low": 0.28509392559950375,
+      "wins": 17
+    },
+    "eval_panel_arm_D100.log": {
+      "attack_chosen_decisions": 0,
+      "attack_legal_decisions": 0,
+      "attack_rate": null,
+      "decided": 40,
+      "deckout_loss_rate": 0.3,
+      "deckout_rate": 0.3,
+      "deckout_win_rate": 0.0,
+      "draws": 0,
+      "games": 40,
+      "games_with_cause": 40,
+      "games_with_turn": 0,
+      "losses": 28,
+      "prize_rate": 0.425,
+      "turns_mean": null,
+      "turns_to_loss_mean": null,
+      "turns_to_loss_median": null,
+      "turns_to_win_mean": null,
+      "turns_to_win_median": null,
+      "win_by_cause": {
+        "deckout": {
+          "D": 0,
+          "L": 12,
+          "W": 0
+        },
+        "other": {
+          "D": 0,
+          "L": 0,
+          "W": 11
+        },
+        "prize": {
+          "D": 0,
+          "L": 16,
+          "W": 1
+        }
+      },
+      "win_rate": 0.3,
+      "win_rate_ci_high": 0.45430018818144935,
+      "win_rate_ci_low": 0.18074845229746528,
+      "wins": 12
+    },
+    "eval_panel_arm_D50.log": {
+      "attack_chosen_decisions": 0,
+      "attack_legal_decisions": 0,
+      "attack_rate": null,
+      "decided": 40,
+      "deckout_loss_rate": 0.4,
+      "deckout_rate": 0.425,
+      "deckout_win_rate": 0.025,
+      "draws": 0,
+      "games": 40,
+      "games_with_cause": 40,
+      "games_with_turn": 0,
+      "losses": 31,
+      "prize_rate": 0.35,
+      "turns_mean": null,
+      "turns_to_loss_mean": null,
+      "turns_to_loss_median": null,
+      "turns_to_win_mean": null,
+      "turns_to_win_median": null,
+      "win_by_cause": {
+        "deckout": {
+          "D": 0,
+          "L": 16,
+          "W": 1
+        },
+        "other": {
+          "D": 0,
+          "L": 1,
+          "W": 8
+        },
+        "prize": {
+          "D": 0,
+          "L": 14,
+          "W": 0
+        }
+      },
+      "win_rate": 0.225,
+      "win_rate_ci_high": 0.3750309674231002,
+      "win_rate_ci_low": 0.12316091323540745,
+      "wins": 9
+    },
+    "eval_panel_new_vs_bot.log": {
+      "attack_chosen_decisions": 0,
+      "attack_legal_decisions": 0,
+      "attack_rate": null,
+      "decided": 40,
+      "deckout_loss_rate": 0.4,
+      "deckout_rate": 0.425,
+      "deckout_win_rate": 0.025,
+      "draws": 0,
+      "games": 40,
+      "games_with_cause": 40,
+      "games_with_turn": 0,
+      "losses": 31,
+      "prize_rate": 0.325,
+      "turns_mean": null,
+      "turns_to_loss_mean": null,
+      "turns_to_loss_median": null,
+      "turns_to_win_mean": null,
+      "turns_to_win_median": null,
+      "win_by_cause": {
+        "deckout": {
+          "D": 0,
+          "L": 16,
+          "W": 1
+        },
+        "other": {
+          "D": 0,
+          "L": 2,
+          "W": 8
+        },
+        "prize": {
+          "D": 0,
+          "L": 13,
+          "W": 0
+        }
+      },
+      "win_rate": 0.225,
+      "win_rate_ci_high": 0.3750309674231002,
+      "win_rate_ci_low": 0.12316091323540745,
+      "wins": 9
+    },
+    "eval_panel_validation.log": {
+      "attack_chosen_decisions": 0,
+      "attack_legal_decisions": 0,
+      "attack_rate": null,
+      "decided": 40,
+      "deckout_loss_rate": 0.025,
+      "deckout_rate": 0.15,
+      "deckout_win_rate": 0.125,
+      "draws": 0,
+      "games": 40,
+      "games_with_cause": 40,
+      "games_with_turn": 0,
+      "losses": 35,
+      "prize_rate": 0.225,
+      "turns_mean": null,
+      "turns_to_loss_mean": null,
+      "turns_to_loss_median": null,
+      "turns_to_win_mean": null,
+      "turns_to_win_median": null,
+      "win_by_cause": {
+        "deckout": {
+          "D": 0,
+          "L": 1,
+          "W": 5
+        },
+        "other": {
+          "D": 0,
+          "L": 25,
+          "W": 0
+        },
+        "prize": {
+          "D": 0,
+          "L": 9,
+          "W": 0
+        }
+      },
+      "win_rate": 0.125,
+      "win_rate_ci_high": 0.26112119838851094,
+      "win_rate_ci_low": 0.054595002509454024,
+      "wins": 5
+    },
+    "h2h_out.log": {
+      "attack_chosen_decisions": 0,
+      "attack_legal_decisions": 0,
+      "attack_rate": null,
+      "decided": 40,
+      "deckout_loss_rate": 0.75,
+      "deckout_rate": 0.75,
+      "deckout_win_rate": 0.0,
+      "draws": 0,
+      "games": 40,
+      "games_with_cause": 40,
+      "games_with_turn": 0,
+      "losses": 30,
+      "prize_rate": 0.0,
+      "turns_mean": null,
+      "turns_to_loss_mean": null,
+      "turns_to_loss_median": null,
+      "turns_to_win_mean": null,
+      "turns_to_win_median": null,
+      "win_by_cause": {
+        "deckout": {
+          "D": 0,
+          "L": 30,
+          "W": 0
+        },
+        "other": {
+          "D": 0,
+          "L": 0,
+          "W": 10
+        }
+      },
+      "win_rate": 0.25,
+      "win_rate_ci_high": 0.40193961420768026,
+      "win_rate_ci_low": 0.14187118639096302,
+      "wins": 10
+    }
+  },
+  "sources": {
+    "diagnostic/diag_2026-08-08_09-37-14.log": {
+      "diag_dumps": 64,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 1.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_13-06-50.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.8,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_16-47-13.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 1.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_16-47-32.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.75,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_16-48-28.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.8,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_16-51-31.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.8,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_16-54-52.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.9,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_17-07-42.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.95,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_18-09-53.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 1.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-08-20.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 1.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-08-54.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-09-07.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-10-10.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.85,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-13-21.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.85,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-16-03.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.8,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-18-39.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.9,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-34-10.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 1.0,
+      "dump_deckout_rate": 0.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-35-26.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.061855670103092786,
+      "dump_deckout_rate": 0.8,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-45-27.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 1.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-46-04.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.13333333333333333,
+      "dump_deckout_rate": 0.75,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-53-46.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 1.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-53-58.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 1.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-54-36.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.3181818181818182,
+      "dump_deckout_rate": 0.95,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_19-55-41.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.021538461538461538,
+      "dump_deckout_rate": 0.8,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_21-22-01.log": {
+      "diag_dumps": 2,
+      "dump_attack_rate": 0.22404371584699453,
+      "dump_deckout_rate": 0.84,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_21-33-21.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.16289592760180996,
+      "dump_deckout_rate": 0.8,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_21-35-39.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.10869565217391304,
+      "dump_deckout_rate": 0.95,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_21-38-01.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.16049382716049382,
+      "dump_deckout_rate": 0.85,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_21-40-17.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.1625,
+      "dump_deckout_rate": 0.9,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-08_21-56-44.log": {
+      "diag_dumps": 75,
+      "dump_attack_rate": 0.23008849557522124,
+      "dump_deckout_rate": 0.56,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_06-34-40.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.3238095238095238,
+      "dump_deckout_rate": 0.75,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_10-04-02.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.0,
+      "dump_deckout_rate": 0.15,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_10-11-45.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.36363636363636365,
+      "dump_deckout_rate": 0.425,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_10-25-08.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.0,
+      "dump_deckout_rate": 0.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_10-26-19.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.3670886075949367,
+      "dump_deckout_rate": 0.225,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_11-04-28.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.34177215189873417,
+      "dump_deckout_rate": 0.425,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_11-12-11.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.39759036144578314,
+      "dump_deckout_rate": 0.3,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_11-46-07.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 1.0,
+      "dump_deckout_rate": null,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_12-43-21.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.18181818181818182,
+      "dump_deckout_rate": null,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_13-20-59.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.15384615384615385,
+      "dump_deckout_rate": 1.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_13-24-51.log": {
+      "diag_dumps": 20,
+      "dump_attack_rate": 0.3076923076923077,
+      "dump_deckout_rate": 1.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_13-37-28.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.21397379912663755,
+      "dump_deckout_rate": 0.9,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_13-40-44.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.15637860082304528,
+      "dump_deckout_rate": 0.95,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_13-43-55.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.12177121771217712,
+      "dump_deckout_rate": 0.95,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_13-48-00.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.14814814814814814,
+      "dump_deckout_rate": 1.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_13-49-00.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.17142857142857143,
+      "dump_deckout_rate": 0.8,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_14-11-25.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.2331288343558282,
+      "dump_deckout_rate": 0.75,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_14-15-30.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.3251231527093596,
+      "dump_deckout_rate": 0.625,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_14-17-45.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.4414715719063545,
+      "dump_deckout_rate": 0.71875,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_14-19-16.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.38869257950530034,
+      "dump_deckout_rate": 0.5625,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_14-20-11.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.29207920792079206,
+      "dump_deckout_rate": 0.65625,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_18-21-52.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.34994523548740414,
+      "dump_deckout_rate": 0.635,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_18-26-26.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.3012948207171315,
+      "dump_deckout_rate": 0.715,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_22-03-43.log": {
+      "diag_dumps": 2,
+      "dump_attack_rate": 0.3815789473684211,
+      "dump_deckout_rate": 0.68,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-09_22-43-52.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.22727272727272727,
+      "dump_deckout_rate": 1.0,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-10_17-56-09.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": null,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-10_18-52-29.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": null,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-10_19-50-12.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.46153846153846156,
+      "dump_deckout_rate": 0.875,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "diagnostic/diag_2026-08-10_19-55-26.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.4634146341463415,
+      "dump_deckout_rate": 0.75,
+      "games": 0,
+      "kind": "standalone diag dump",
+      "meta": {},
+      "summary": null
+    },
+    "eval_m2only_sims200_smooth00_main12.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.49230769230769234,
+      "dump_deckout_rate": 0.15,
+      "games": 40,
+      "kind": "eval_panel run",
+      "meta": {
+        "EVAL_BASE_SEED": "20260809",
+        "EVAL_CANDIDATE": "checkpoints/m2/model_2026-08-10_22-01.pth",
+        "EVAL_CANDIDATE_DECK": "M2Deck.xlsx",
+        "EVAL_GAMES_PER_OPPONENT": "40",
+        "EVAL_SIMULATIONS_PER_MOVE": "200"
+      },
+      "summary": {
+        "attack_chosen_decisions": 0,
+        "attack_legal_decisions": 0,
+        "attack_rate": null,
+        "decided": 40,
+        "deckout_loss_rate": 0.125,
+        "deckout_rate": 0.15,
+        "deckout_win_rate": 0.025,
+        "draws": 0,
+        "games": 40,
+        "games_with_cause": 40,
+        "games_with_turn": 0,
+        "losses": 18,
+        "prize_rate": 0.45,
+        "turns_mean": null,
+        "turns_to_loss_mean": null,
+        "turns_to_loss_median": null,
+        "turns_to_win_mean": null,
+        "turns_to_win_median": null,
+        "win_by_cause": {
+          "deckout": {
+            "D": 0,
+            "L": 5,
+            "W": 1
+          },
+          "other": {
+            "D": 0,
+            "L": 0,
+            "W": 16
+          },
+          "prize": {
+            "D": 0,
+            "L": 13,
+            "W": 5
+          }
+        },
+        "win_rate": 0.55,
+        "win_rate_ci_high": 0.6929469218909508,
+        "win_rate_ci_low": 0.39829091798932054,
+        "wins": 22
+      }
+    },
+    "eval_panel_arm_B.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.0,
+      "dump_deckout_rate": 0.0,
+      "games": 40,
+      "kind": "eval_panel run",
+      "meta": {
+        "EVAL_BASE_SEED": "20260809",
+        "EVAL_CANDIDATE": "RANDOM_INIT",
+        "EVAL_CANDIDATE_DECK": "M2Deck.xlsx",
+        "EVAL_GAMES_PER_OPPONENT": "40",
+        "EVAL_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": {
+        "attack_chosen_decisions": 0,
+        "attack_legal_decisions": 0,
+        "attack_rate": null,
+        "decided": 40,
+        "deckout_loss_rate": 0.0,
+        "deckout_rate": 0.0,
+        "deckout_win_rate": 0.0,
+        "draws": 0,
+        "games": 40,
+        "games_with_cause": 40,
+        "games_with_turn": 0,
+        "losses": 40,
+        "prize_rate": 0.05,
+        "turns_mean": null,
+        "turns_to_loss_mean": null,
+        "turns_to_loss_median": null,
+        "turns_to_win_mean": null,
+        "turns_to_win_median": null,
+        "win_by_cause": {
+          "other": {
+            "D": 0,
+            "L": 38,
+            "W": 0
+          },
+          "prize": {
+            "D": 0,
+            "L": 2,
+            "W": 0
+          }
+        },
+        "win_rate": 0.0,
+        "win_rate_ci_high": 0.08762160119728664,
+        "win_rate_ci_low": 0.0,
+        "wins": 0
+      }
+    },
+    "eval_panel_arm_C.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.3670886075949367,
+      "dump_deckout_rate": 0.225,
+      "games": 40,
+      "kind": "eval_panel run",
+      "meta": {
+        "EVAL_BASE_SEED": "20260809",
+        "EVAL_CANDIDATE": "checkpoints/m2/model_2026-08-09_03-38.pth",
+        "EVAL_CANDIDATE_DECK": "M2Deck.xlsx",
+        "EVAL_GAMES_PER_OPPONENT": "40",
+        "EVAL_SIMULATIONS_PER_MOVE": "200"
+      },
+      "summary": {
+        "attack_chosen_decisions": 0,
+        "attack_legal_decisions": 0,
+        "attack_rate": null,
+        "decided": 40,
+        "deckout_loss_rate": 0.2,
+        "deckout_rate": 0.225,
+        "deckout_win_rate": 0.025,
+        "draws": 0,
+        "games": 40,
+        "games_with_cause": 40,
+        "games_with_turn": 0,
+        "losses": 23,
+        "prize_rate": 0.35,
+        "turns_mean": null,
+        "turns_to_loss_mean": null,
+        "turns_to_loss_median": null,
+        "turns_to_win_mean": null,
+        "turns_to_win_median": null,
+        "win_by_cause": {
+          "deckout": {
+            "D": 0,
+            "L": 8,
+            "W": 1
+          },
+          "other": {
+            "D": 0,
+            "L": 1,
+            "W": 16
+          },
+          "prize": {
+            "D": 0,
+            "L": 14,
+            "W": 0
+          }
+        },
+        "win_rate": 0.425,
+        "win_rate_ci_high": 0.5780493145800892,
+        "win_rate_ci_low": 0.28509392559950375,
+        "wins": 17
+      }
+    },
+    "eval_panel_arm_D100.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.39759036144578314,
+      "dump_deckout_rate": 0.3,
+      "games": 40,
+      "kind": "eval_panel run",
+      "meta": {
+        "EVAL_BASE_SEED": "20260809",
+        "EVAL_CANDIDATE": "checkpoints/m2/model_2026-08-09_03-38.pth",
+        "EVAL_CANDIDATE_DECK": "M2Deck.xlsx",
+        "EVAL_GAMES_PER_OPPONENT": "40",
+        "EVAL_SIMULATIONS_PER_MOVE": "100"
+      },
+      "summary": {
+        "attack_chosen_decisions": 0,
+        "attack_legal_decisions": 0,
+        "attack_rate": null,
+        "decided": 40,
+        "deckout_loss_rate": 0.3,
+        "deckout_rate": 0.3,
+        "deckout_win_rate": 0.0,
+        "draws": 0,
+        "games": 40,
+        "games_with_cause": 40,
+        "games_with_turn": 0,
+        "losses": 28,
+        "prize_rate": 0.425,
+        "turns_mean": null,
+        "turns_to_loss_mean": null,
+        "turns_to_loss_median": null,
+        "turns_to_win_mean": null,
+        "turns_to_win_median": null,
+        "win_by_cause": {
+          "deckout": {
+            "D": 0,
+            "L": 12,
+            "W": 0
+          },
+          "other": {
+            "D": 0,
+            "L": 0,
+            "W": 11
+          },
+          "prize": {
+            "D": 0,
+            "L": 16,
+            "W": 1
+          }
+        },
+        "win_rate": 0.3,
+        "win_rate_ci_high": 0.45430018818144935,
+        "win_rate_ci_low": 0.18074845229746528,
+        "wins": 12
+      }
+    },
+    "eval_panel_arm_D50.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.34177215189873417,
+      "dump_deckout_rate": 0.425,
+      "games": 40,
+      "kind": "eval_panel run",
+      "meta": {
+        "EVAL_BASE_SEED": "20260809",
+        "EVAL_CANDIDATE": "checkpoints/m2/model_2026-08-09_03-38.pth",
+        "EVAL_CANDIDATE_DECK": "M2Deck.xlsx",
+        "EVAL_GAMES_PER_OPPONENT": "40",
+        "EVAL_SIMULATIONS_PER_MOVE": "50"
+      },
+      "summary": {
+        "attack_chosen_decisions": 0,
+        "attack_legal_decisions": 0,
+        "attack_rate": null,
+        "decided": 40,
+        "deckout_loss_rate": 0.4,
+        "deckout_rate": 0.425,
+        "deckout_win_rate": 0.025,
+        "draws": 0,
+        "games": 40,
+        "games_with_cause": 40,
+        "games_with_turn": 0,
+        "losses": 31,
+        "prize_rate": 0.35,
+        "turns_mean": null,
+        "turns_to_loss_mean": null,
+        "turns_to_loss_median": null,
+        "turns_to_win_mean": null,
+        "turns_to_win_median": null,
+        "win_by_cause": {
+          "deckout": {
+            "D": 0,
+            "L": 16,
+            "W": 1
+          },
+          "other": {
+            "D": 0,
+            "L": 1,
+            "W": 8
+          },
+          "prize": {
+            "D": 0,
+            "L": 14,
+            "W": 0
+          }
+        },
+        "win_rate": 0.225,
+        "win_rate_ci_high": 0.3750309674231002,
+        "win_rate_ci_low": 0.12316091323540745,
+        "wins": 9
+      }
+    },
+    "eval_panel_new_vs_bot.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.36363636363636365,
+      "dump_deckout_rate": 0.425,
+      "games": 40,
+      "kind": "eval_panel run",
+      "meta": {
+        "EVAL_BASE_SEED": "20260809",
+        "EVAL_CANDIDATE": "checkpoints/m2/model_2026-08-09_03-38.pth",
+        "EVAL_CANDIDATE_DECK": "M2Deck.xlsx",
+        "EVAL_GAMES_PER_OPPONENT": "40",
+        "EVAL_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": {
+        "attack_chosen_decisions": 0,
+        "attack_legal_decisions": 0,
+        "attack_rate": null,
+        "decided": 40,
+        "deckout_loss_rate": 0.4,
+        "deckout_rate": 0.425,
+        "deckout_win_rate": 0.025,
+        "draws": 0,
+        "games": 40,
+        "games_with_cause": 40,
+        "games_with_turn": 0,
+        "losses": 31,
+        "prize_rate": 0.325,
+        "turns_mean": null,
+        "turns_to_loss_mean": null,
+        "turns_to_loss_median": null,
+        "turns_to_win_mean": null,
+        "turns_to_win_median": null,
+        "win_by_cause": {
+          "deckout": {
+            "D": 0,
+            "L": 16,
+            "W": 1
+          },
+          "other": {
+            "D": 0,
+            "L": 2,
+            "W": 8
+          },
+          "prize": {
+            "D": 0,
+            "L": 13,
+            "W": 0
+          }
+        },
+        "win_rate": 0.225,
+        "win_rate_ci_high": 0.3750309674231002,
+        "win_rate_ci_low": 0.12316091323540745,
+        "wins": 9
+      }
+    },
+    "eval_panel_validation.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.0,
+      "dump_deckout_rate": 0.15,
+      "games": 40,
+      "kind": "eval_panel run",
+      "meta": {
+        "EVAL_BASE_SEED": "20260809",
+        "EVAL_CANDIDATE": "checkpoints/m2/model_2026-08-08_09-48.pth",
+        "EVAL_CANDIDATE_DECK": "M2Deck.xlsx",
+        "EVAL_GAMES_PER_OPPONENT": "40",
+        "EVAL_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": {
+        "attack_chosen_decisions": 0,
+        "attack_legal_decisions": 0,
+        "attack_rate": null,
+        "decided": 40,
+        "deckout_loss_rate": 0.025,
+        "deckout_rate": 0.15,
+        "deckout_win_rate": 0.125,
+        "draws": 0,
+        "games": 40,
+        "games_with_cause": 40,
+        "games_with_turn": 0,
+        "losses": 35,
+        "prize_rate": 0.225,
+        "turns_mean": null,
+        "turns_to_loss_mean": null,
+        "turns_to_loss_median": null,
+        "turns_to_win_mean": null,
+        "turns_to_win_median": null,
+        "win_by_cause": {
+          "deckout": {
+            "D": 0,
+            "L": 1,
+            "W": 5
+          },
+          "other": {
+            "D": 0,
+            "L": 25,
+            "W": 0
+          },
+          "prize": {
+            "D": 0,
+            "L": 9,
+            "W": 0
+          }
+        },
+        "win_rate": 0.125,
+        "win_rate_ci_high": 0.26112119838851094,
+        "win_rate_ci_low": 0.054595002509454024,
+        "wins": 5
+      }
+    },
+    "h2h_out.log": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.3238095238095238,
+      "dump_deckout_rate": 0.75,
+      "games": 40,
+      "kind": "head-to-head checkpoint comparison",
+      "meta": {
+        "H2H_BASE_SEED": "20260809",
+        "H2H_GAMES": "40",
+        "H2H_NEW": "checkpoints/m2/model_2026-08-09_03-38.pth",
+        "H2H_OLD": "checkpoints/m2/model_2026-08-08_09-48.pth",
+        "H2H_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": {
+        "attack_chosen_decisions": 0,
+        "attack_legal_decisions": 0,
+        "attack_rate": null,
+        "decided": 40,
+        "deckout_loss_rate": 0.75,
+        "deckout_rate": 0.75,
+        "deckout_win_rate": 0.0,
+        "draws": 0,
+        "games": 40,
+        "games_with_cause": 40,
+        "games_with_turn": 0,
+        "losses": 30,
+        "prize_rate": 0.0,
+        "turns_mean": null,
+        "turns_to_loss_mean": null,
+        "turns_to_loss_median": null,
+        "turns_to_win_mean": null,
+        "turns_to_win_median": null,
+        "win_by_cause": {
+          "deckout": {
+            "D": 0,
+            "L": 30,
+            "W": 0
+          },
+          "other": {
+            "D": 0,
+            "L": 0,
+            "W": 10
+          }
+        },
+        "win_rate": 0.25,
+        "win_rate_ci_high": 0.40193961420768026,
+        "win_rate_ci_low": 0.14187118639096302,
+        "wins": 10
+      }
+    },
+    "run_e12_2026-08-10.log": {
+      "diag_dumps": 14,
+      "dump_attack_rate": 0.4391891891891892,
+      "dump_deckout_rate": 0.48,
+      "games": 0,
+      "kind": "training log with diag dumps",
+      "meta": {},
+      "summary": null
+    },
+    "sims200_A_smooth05.log": {
+      "diag_dumps": 6,
+      "dump_attack_rate": 0.18032786885245902,
+      "dump_deckout_rate": 0.64,
+      "games": 0,
+      "kind": "training log with diag dumps",
+      "meta": {},
+      "summary": null
+    },
+    "sims200_B_smooth00.log": {
+      "diag_dumps": 6,
+      "dump_attack_rate": 0.335978835978836,
+      "dump_deckout_rate": 0.4,
+      "games": 0,
+      "kind": "training log with diag dumps",
+      "meta": {},
+      "summary": null
+    },
+    "sims200_smooth05.log": {
+      "diag_dumps": 6,
+      "dump_attack_rate": 0.3405511811023622,
+      "dump_deckout_rate": 0.44,
+      "games": 0,
+      "kind": "training log with diag dumps",
+      "meta": {},
+      "summary": null
+    },
+    "sweep_out/action_availability.txt": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.061855670103092786,
+      "dump_deckout_rate": 0.8,
+      "games": 0,
+      "kind": "parameter-sweep arm",
+      "meta": {
+        "ARM_BASE_SEED": "20260808",
+        "ARM_CHECKPOINT": "checkpoints/m2/model_2026-08-08_09-48.pth",
+        "ARM_DECK_DIFF_COEF": "0.01",
+        "ARM_GAMES": "20",
+        "ARM_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": null
+    },
+    "sweep_out/attach_prior.txt": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.13333333333333333,
+      "dump_deckout_rate": 0.75,
+      "games": 0,
+      "kind": "parameter-sweep arm",
+      "meta": {
+        "ARM_BASE_SEED": "20260808",
+        "ARM_CHECKPOINT": "checkpoints/m2/model_2026-08-08_09-48.pth",
+        "ARM_DECK_DIFF_COEF": "0.01",
+        "ARM_GAMES": "20",
+        "ARM_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": null
+    },
+    "sweep_out/coef_-0.01.txt": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.9,
+      "games": 0,
+      "kind": "parameter-sweep arm",
+      "meta": {
+        "ARM_BASE_SEED": "20260808",
+        "ARM_CHECKPOINT": "checkpoints/m2/model_2026-08-08_09-48.pth",
+        "ARM_DECK_DIFF_COEF": "-0.01",
+        "ARM_GAMES": "20",
+        "ARM_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": null
+    },
+    "sweep_out/coef_0.0.txt": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.8,
+      "games": 0,
+      "kind": "parameter-sweep arm",
+      "meta": {
+        "ARM_BASE_SEED": "20260808",
+        "ARM_CHECKPOINT": "checkpoints/m2/model_2026-08-08_09-48.pth",
+        "ARM_DECK_DIFF_COEF": "0.0",
+        "ARM_GAMES": "20",
+        "ARM_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": null
+    },
+    "sweep_out/coef_0.0025.txt": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.85,
+      "games": 0,
+      "kind": "parameter-sweep arm",
+      "meta": {
+        "ARM_BASE_SEED": "20260808",
+        "ARM_CHECKPOINT": "checkpoints/m2/model_2026-08-08_09-48.pth",
+        "ARM_DECK_DIFF_COEF": "0.0025",
+        "ARM_GAMES": "20",
+        "ARM_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": null
+    },
+    "sweep_out/coef_0.01.txt": {
+      "diag_dumps": 1,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": 0.85,
+      "games": 0,
+      "kind": "parameter-sweep arm",
+      "meta": {
+        "ARM_BASE_SEED": "20260808",
+        "ARM_CHECKPOINT": "checkpoints/m2/model_2026-08-08_09-48.pth",
+        "ARM_DECK_DIFF_COEF": "0.01",
+        "ARM_GAMES": "20",
+        "ARM_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": null
+    },
+    "sweep_out/floor_0.05.txt": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.16289592760180996,
+      "dump_deckout_rate": 0.8,
+      "games": 0,
+      "kind": "parameter-sweep arm",
+      "meta": {
+        "ARM_ATTACH_PRIOR_FLOOR": "0.05",
+        "ARM_BASE_SEED": "20260808",
+        "ARM_CHECKPOINT": "RANDOM_INIT (no checkpoint loaded)",
+        "ARM_DECK_DIFF_COEF": "0.01",
+        "ARM_GAMES": "20",
+        "ARM_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": null
+    },
+    "sweep_out/floor_0.10.txt": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.10869565217391304,
+      "dump_deckout_rate": 0.95,
+      "games": 0,
+      "kind": "parameter-sweep arm",
+      "meta": {
+        "ARM_ATTACH_PRIOR_FLOOR": "0.1",
+        "ARM_BASE_SEED": "20260808",
+        "ARM_CHECKPOINT": "RANDOM_INIT (no checkpoint loaded)",
+        "ARM_DECK_DIFF_COEF": "0.01",
+        "ARM_GAMES": "20",
+        "ARM_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": null
+    },
+    "sweep_out/floor_0.15.txt": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.16049382716049382,
+      "dump_deckout_rate": 0.85,
+      "games": 0,
+      "kind": "parameter-sweep arm",
+      "meta": {
+        "ARM_ATTACH_PRIOR_FLOOR": "0.15",
+        "ARM_BASE_SEED": "20260808",
+        "ARM_CHECKPOINT": "RANDOM_INIT (no checkpoint loaded)",
+        "ARM_DECK_DIFF_COEF": "0.01",
+        "ARM_GAMES": "20",
+        "ARM_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": null
+    },
+    "sweep_out/floor_0.25.txt": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.1625,
+      "dump_deckout_rate": 0.9,
+      "games": 0,
+      "kind": "parameter-sweep arm",
+      "meta": {
+        "ARM_ATTACH_PRIOR_FLOOR": "0.25",
+        "ARM_BASE_SEED": "20260808",
+        "ARM_CHECKPOINT": "RANDOM_INIT (no checkpoint loaded)",
+        "ARM_DECK_DIFF_COEF": "0.01",
+        "ARM_GAMES": "20",
+        "ARM_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": null
+    },
+    "sweep_out/prior_floor.txt": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.021538461538461538,
+      "dump_deckout_rate": 0.8,
+      "games": 0,
+      "kind": "parameter-sweep arm",
+      "meta": {
+        "ARM_ATTACH_PRIOR_FLOOR": "0.05",
+        "ARM_BASE_SEED": "20260808",
+        "ARM_CHECKPOINT": "checkpoints/m2/model_2026-08-08_09-48.pth",
+        "ARM_DECK_DIFF_COEF": "0.01",
+        "ARM_GAMES": "20",
+        "ARM_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": null
+    },
+    "sweep_out/random_init.txt": {
+      "diag_dumps": 1,
+      "dump_attack_rate": 0.3181818181818182,
+      "dump_deckout_rate": 0.95,
+      "games": 0,
+      "kind": "parameter-sweep arm",
+      "meta": {
+        "ARM_ATTACH_PRIOR_FLOOR": "0.0",
+        "ARM_BASE_SEED": "20260808",
+        "ARM_CHECKPOINT": "RANDOM_INIT (no checkpoint loaded)",
+        "ARM_DECK_DIFF_COEF": "0.01",
+        "ARM_GAMES": "20",
+        "ARM_SIMULATIONS_PER_MOVE": "20"
+      },
+      "summary": null
+    },
+    "sweep_out/task_a_dump_window.txt": {
+      "diag_dumps": 2,
+      "dump_attack_rate": 0.22404371584699453,
+      "dump_deckout_rate": 0.84,
+      "games": 0,
+      "kind": "parameter-sweep arm",
+      "meta": {},
+      "summary": null
+    },
+    "task1_diag_run_old.log": {
+      "diag_dumps": 40,
+      "dump_attack_rate": null,
+      "dump_deckout_rate": null,
+      "games": 0,
+      "kind": "training log with diag dumps",
+      "meta": {},
+      "summary": null
+    },
+    "task_c_per_dump.csv": {
+      "diag_dumps": 75,
+      "dump_attack_rate": 0.23008849557522124,
+      "dump_deckout_rate": 0.56,
+      "games": 0,
+      "kind": "pre-parsed per-dump table",
+      "meta": {},
+      "summary": null
+    },
+    "task_c_retrain.log": {
+      "diag_dumps": 75,
+      "dump_attack_rate": 0.23008849557522124,
+      "dump_deckout_rate": 0.56,
+      "games": 0,
+      "kind": "training log with diag dumps",
+      "meta": {},
+      "summary": null
+    }
+  },
+  "totals": {
+    "diag_dumps": 461,
+    "files_with_content": 87,
+    "games": 320
+  }
+}
