@@ -40,7 +40,7 @@ _SAMPLE_BOT_DECK_CSV = os.path.join(
 )
 _REMOTE_TARBALL = "pkmnagent_remote.tar.gz"
 
-_PANEL_CHOICES = ("random", "first", "starter_rule", "sample_bot", "old_m2")
+_PANEL_CHOICES = ("random", "first", "starter_rule", "sample_bot", "old_m2", "iono_rule")
 
 
 def _read_deck_csv(path: str) -> list[int]:
@@ -145,6 +145,33 @@ def build_scripted_panel(name: str) -> Side:
     if name == "starter_rule":
         return Side(name, deck, model=None, display="starter_rule(priority)", policy=_starter_rule_move)
     raise ValueError(f"Unknown scripted panel member: {name}")
+
+
+def build_iono_rule() -> Side:
+    """Real Kaggle rule-based starter agent (see panel_bots/iono_rule/PROVENANCE.md).
+
+    main.py is the verbatim `%%writefile main.py` cell from the public notebook
+    "A Sample Rule-Based Agent Iono's Deck" (Kiyota + The Pokémon Company
+    collaborators, Apache 2.0). It reads deck.csv from the cwd at import time,
+    so import it with the bot directory temporarily as cwd.
+    """
+    import importlib.util
+
+    bot_dir = os.path.join("panel_bots", "iono_rule")
+    deck = _read_deck_csv(os.path.join(bot_dir, "deck.csv"))
+    missing = [cid for cid in deck if cid not in R.card_table]
+    if missing:
+        raise ValueError(f"iono_rule deck has card ids unknown to the engine: {missing}")
+
+    prev_cwd = os.getcwd()
+    os.chdir(bot_dir)
+    try:
+        spec = importlib.util.spec_from_file_location("iono_rule_main", "main.py")
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+    finally:
+        os.chdir(prev_cwd)
+    return Side("iono_rule", deck, model=None, display="iono_rule(kaggle)", policy=mod.agent)
 
 
 def wilson_ci(wins: int, total: int) -> tuple[float, float]:
@@ -305,7 +332,12 @@ def main() -> None:
         if opp_name not in _PANEL_CHOICES:
             raise ValueError(f"Unknown panel member: {opp_name} (choices: {_PANEL_CHOICES})")
 
-        opponent = build_old_m2(device) if opp_name == "old_m2" else build_scripted_panel(opp_name)
+        if opp_name == "old_m2":
+            opponent = build_old_m2(device)
+        elif opp_name == "iono_rule":
+            opponent = build_iono_rule()
+        else:
+            opponent = build_scripted_panel(opp_name)
 
         print(f"\n=== PANEL: candidate vs {opp_name} ===", flush=True)
         t0 = time.perf_counter()
