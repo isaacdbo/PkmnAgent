@@ -1452,7 +1452,7 @@ if __name__ == "__main__":
     loss_fn_dec = torch.nn.HuberLoss(reduction="none", delta=0.1)
 
     # --- Training Hyperparameters ---
-    BATCH_SIZE = 128
+    BATCH_SIZE = int(os.environ.get("BATCH_SIZE", "128"))
     LAMBDA = 0.9
     REPLAY_BUFFER_MAXLEN = 25_000       # ~500 games × ~50 samples/player/game
     # Mix the visit-count policy target with a uniform distribution over legal
@@ -1463,13 +1463,13 @@ if __name__ == "__main__":
     POLICY_LABEL_SMOOTHING = float(os.environ.get("POLICY_LABEL_SMOOTHING", "0.0"))
     # ~1 hour values shown; 2-hour alternatives in comments
     WARMUP_EPOCHS             = int(os.environ.get("WARMUP_EPOCHS", 1 if FAST_TEST else 4))   # 1hr: 2 - 2h: 3
-    WARMUP_SELF_PLAY_GAMES    = 3  if FAST_TEST else 25  # 1hr: 15 -2h: 25
+    WARMUP_SELF_PLAY_GAMES    = int(os.environ.get("WARMUP_SELF_PLAY_GAMES", 3  if FAST_TEST else 25))  # 1hr: 15 -2h: 25
     MAIN_EPOCHS               = int(os.environ.get("MAIN_EPOCHS", 2 if FAST_TEST else 20))   # 1hr: 8 - 2h: 15
     EVAL_EVERY                = 1  if FAST_TEST else 4   # 1hr: 2  - 2h: 3
-    MAIN_SELF_PLAY_M2_GAMES   = 3  if FAST_TEST else 25  # 1hr: 15 - 2h: 25
-    MAIN_SELF_PLAY_OPP_GAMES  = 2  if FAST_TEST else 15   # 1hr: 8 - 2h: 15
-    MAIN_CROSS_PLAY_GAMES     = 2  if FAST_TEST else 12   # 1hr: 2 - 2h: 12
-    EVAL_GAMES_PER_MATCHUP    = 2  if FAST_TEST else 10   # 1hr: 5 - 2h: 8
+    MAIN_SELF_PLAY_M2_GAMES   = int(os.environ.get("MAIN_SELF_PLAY_M2_GAMES", 3  if FAST_TEST else 25))  # 1hr: 15 - 2h: 25
+    MAIN_SELF_PLAY_OPP_GAMES  = int(os.environ.get("MAIN_SELF_PLAY_OPP_GAMES", 2  if FAST_TEST else 15))   # 1hr: 8 - 2h: 15
+    MAIN_CROSS_PLAY_GAMES     = int(os.environ.get("MAIN_CROSS_PLAY_GAMES", 2  if FAST_TEST else 12))   # 1hr: 2 - 2h: 12
+    EVAL_GAMES_PER_MATCHUP    = int(os.environ.get("EVAL_GAMES_PER_MATCHUP", 2  if FAST_TEST else 10))   # 1hr: 5 - 2h: 8
 
     class AgentState:
         def __init__(self, name: str, deck: list[int]):
@@ -1676,6 +1676,9 @@ if __name__ == "__main__":
         # random draw — true SGD breaks temporal correlation between consecutive
         # game states that would otherwise bias the gradient direction.
         num_batches = n // batch_size
+        max_train_batches = int(os.environ.get("MAX_TRAIN_BATCHES", "0"))
+        if max_train_batches > 0:
+            num_batches = min(num_batches, max_train_batches)
         print(f"[{agent.name}] Training ({n} samples, {num_batches} batches)...")
         agent.model.train()
 
@@ -1840,8 +1843,10 @@ if __name__ == "__main__":
     SELF_PLAY_WORKERS = int(os.environ.get("SELF_PLAY_WORKERS", "1"))
     SELF_PLAY_BASE_SEED = int(os.environ.get("SELF_PLAY_BASE_SEED", "20260810"))
     _seed_cursor = SELF_PLAY_BASE_SEED
-    _mp_context = multiprocessing.get_context("spawn")
-    worker_pool = ProcessPoolExecutor(max_workers=SELF_PLAY_WORKERS, mp_context=_mp_context)
+    worker_pool = None
+    if SELF_PLAY_WORKERS > 0:
+        _mp_context = multiprocessing.get_context("spawn")
+        worker_pool = ProcessPoolExecutor(max_workers=SELF_PLAY_WORKERS, mp_context=_mp_context)
 
     try:
         # === WARM-UP PHASE ===
@@ -1850,7 +1855,10 @@ if __name__ == "__main__":
             print(f"--- Warm-up Epoch {epoch + 1}/{WARMUP_EPOCHS} ---")
             for agent in all_agents:
                 diag.set_agent(agent.name)
-                run_self_play_parallel(agent, WARMUP_SELF_PLAY_GAMES, worker_pool, SELF_PLAY_WORKERS, _seed_cursor)
+                if worker_pool is None:
+                    run_self_play(agent, WARMUP_SELF_PLAY_GAMES)
+                else:
+                    run_self_play_parallel(agent, WARMUP_SELF_PLAY_GAMES, worker_pool, SELF_PLAY_WORKERS, _seed_cursor)
                 _seed_cursor += WARMUP_SELF_PLAY_GAMES
                 total_games += WARMUP_SELF_PLAY_GAMES
                 train_agent(agent)
@@ -1865,19 +1873,28 @@ if __name__ == "__main__":
 
             # Self-play data collection
             diag.set_agent(m2_agent.name)
-            run_self_play_parallel(m2_agent, MAIN_SELF_PLAY_M2_GAMES, worker_pool, SELF_PLAY_WORKERS, _seed_cursor)
+            if worker_pool is None:
+                run_self_play(m2_agent, MAIN_SELF_PLAY_M2_GAMES)
+            else:
+                run_self_play_parallel(m2_agent, MAIN_SELF_PLAY_M2_GAMES, worker_pool, SELF_PLAY_WORKERS, _seed_cursor)
             _seed_cursor += MAIN_SELF_PLAY_M2_GAMES
             total_games += MAIN_SELF_PLAY_M2_GAMES
             for opp in opponent_agents:
                 diag.set_agent(opp.name)
-                run_self_play_parallel(opp, MAIN_SELF_PLAY_OPP_GAMES, worker_pool, SELF_PLAY_WORKERS, _seed_cursor)
+                if worker_pool is None:
+                    run_self_play(opp, MAIN_SELF_PLAY_OPP_GAMES)
+                else:
+                    run_self_play_parallel(opp, MAIN_SELF_PLAY_OPP_GAMES, worker_pool, SELF_PLAY_WORKERS, _seed_cursor)
                 _seed_cursor += MAIN_SELF_PLAY_OPP_GAMES
                 total_games += MAIN_SELF_PLAY_OPP_GAMES
 
             # Cross-play: M2 vs each opponent (both sides collect samples)
             for opp in opponent_agents:
                 diag.set_agent(f"m2_vs_{opp.name}")
-                run_cross_play_parallel(m2_agent, opp, MAIN_CROSS_PLAY_GAMES, worker_pool, SELF_PLAY_WORKERS, _seed_cursor)
+                if worker_pool is None:
+                    run_cross_play(m2_agent, opp, MAIN_CROSS_PLAY_GAMES)
+                else:
+                    run_cross_play_parallel(m2_agent, opp, MAIN_CROSS_PLAY_GAMES, worker_pool, SELF_PLAY_WORKERS, _seed_cursor)
                 _seed_cursor += MAIN_CROSS_PLAY_GAMES
                 total_games += MAIN_CROSS_PLAY_GAMES
 
@@ -1907,4 +1924,5 @@ if __name__ == "__main__":
                 print(f"[STOP] Reached STOP_AFTER_MAIN_EPOCH={stop_after}; halting cleanly.", flush=True)
                 break
     finally:
-        worker_pool.shutdown(wait=True)
+        if worker_pool is not None:
+            worker_pool.shutdown(wait=True)
