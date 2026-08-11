@@ -1,0 +1,3 @@
+opponent,games,wins,losses,draws,decided,win_rate,win_rate_ci_low,win_rate_ci_high,deckout_rate,deckout_win_rate,deckout_loss_rate,prize_rate,attack_rate,attack_legal_decisions,attack_chosen_decisions,turns_to_win_mean,turns_to_win_median,turns_to_loss_mean,turns_to_loss_median,turns_mean,win_by_cause,games_with_cause,games_with_turn
+first,4,2,2,0,4,0.5,0.15003898915214947,0.8499610108478506,0.5,0.5,0.0,0.0,,0,0,55.5,55.5,5.5,5.5,30.5,"deckout:W=2,L=0,D=0|other:W=0,L=2,D=0",4,4
+random,4,0,4,0,4,0.0,0.0,0.4898908364545973,0.0,0.0,0.0,0.0,,0,0,,,13.75,11.0,13.75,"other:W=0,L=4,D=0",4,4
