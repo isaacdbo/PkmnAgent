@@ -1518,21 +1518,14 @@ if __name__ == "__main__":
     # this is doing anything.
     POLICY_LABEL_SMOOTHING = float(os.environ.get("POLICY_LABEL_SMOOTHING", "0.0"))
     # ~1 hour values shown; 2-hour alternatives in comments
-    # All eight are env-overridable so a sweep can hold training size fixed
-    # across arms without editing this file. WARMUP_EPOCHS, MAIN_EPOCHS and
-    # POLICY_LABEL_SMOOTHING already were; the game counts were not, which
-    # meant a driver passing e.g. MAIN_SELF_PLAY_M2_GAMES was silently ignored.
-    def _env_int(name: str, default: int) -> int:
-        return int(os.environ.get(name, default))
-
-    WARMUP_EPOCHS             = _env_int("WARMUP_EPOCHS", 1 if FAST_TEST else 4)   # 1hr: 2 - 2h: 3
-    WARMUP_SELF_PLAY_GAMES    = _env_int("WARMUP_SELF_PLAY_GAMES", 3 if FAST_TEST else 25)  # 1hr: 15 -2h: 25
-    MAIN_EPOCHS               = _env_int("MAIN_EPOCHS", 2 if FAST_TEST else 20)   # 1hr: 8 - 2h: 15
-    EVAL_EVERY                = _env_int("EVAL_EVERY", 1 if FAST_TEST else 4)   # 1hr: 2  - 2h: 3
-    MAIN_SELF_PLAY_M2_GAMES   = _env_int("MAIN_SELF_PLAY_M2_GAMES", 3 if FAST_TEST else 25)  # 1hr: 15 - 2h: 25
-    MAIN_SELF_PLAY_OPP_GAMES  = _env_int("MAIN_SELF_PLAY_OPP_GAMES", 2 if FAST_TEST else 15)   # 1hr: 8 - 2h: 15
-    MAIN_CROSS_PLAY_GAMES     = _env_int("MAIN_CROSS_PLAY_GAMES", 2 if FAST_TEST else 12)   # 1hr: 2 - 2h: 12
-    EVAL_GAMES_PER_MATCHUP    = _env_int("EVAL_GAMES_PER_MATCHUP", 2 if FAST_TEST else 10)   # 1hr: 5 - 2h: 8
+    WARMUP_EPOCHS             = int(os.environ.get("WARMUP_EPOCHS", 1 if FAST_TEST else 4))   # 1hr: 2 - 2h: 3
+    WARMUP_SELF_PLAY_GAMES    = int(os.environ.get("WARMUP_SELF_PLAY_GAMES", 3  if FAST_TEST else 25))  # 1hr: 15 -2h: 25
+    MAIN_EPOCHS               = int(os.environ.get("MAIN_EPOCHS", 2 if FAST_TEST else 20))   # 1hr: 8 - 2h: 15
+    EVAL_EVERY                = 1  if FAST_TEST else 4   # 1hr: 2  - 2h: 3
+    MAIN_SELF_PLAY_M2_GAMES   = int(os.environ.get("MAIN_SELF_PLAY_M2_GAMES", 3  if FAST_TEST else 25))  # 1hr: 15 - 2h: 25
+    MAIN_SELF_PLAY_OPP_GAMES  = int(os.environ.get("MAIN_SELF_PLAY_OPP_GAMES", 2  if FAST_TEST else 15))   # 1hr: 8 - 2h: 15
+    MAIN_CROSS_PLAY_GAMES     = int(os.environ.get("MAIN_CROSS_PLAY_GAMES", 2  if FAST_TEST else 12))   # 1hr: 2 - 2h: 12
+    EVAL_GAMES_PER_MATCHUP    = int(os.environ.get("EVAL_GAMES_PER_MATCHUP", 2  if FAST_TEST else 10))   # 1hr: 5 - 2h: 8
 
     class AgentState:
         def __init__(self, name: str, deck: list[int]):

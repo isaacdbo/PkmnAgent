@@ -98,7 +98,9 @@ def train_arm(arm: str, arm_dir: str, overrides: dict[str, str], timeout: int | 
         log.write(f"# {rewards.get(arm).describe()}\n")
         for key in sorted(set(DEFAULT_TRAIN_ENV) | set(overrides) | {"CHECKPOINT_ROOT"}):
             log.write(f"# {key}={env.get(key)}\n")
-            log.flush()
+        # Flush before handing the fd to the child, or the header lands after
+        # the training output it is supposed to describe.
+        log.flush()
         try:
             proc = subprocess.run(cmd, env=env, stdout=log, stderr=subprocess.STDOUT,
                                   timeout=timeout, check=False)
@@ -130,6 +132,10 @@ def evaluate_arm(arm: str, arm_dir: str, checkpoint: str, panel: str,
                  games: int, base_seed: int, sims: str | None) -> list[GameRecord]:
     """Score one arm's checkpoint on the pinned panel, in-process."""
     if sims is not None:
+        # Set before the first import of RLTRM2, which reads it once into
+        # SEARCH_COUNT at import time. It is the same value for every arm, so
+        # a later arm re-reading the already-imported module is not a problem
+        # — but a per-arm value would silently apply only to the first arm.
         os.environ["SIMULATIONS_PER_MOVE"] = sims
     # Imported lazily: these pull in torch and the compiled engine, which is
     # not importable on the macOS host where --dry-run is useful.
