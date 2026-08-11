@@ -17,3 +17,8 @@ Miniconda*
 *.pth
 
 submission.zip
+# Container-local pip --user tree, created by ablation/run_local.sh
+.dockerhome/
+# Scratch output from ablation runs. Receipts worth keeping are committed
+# under ablation_results/ instead.
+results/
