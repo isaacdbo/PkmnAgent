@@ -34,6 +34,7 @@ import time
 
 import torch
 
+import diag
 import eval_panel as EP
 import RLTRM2 as R
 from ablation import metrics
@@ -75,6 +76,12 @@ def run_matchup(
 ) -> list[GameRecord]:
     records: list[GameRecord] = []
     context = context or {}
+
+    # Importing RLTRM2 turns diag on. This loop never calls start_game/
+    # end_game, so leaving it on would accumulate per-decision counters into a
+    # window that is never flushed, and the metrics this runner reports come
+    # from the trajectory anyway.
+    diag.configure(enabled=False, verbose=False)
 
     with torch.inference_mode():
         for g in range(n_games):
