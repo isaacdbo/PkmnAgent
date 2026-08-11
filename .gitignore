@@ -16,4 +16,7 @@ first_out/
 Miniconda*
 *.pth
 
-submission.zip.dockerhome/
+submission.zip
+
+# Container HOME for the amd64 docker runs (pip cache, site-packages)
+.dockerhome/
