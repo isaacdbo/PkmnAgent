@@ -1,10 +1,15 @@
 """Evaluate a candidate m2 checkpoint against a fixed panel of opponents.
 
 Panel members (fixed, reusable across candidates):
-  sample_bot  - the official competition sample_submission: pure uniform-random
-                legal-action selection, its own deck.csv.
-  old_m2      - checkpoints/m2/model_2026-08-08_09-48.pth on M2Deck.xlsx, the
-                checkpoint that won last night's 40-game head-to-head 75/25.
+  random       - uniform-random legal-action selection with the official
+                 sample_submission deck.csv.
+  first        - deterministic first-legal-action degeneracy check with the
+                 official sample_submission deck.csv.
+  starter_rule - small deterministic starter rule-bot with the official
+                 sample_submission deck.csv.
+  sample_bot   - alias for random; retained for comparability with FINDINGS.md.
+  old_m2       - checkpoints/m2/model_2026-08-08_09-48.pth on M2Deck.xlsx, the
+                 checkpoint that won last night's 40-game head-to-head 75/25.
 
 Inference-only, no training. Alternates who plays first each game. Win/loss is
 attributed by identity (candidate vs opponent), not raw player index, since
@@ -20,6 +25,7 @@ from __future__ import annotations
 import argparse
 import os
 import random
+import tarfile
 import time
 
 import torch
@@ -32,8 +38,9 @@ _CAUSE_LABEL = {1: "prize", 2: "deckout", 3: "other", 4: "other"}
 _SAMPLE_BOT_DECK_CSV = os.path.join(
     "pokemon-tcg-ai-battle", "sample_submission", "sample_submission", "deck.csv"
 )
+_REMOTE_TARBALL = "pkmnagent_remote.tar.gz"
 
-_PANEL_CHOICES = ("sample_bot", "old_m2")
+_PANEL_CHOICES = ("random", "first", "starter_rule", "sample_bot", "old_m2", "iono_rule")
 
 
 def _read_deck_csv(path: str) -> list[int]:
@@ -42,19 +49,62 @@ def _read_deck_csv(path: str) -> list[int]:
     return [int(lines[i]) for i in range(60)]
 
 
+def _read_sample_submission_deck() -> list[int]:
+    if os.path.exists(_SAMPLE_BOT_DECK_CSV):
+        return _read_deck_csv(_SAMPLE_BOT_DECK_CSV)
+    if os.path.exists(_REMOTE_TARBALL):
+        with tarfile.open(_REMOTE_TARBALL, "r:gz") as tar:
+            member = tar.extractfile(_SAMPLE_BOT_DECK_CSV)
+            if member is not None:
+                lines = member.read().decode("utf-8").split("\n")
+                return [int(lines[i]) for i in range(60)]
+    raise FileNotFoundError(
+        f"Could not find sample_submission deck at {_SAMPLE_BOT_DECK_CSV} "
+        f"or inside {_REMOTE_TARBALL}"
+    )
+
+
 def _random_bot_move(obs_dict: dict) -> list[int]:
     # Identical logic to pokemon-tcg-ai-battle/sample_submission/sample_submission/main.py's agent()
     obs = R.to_observation_class(obs_dict)
     return random.sample(list(range(len(obs.select.option))), obs.select.maxCount)
 
 
+def _first_bot_move(obs_dict: dict) -> list[int]:
+    obs = R.to_observation_class(obs_dict)
+    return list(range(min(obs.select.maxCount, len(obs.select.option))))
+
+
+def _starter_rule_move(obs_dict: dict) -> list[int]:
+    obs = R.to_observation_class(obs_dict)
+    select = obs.select
+    if select is None:
+        return []
+    if select.context == R.SelectContext.MAIN and select.maxCount == 1:
+        priority = (
+            R.OptionType.ATTACK,
+            R.OptionType.ABILITY,
+            R.OptionType.ATTACH,
+            R.OptionType.EVOLVE,
+            R.OptionType.PLAY,
+            R.OptionType.RETREAT,
+            R.OptionType.END,
+        )
+        for wanted in priority:
+            for idx, option in enumerate(select.option):
+                if option.type == wanted:
+                    return [idx]
+    return _first_bot_move(obs_dict)
+
+
 class Side:
     """One participant: either an MCTS checkpoint or the random sample bot."""
 
-    def __init__(self, name: str, deck: list[int], model=None, display: str | None = None):
+    def __init__(self, name: str, deck: list[int], model=None, display: str | None = None, policy=None):
         self.name = name
         self.deck = deck
         self.model = model  # None => random sample-bot logic
+        self.policy = policy
         # display: what gets printed in place of the bare role string
         # ("candidate"/"opponent") in per-game log lines, so a reader doesn't
         # have to cross-reference the "=== PANEL: ... ===" header to know who
@@ -62,6 +112,8 @@ class Side:
         self.display = display if display is not None else name
 
     def act(self, obs_dict: dict) -> list[int]:
+        if self.policy is not None:
+            return self.policy(obs_dict)
         if self.model is None:
             return _random_bot_move(obs_dict)
         selected, _ = R.mcts_agent(obs_dict, self.deck, self.model)
@@ -77,16 +129,60 @@ def build_old_m2(device) -> Side:
     return Side("old_m2", deck, model, display="old_m2(checkpoint)")
 
 
-def build_sample_bot() -> Side:
-    deck = _read_deck_csv(_SAMPLE_BOT_DECK_CSV)
-    # "random", not "staller": the competition's sample_submission picks
-    # uniform-random legal actions every decision (_random_bot_move above,
-    # identical logic to the real sample_submission's agent()). The
-    # "stalling" behavior discussed elsewhere in this project belongs to the
-    # OLD m2 checkpoint (model_2026-08-08_09-48.pth) — a different, trained
-    # agent that passively ran games to deck-out — not to sample_bot, which
-    # has no policy to stall with in the first place.
-    return Side("sample_bot", deck, model=None, display="sample_bot(random)")
+def build_scripted_panel(name: str) -> Side:
+    deck = _read_sample_submission_deck()
+    if name in {"random", "sample_bot"}:
+        # "random", not "staller": the competition's sample_submission picks
+        # uniform-random legal actions every decision (_random_bot_move above,
+        # identical logic to the real sample_submission's agent()). The
+        # "stalling" behavior discussed elsewhere in this project belongs to the
+        # OLD m2 checkpoint (model_2026-08-08_09-48.pth) — a different, trained
+        # agent that passively ran games to deck-out — not to sample_bot, which
+        # has no policy to stall with in the first place.
+        return Side(name, deck, model=None, display=f"{name}(random)", policy=_random_bot_move)
+    if name == "first":
+        return Side(name, deck, model=None, display="first(first-legal)", policy=_first_bot_move)
+    if name == "starter_rule":
+        return Side(name, deck, model=None, display="starter_rule(priority)", policy=_starter_rule_move)
+    raise ValueError(f"Unknown scripted panel member: {name}")
+
+
+def build_iono_rule() -> Side:
+    """Real Kaggle rule-based starter agent (see panel_bots/iono_rule/PROVENANCE.md).
+
+    main.py is the verbatim `%%writefile main.py` cell from the public notebook
+    "A Sample Rule-Based Agent Iono's Deck" (Kiyota + The Pokémon Company
+    collaborators, Apache 2.0). It reads deck.csv from the cwd at import time,
+    so import it with the bot directory temporarily as cwd.
+    """
+    import importlib.util
+
+    bot_dir = os.path.join("panel_bots", "iono_rule")
+    deck = _read_deck_csv(os.path.join(bot_dir, "deck.csv"))
+    missing = [cid for cid in deck if cid not in R.card_table]
+    if missing:
+        raise ValueError(f"iono_rule deck has card ids unknown to the engine: {missing}")
+
+    prev_cwd = os.getcwd()
+    os.chdir(bot_dir)
+    try:
+        spec = importlib.util.spec_from_file_location("iono_rule_main", "main.py")
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+    finally:
+        os.chdir(prev_cwd)
+    return Side("iono_rule", deck, model=None, display="iono_rule(kaggle)", policy=mod.agent)
+
+
+def wilson_ci(wins: int, total: int) -> tuple[float, float]:
+    if total == 0:
+        return (0.0, 0.0)
+    z = 1.959963984540054
+    p = wins / total
+    denom = 1.0 + z * z / total
+    center = (p + z * z / (2.0 * total)) / denom
+    margin = z * ((p * (1.0 - p) + z * z / (4.0 * total)) / total) ** 0.5 / denom
+    return max(0.0, center - margin), min(1.0, center + margin)
 
 
 def run_matchup(candidate: Side, opponent: Side, n_games: int, base_seed: int) -> dict:
@@ -236,7 +332,12 @@ def main() -> None:
         if opp_name not in _PANEL_CHOICES:
             raise ValueError(f"Unknown panel member: {opp_name} (choices: {_PANEL_CHOICES})")
 
-        opponent = build_sample_bot() if opp_name == "sample_bot" else build_old_m2(device)
+        if opp_name == "old_m2":
+            opponent = build_old_m2(device)
+        elif opp_name == "iono_rule":
+            opponent = build_iono_rule()
+        else:
+            opponent = build_scripted_panel(opp_name)
 
         print(f"\n=== PANEL: candidate vs {opp_name} ===", flush=True)
         t0 = time.perf_counter()
@@ -253,6 +354,7 @@ def main() -> None:
             s = stats[side]
             decided = s["wins"] + s["losses"]
             wr = 100 * s["wins"] / decided if decided else 0.0
+            ci_low, ci_high = wilson_ci(s["wins"], decided)
             total_decided_causes = s["prize_win"] + s["prize_loss"] + s["deckout_win"] + s["deckout_loss"] + \
                 s["other_win"] + s["other_loss"]
             prize_decided = s["prize_win"] + s["prize_loss"]
@@ -260,6 +362,7 @@ def main() -> None:
             print(
                 f"OPP_{opp_name}_{side.upper()}: wins={s['wins']} losses={s['losses']} draws={s['draws']} "
                 f"win_rate={wr:.1f}%({s['wins']}/{decided}) "
+                f"wilson95=[{100 * ci_low:.1f}%,{100 * ci_high:.1f}%] "
                 f"prize_decided={prize_decided}/{total_decided_causes} "
                 f"deckout_share={100 * deckout_decided / total_decided_causes if total_decided_causes else 0:.1f}%"
                 f"({deckout_decided}/{total_decided_causes})",
