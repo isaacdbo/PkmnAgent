@@ -1,0 +1,9 @@
+source,games,wins,losses,draws,decided,win_rate,win_rate_ci_low,win_rate_ci_high,deckout_rate,deckout_win_rate,deckout_loss_rate,prize_rate,attack_rate,attack_legal_decisions,attack_chosen_decisions,turns_to_win_mean,turns_to_win_median,turns_to_loss_mean,turns_to_loss_median,turns_mean,win_by_cause,games_with_cause,games_with_turn
+eval_m2only_sims200_smooth00_main12.log,40,22,18,0,40,0.55,0.39829091798932054,0.6929469218909508,0.15,0.025,0.125,0.45,,0,0,,,,,,"deckout:W=1,L=5,D=0|other:W=16,L=0,D=0|prize:W=5,L=13,D=0",40,0
+eval_panel_arm_B.log,40,0,40,0,40,0.0,0.0,0.08762160119728664,0.0,0.0,0.0,0.05,,0,0,,,,,,"other:W=0,L=38,D=0|prize:W=0,L=2,D=0",40,0
+eval_panel_arm_C.log,40,17,23,0,40,0.425,0.28509392559950375,0.5780493145800892,0.225,0.025,0.2,0.35,,0,0,,,,,,"deckout:W=1,L=8,D=0|other:W=16,L=1,D=0|prize:W=0,L=14,D=0",40,0
+eval_panel_arm_D100.log,40,12,28,0,40,0.3,0.18074845229746528,0.45430018818144935,0.3,0.0,0.3,0.425,,0,0,,,,,,"deckout:W=0,L=12,D=0|other:W=11,L=0,D=0|prize:W=1,L=16,D=0",40,0
+eval_panel_arm_D50.log,40,9,31,0,40,0.225,0.12316091323540745,0.3750309674231002,0.425,0.025,0.4,0.35,,0,0,,,,,,"deckout:W=1,L=16,D=0|other:W=8,L=1,D=0|prize:W=0,L=14,D=0",40,0
+eval_panel_new_vs_bot.log,40,9,31,0,40,0.225,0.12316091323540745,0.3750309674231002,0.425,0.025,0.4,0.325,,0,0,,,,,,"deckout:W=1,L=16,D=0|other:W=8,L=2,D=0|prize:W=0,L=13,D=0",40,0
+eval_panel_validation.log,40,5,35,0,40,0.125,0.054595002509454024,0.26112119838851094,0.15,0.125,0.025,0.225,,0,0,,,,,,"deckout:W=5,L=1,D=0|other:W=0,L=25,D=0|prize:W=0,L=9,D=0",40,0
+h2h_out.log,40,10,30,0,40,0.25,0.14187118639096302,0.40193961420768026,0.75,0.0,0.75,0.0,,0,0,,,,,,"deckout:W=0,L=30,D=0|other:W=10,L=0,D=0",40,0

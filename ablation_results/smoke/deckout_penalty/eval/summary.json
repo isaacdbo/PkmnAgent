@@ -1,0 +1,107 @@
+{
+  "by_opponent": {
+    "first": {
+      "attack_chosen_decisions": 0,
+      "attack_legal_decisions": 0,
+      "attack_rate": null,
+      "decided": 4,
+      "deckout_loss_rate": 0.0,
+      "deckout_rate": 0.5,
+      "deckout_win_rate": 0.5,
+      "draws": 0,
+      "games": 4,
+      "games_with_cause": 4,
+      "games_with_turn": 4,
+      "losses": 2,
+      "prize_rate": 0.0,
+      "turns_mean": 30.5,
+      "turns_to_loss_mean": 5.5,
+      "turns_to_loss_median": 5.5,
+      "turns_to_win_mean": 55.5,
+      "turns_to_win_median": 55.5,
+      "win_by_cause": {
+        "deckout": {
+          "D": 0,
+          "L": 0,
+          "W": 2
+        },
+        "other": {
+          "D": 0,
+          "L": 2,
+          "W": 0
+        }
+      },
+      "win_rate": 0.5,
+      "win_rate_ci_high": 0.8499610108478506,
+      "win_rate_ci_low": 0.15003898915214947,
+      "wins": 2
+    },
+    "random": {
+      "attack_chosen_decisions": 0,
+      "attack_legal_decisions": 0,
+      "attack_rate": null,
+      "decided": 4,
+      "deckout_loss_rate": 0.0,
+      "deckout_rate": 0.0,
+      "deckout_win_rate": 0.0,
+      "draws": 0,
+      "games": 4,
+      "games_with_cause": 4,
+      "games_with_turn": 4,
+      "losses": 4,
+      "prize_rate": 0.0,
+      "turns_mean": 13.75,
+      "turns_to_loss_mean": 13.75,
+      "turns_to_loss_median": 11.0,
+      "turns_to_win_mean": null,
+      "turns_to_win_median": null,
+      "win_by_cause": {
+        "other": {
+          "D": 0,
+          "L": 4,
+          "W": 0
+        }
+      },
+      "win_rate": 0.0,
+      "win_rate_ci_high": 0.4898908364545973,
+      "win_rate_ci_low": 0.0,
+      "wins": 0
+    }
+  },
+  "overall": {
+    "attack_chosen_decisions": 0,
+    "attack_legal_decisions": 0,
+    "attack_rate": null,
+    "decided": 8,
+    "deckout_loss_rate": 0.0,
+    "deckout_rate": 0.25,
+    "deckout_win_rate": 0.25,
+    "draws": 0,
+    "games": 8,
+    "games_with_cause": 8,
+    "games_with_turn": 8,
+    "losses": 6,
+    "prize_rate": 0.0,
+    "turns_mean": 22.125,
+    "turns_to_loss_mean": 11.0,
+    "turns_to_loss_median": 7.0,
+    "turns_to_win_mean": 55.5,
+    "turns_to_win_median": 55.5,
+    "win_by_cause": {
+      "deckout": {
+        "D": 0,
+        "L": 0,
+        "W": 2
+      },
+      "other": {
+        "D": 0,
+        "L": 6,
+        "W": 0
+      }
+    },
+    "win_rate": 0.25,
+    "win_rate_ci_high": 0.5907245696898311,
+    "win_rate_ci_low": 0.071479212752109,
+    "wins": 2
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "arm": "baseline",
+  "checkpoint": "results/ablation-smoke/baseline/checkpoints/m2/model_2026-08-11_21-06.pth",
+  "cmd": [
+    "/usr/local/bin/python",
+    "-u",
+    "RLTRM2.py"
+  ],
+  "env": {
+    "CHECKPOINT_ROOT": "results/ablation-smoke/baseline/checkpoints",
+    "EVAL_GAMES_PER_MATCHUP": "1",
+    "FAST_TEST": "0",
+    "M2_ONLY": "1",
+    "MAIN_EPOCHS": "1",
+    "MAIN_SELF_PLAY_M2_GAMES": "2",
+    "REWARD_SPEC": "baseline",
+    "SELF_PLAY_BASE_SEED": "20260810",
+    "SELF_PLAY_WORKERS": "1",
+    "SIMULATIONS_PER_MOVE": "5",
+    "SKIP_CHECKPOINT_LOAD": "1",
+    "STOP_AFTER_MAIN_EPOCH": "1",
+    "WARMUP_EPOCHS": "1",
+    "WARMUP_SELF_PLAY_GAMES": "2"
+  },
+  "log": "results/ablation-smoke/baseline/train.log",
+  "returncode": 0,
+  "timed_out": false,
+  "wall_seconds": 491.4
+}

@@ -14,6 +14,7 @@ import random
 import time
 
 import diag
+from ablation import rewards as ablation_rewards
 import torch
 import torch.nn
 import torch.nn.functional
@@ -77,7 +78,22 @@ decoder_size = decoder_card_offset + (1 + decoder_main_feature + SelectContext.R
 
 FAST_TEST = os.environ.get("FAST_TEST", "1") == "1"  # ~5 min; set FAST_TEST=0 for real runs
 DIAG_DUMP_EVERY_GAMES = 25
+
+# Reward ablation arm, selected with REWARD_SPEC=<name> (default "baseline",
+# which is exactly the behaviour this file had before the harness existed).
+# Read at import time because self-play fans out through 'spawn' workers that
+# re-import this module in a fresh interpreter — the environment is what
+# survives that boundary. See ablation/rewards.py.
+REWARD_SPEC = ablation_rewards.active_spec()
+
 DECK_DIFF_COEF = float(os.environ.get("DECK_DIFF_COEF", 0.01))
+if REWARD_SPEC.board_diff_coef is not None:
+    DECK_DIFF_COEF = REWARD_SPEC.board_diff_coef
+
+# Where checkpoints are written and re-loaded. Overridable so an ablation
+# sweep can give each arm its own directory; without that, arms started from
+# each other's checkpoints and the comparison meant nothing.
+CHECKPOINT_ROOT = os.environ.get("CHECKPOINT_ROOT", "checkpoints")
 MAX_CHILDREN_PER_NODE = 64
 # Inference-only experiment (default 0 = off, identical to prior behaviour):
 # when > 0, replaces the +0.916 ATTACH domain-bonus logit with a post-softmax
@@ -111,6 +127,7 @@ print(
     f"(the only two call sites that invoke mcts_agent for self-play generation)",
     flush=True,
 )
+print(f"[CONFIG] reward: {REWARD_SPEC.describe()} DECK_DIFF_COEF={DECK_DIFF_COEF}", flush=True)
 
 # ~1 hour: 20 | ~2 hours: 30
 SEARCH_COUNT = SIMULATIONS_PER_MOVE
@@ -287,6 +304,23 @@ def add_player(sv: SparseVector, ps: PlayerState):
 # First word of card name lowercased for each known item-locking Pokémon
 _ITEM_LOCK_NAMES = frozenset({'budew', 'frillish', 'jellicent'})
 
+# Every component of the shaped reward, in one place: shaped_reward_terms
+# starts from a copy of this, and the ablation registry checks it at import so
+# a term added here without a matching entry in ablation/rewards.py fails
+# loudly instead of quietly surviving an arm that meant to zero all shaping.
+SHAPING_TERM_TEMPLATE: dict[str, float] = {
+    "PRIZE_DIFF": 0.0,
+    "KO_BONUS": 0.0,
+    "ENERGY_DENIAL": 0.0,
+    "DISRUPTION": 0.0,
+    "DAMAGE_PRESSURE": 0.0,
+    "PARALYSIS": 0.0,
+    "SLEEP": 0.0,
+    "ITEM_LOCK_PENALTY": 0.0,
+}
+ablation_rewards.validate_terms(SHAPING_TERM_TEMPLATE)
+
+
 def _prize_taken_reward_hit(obs: Observation, your_index: int) -> bool:
     for log in obs.logs:
         if (
@@ -304,16 +338,7 @@ def shaped_reward_terms(obs: Observation, your_index: int) -> dict[str, float]:
     your = state.players[your_index]
     opp  = state.players[1 - your_index]
     opp_index = 1 - your_index
-    terms: dict[str, float] = {
-        "PRIZE_DIFF": 0.0,
-        "KO_BONUS": 0.0,
-        "ENERGY_DENIAL": 0.0,
-        "DISRUPTION": 0.0,
-        "DAMAGE_PRESSURE": 0.0,
-        "PARALYSIS": 0.0,
-        "SLEEP": 0.0,
-        "ITEM_LOCK_PENALTY": 0.0,
-    }
+    terms: dict[str, float] = dict(SHAPING_TERM_TEMPLATE)
 
     # Prize differential: positive when you've taken more prizes
     terms["PRIZE_DIFF"] += 0.15 * (len(opp.prize) - len(your.prize)) / 6
@@ -377,7 +402,11 @@ def shaped_reward_terms(obs: Observation, your_index: int) -> dict[str, float]:
                     if data and data.cardType == CardType.ITEM:
                         terms["ITEM_LOCK_PENALTY"] -= 0.02
 
-    return terms
+    # Ablation hook. Under the default "baseline" spec every weight is 1.0 and
+    # this returns `terms` unchanged; an arm that zeroes shaping does it here,
+    # at the single place every shaping term passes through, rather than by
+    # editing the term computations above.
+    return REWARD_SPEC.apply_shaping(terms)
 
 
 def shaped_reward(obs: Observation, your_index: int) -> float:
@@ -461,6 +490,28 @@ def _extract_result_reason(obs: Observation) -> int | None:
             return log.reason
     print("[WARN] RESULT log missing at terminal state; reason set to UNKNOWN", flush=True)
     return None
+
+
+class GameOutcome:
+    """How a finished game ended, for reward specs that care.
+
+    Carried alongside the raw result so `_backup_and_store` can compute a
+    terminal value that depends on the ending (deck-out vs prizes) or on the
+    turn count, without re-deriving either from an observation that the
+    parallel workers no longer hold by the time samples are stored.
+    """
+
+    __slots__ = ("cause", "final_turn", "reason_code")
+
+    def __init__(self, cause: str | None, final_turn: int | None, reason_code: int | None):
+        self.cause = cause
+        self.final_turn = final_turn
+        self.reason_code = reason_code
+
+    @classmethod
+    def from_final_obs(cls, final_obs: Observation) -> 'GameOutcome':
+        reason = _extract_result_reason(final_obs)
+        return cls(ablation_rewards.cause_from_reason(reason), final_obs.current.turn, reason)
 
 
 def _diag_step_features(prev_obs: Observation, selected: list[int], next_obs: Observation) -> tuple[bool, bool, bool, bool]:
@@ -1263,7 +1314,7 @@ def sample_opponent_deck_from_belief(belief: dict[str, float], deck_count: int) 
     return sample
 
 
-def _play_one_self_play_game(deck: list[int], model: 'MyModel') -> tuple[int, list['LearnSample'], list['LearnSample']]:
+def _play_one_self_play_game(deck: list[int], model: 'MyModel') -> tuple[int, list['LearnSample'], list['LearnSample'], 'GameOutcome']:
     """One mirror self-play game: identical logic to run_self_play's inner
     loop body, factored out so both the serial path and the parallel worker
     call the exact same code (not two copies that could silently drift)."""
@@ -1300,7 +1351,7 @@ def _play_one_self_play_game(deck: list[int], model: 'MyModel') -> tuple[int, li
     diag.record_true_result(result=obs["current"]["result"])
     diag.end_game()
     result = obs["current"]["result"]
-    return result, per_player[0], per_player[1]
+    return result, per_player[0], per_player[1], GameOutcome.from_final_obs(final_obs_obj)
 
 
 def _self_play_worker(
@@ -1403,7 +1454,12 @@ def _play_one_cross_play_game(
     diag.record_true_result(result=obs["current"]["result"])
     diag.end_game()
     result = obs["current"]["result"]
-    return {"result": result, "roles": roles, "samples": per_player}
+    return {
+        "result": result,
+        "roles": roles,
+        "samples": per_player,
+        "outcome": GameOutcome.from_final_obs(final_obs_obj),
+    }
 
 
 def _cross_play_worker(
@@ -1463,13 +1519,13 @@ if __name__ == "__main__":
     POLICY_LABEL_SMOOTHING = float(os.environ.get("POLICY_LABEL_SMOOTHING", "0.0"))
     # ~1 hour values shown; 2-hour alternatives in comments
     WARMUP_EPOCHS             = int(os.environ.get("WARMUP_EPOCHS", 1 if FAST_TEST else 4))   # 1hr: 2 - 2h: 3
-    WARMUP_SELF_PLAY_GAMES    = 3  if FAST_TEST else 25  # 1hr: 15 -2h: 25
+    WARMUP_SELF_PLAY_GAMES    = int(os.environ.get("WARMUP_SELF_PLAY_GAMES", 3  if FAST_TEST else 25))  # 1hr: 15 -2h: 25
     MAIN_EPOCHS               = int(os.environ.get("MAIN_EPOCHS", 2 if FAST_TEST else 20))   # 1hr: 8 - 2h: 15
     EVAL_EVERY                = 1  if FAST_TEST else 4   # 1hr: 2  - 2h: 3
-    MAIN_SELF_PLAY_M2_GAMES   = 3  if FAST_TEST else 25  # 1hr: 15 - 2h: 25
-    MAIN_SELF_PLAY_OPP_GAMES  = 2  if FAST_TEST else 15   # 1hr: 8 - 2h: 15
-    MAIN_CROSS_PLAY_GAMES     = 2  if FAST_TEST else 12   # 1hr: 2 - 2h: 12
-    EVAL_GAMES_PER_MATCHUP    = 2  if FAST_TEST else 10   # 1hr: 5 - 2h: 8
+    MAIN_SELF_PLAY_M2_GAMES   = int(os.environ.get("MAIN_SELF_PLAY_M2_GAMES", 3  if FAST_TEST else 25))  # 1hr: 15 - 2h: 25
+    MAIN_SELF_PLAY_OPP_GAMES  = int(os.environ.get("MAIN_SELF_PLAY_OPP_GAMES", 2  if FAST_TEST else 15))   # 1hr: 8 - 2h: 15
+    MAIN_CROSS_PLAY_GAMES     = int(os.environ.get("MAIN_CROSS_PLAY_GAMES", 2  if FAST_TEST else 12))   # 1hr: 2 - 2h: 12
+    EVAL_GAMES_PER_MATCHUP    = int(os.environ.get("EVAL_GAMES_PER_MATCHUP", 2  if FAST_TEST else 10))   # 1hr: 5 - 2h: 8
 
     class AgentState:
         def __init__(self, name: str, deck: list[int]):
@@ -1481,7 +1537,7 @@ if __name__ == "__main__":
             self.opponent_belief: dict[str, float] = initial_belief()
 
         def save_checkpoint(self):
-            folder = os.path.join("checkpoints", self.name)
+            folder = os.path.join(CHECKPOINT_ROOT, self.name)
             os.makedirs(folder, exist_ok=True)
             ts = time.strftime("%Y-%m-%d_%H-%M")
             path = os.path.join(folder, f"model_{ts}.pth")
@@ -1489,7 +1545,7 @@ if __name__ == "__main__":
             print(f"[{self.name}] Saved: {path}")
 
         def load_latest_checkpoint(self):
-            folder = os.path.join("checkpoints", self.name)
+            folder = os.path.join(CHECKPOINT_ROOT, self.name)
             if not os.path.exists(folder):
                 return
             files = sorted(glob.glob(os.path.join(folder, "model_*.pth")))
@@ -1501,14 +1557,21 @@ if __name__ == "__main__":
             except Exception as e:
                 print(f"[{self.name}] Checkpoint load failed ({e}), starting fresh.")
 
-    def _backup_and_store(agent, result: int, player_idx: int, samples: list[LearnSample]):
-    # Convert result (0/1/2) into +1 / 0 / -1 from this player's perspective
-        if result == 2:
-            z = 0.0          # draw
-        elif result == player_idx:
-            z = 1.0          # this player won
-        else:
-            z = -1.0         # this player lost
+    def _backup_and_store(agent, result: int, player_idx: int, samples: list[LearnSample],
+                          outcome: 'GameOutcome | None' = None):
+        # Convert result (0/1/2) into the long-term value target from this
+        # player's perspective. Under the default "baseline" reward spec this
+        # is exactly +1 / 0 / -1 as before; other arms may scale it by how the
+        # game ended (deck-out vs prizes) and how long it took, which is what
+        # `outcome` carries. A missing outcome falls back to +1 / 0 / -1, so a
+        # call site that does not supply one cannot silently change training.
+        z = ablation_rewards.terminal_value(
+            REWARD_SPEC,
+            result=result,
+            player_index=player_idx,
+            cause=outcome.cause if outcome else None,
+            final_turn=outcome.final_turn if outcome else None,
+        )
 
         for s in samples:
             s.value = z      # long-term outcome target
@@ -1551,8 +1614,9 @@ if __name__ == "__main__":
                 diag.record_true_result(result=obs["current"]["result"])
                 diag.end_game()
                 result = obs["current"]["result"]
+                outcome = GameOutcome.from_final_obs(final_obs_obj)
                 for pi in range(2):
-                    _backup_and_store(agent, result, pi, per_player[pi])
+                    _backup_and_store(agent, result, pi, per_player[pi], outcome)
 
     def run_cross_play(m2, opp, n_games: int):
         m2.model.eval()
@@ -1614,8 +1678,9 @@ if __name__ == "__main__":
                 diag.record_true_result(result=obs["current"]["result"])
                 diag.end_game()
                 result = obs["current"]["result"]
+                outcome = GameOutcome.from_final_obs(final_obs_obj)
                 for pi in range(2):
-                    _backup_and_store(by_player[pi], result, pi, per_player[pi])
+                    _backup_and_store(by_player[pi], result, pi, per_player[pi], outcome)
 
     def _split_game_indices(n_games: int, n_workers: int) -> list[list[int]]:
         """Evenly split [0, n_games) into up to n_workers contiguous slices.
@@ -1640,9 +1705,9 @@ if __name__ == "__main__":
         futures = [pool.submit(_self_play_worker, agent.deck, state_dict, gi, base_seed) for gi in slices]
         for _, fut in zip(progress(len(futures), f"[{agent.name}] self-play ({len(slices)} workers)"), as_completed(futures)):
             results, window_state, games = fut.result()
-            for result, samples0, samples1 in results:
-                _backup_and_store(agent, result, 0, samples0)
-                _backup_and_store(agent, result, 1, samples1)
+            for result, samples0, samples1, outcome in results:
+                _backup_and_store(agent, result, 0, samples0, outcome)
+                _backup_and_store(agent, result, 1, samples1, outcome)
             diag.merge_worker_window(window_state, games)
 
     def run_cross_play_parallel(m2, opp, n_games: int, pool: ProcessPoolExecutor, n_workers: int, base_seed: int) -> None:
@@ -1662,8 +1727,9 @@ if __name__ == "__main__":
                 result = game_result["result"]
                 roles = game_result["roles"]
                 samples = game_result["samples"]
+                outcome = game_result.get("outcome")
                 for pi in range(2):
-                    _backup_and_store(agents_by_role[roles[pi]], result, pi, samples[pi])
+                    _backup_and_store(agents_by_role[roles[pi]], result, pi, samples[pi], outcome)
             diag.merge_worker_window(window_state, games)
 
     def train_agent(agent, batch_size: int = BATCH_SIZE):
