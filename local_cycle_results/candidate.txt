@@ -1,0 +1,1 @@
+CANDIDATE=checkpoints/m2/model_2026-08-11_22-44.pth

@@ -1,0 +1,96 @@
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+EVAL_CANDIDATE=checkpoints/m2/model_2026-08-11_22-44.pth
+EVAL_CANDIDATE_DECK=M2Deck.xlsx
+EVAL_SIMULATIONS_PER_MOVE=100
+EVAL_GAMES_PER_OPPONENT=40
+EVAL_BASE_SEED=20260811
+
+=== PANEL: candidate vs random ===
+EVAL_GAME_DONE=1/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=2 cause=deckout turn=31 cand_prizes=0 opp_prizes=4 sec=526.33
+EVAL_GAME_DONE=2/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=1 cause=prize turn=23 cand_prizes=0 opp_prizes=6 sec=402.16
+EVAL_GAME_DONE=3/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=2 cause=deckout turn=27 cand_prizes=0 opp_prizes=3 sec=543.33
+EVAL_GAME_DONE=4/40 winner=candidate p0=random(random) p1=candidate result=1 reason=3 cause=other turn=33 cand_prizes=5 opp_prizes=5 sec=545.27
+EVAL_GAME_DONE=5/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=2 cause=deckout turn=37 cand_prizes=3 opp_prizes=5 sec=674.46
+EVAL_GAME_DONE=6/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=1 cause=prize turn=32 cand_prizes=0 opp_prizes=6 sec=478.49
+EVAL_GAME_DONE=7/40 winner=candidate p0=candidate p1=random(random) result=0 reason=3 cause=other turn=25 cand_prizes=3 opp_prizes=3 sec=238.73
+EVAL_GAME_DONE=8/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=1 cause=prize turn=26 cand_prizes=0 opp_prizes=6 sec=474.98
+EVAL_GAME_DONE=9/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=1 cause=prize turn=20 cand_prizes=0 opp_prizes=6 sec=327.55
+EVAL_GAME_DONE=10/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=1 cause=prize turn=32 cand_prizes=0 opp_prizes=6 sec=345.27
+EVAL_GAME_DONE=11/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=1 cause=prize turn=20 cand_prizes=0 opp_prizes=6 sec=460.73
+EVAL_GAME_DONE=12/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=3 cause=other turn=19 cand_prizes=0 opp_prizes=1 sec=79.59
+EVAL_GAME_DONE=13/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=2 cause=deckout turn=27 cand_prizes=0 opp_prizes=0 sec=435.03
+EVAL_GAME_DONE=14/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=2 cause=deckout turn=39 cand_prizes=0 opp_prizes=4 sec=578.26
+EVAL_GAME_DONE=15/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=2 cause=deckout turn=41 cand_prizes=3 opp_prizes=4 sec=618.70
+EVAL_GAME_DONE=16/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=1 cause=prize turn=22 cand_prizes=0 opp_prizes=6 sec=423.40
+EVAL_GAME_DONE=17/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=2 cause=deckout turn=23 cand_prizes=0 opp_prizes=5 sec=506.31
+EVAL_GAME_DONE=18/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=1 cause=prize turn=34 cand_prizes=0 opp_prizes=6 sec=416.54
+EVAL_GAME_DONE=19/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=3 cause=other turn=8 cand_prizes=0 opp_prizes=2 sec=80.16
+EVAL_GAME_DONE=20/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=1 cause=prize turn=35 cand_prizes=1 opp_prizes=6 sec=629.95
+EVAL_GAME_DONE=21/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=1 cause=prize turn=28 cand_prizes=0 opp_prizes=6 sec=374.19
+EVAL_GAME_DONE=22/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=1 cause=prize turn=13 cand_prizes=0 opp_prizes=6 sec=251.27
+EVAL_GAME_DONE=23/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=1 cause=prize turn=36 cand_prizes=4 opp_prizes=6 sec=613.74
+EVAL_GAME_DONE=24/40 winner=candidate p0=random(random) p1=candidate result=1 reason=2 cause=deckout turn=29 cand_prizes=0 opp_prizes=4 sec=436.74
+EVAL_GAME_DONE=25/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=1 cause=prize turn=34 cand_prizes=4 opp_prizes=6 sec=435.47
+EVAL_GAME_DONE=26/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=2 cause=deckout turn=29 cand_prizes=0 opp_prizes=0 sec=446.96
+EVAL_GAME_DONE=27/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=1 cause=prize turn=12 cand_prizes=0 opp_prizes=6 sec=165.46
+EVAL_GAME_DONE=28/40 winner=candidate p0=random(random) p1=candidate result=1 reason=3 cause=other turn=23 cand_prizes=4 opp_prizes=5 sec=427.15
+EVAL_GAME_DONE=29/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=1 cause=prize turn=10 cand_prizes=0 opp_prizes=6 sec=161.75
+EVAL_GAME_DONE=30/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=3 cause=other turn=10 cand_prizes=0 opp_prizes=2 sec=29.84
+EVAL_GAME_DONE=31/40 winner=candidate p0=candidate p1=random(random) result=0 reason=3 cause=other turn=7 cand_prizes=1 opp_prizes=0 sec=108.29
+EVAL_GAME_DONE=32/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=1 cause=prize turn=13 cand_prizes=0 opp_prizes=6 sec=139.76
+EVAL_GAME_DONE=33/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=1 cause=prize turn=20 cand_prizes=0 opp_prizes=6 sec=349.30
+EVAL_GAME_DONE=34/40 winner=candidate p0=random(random) p1=candidate result=1 reason=3 cause=other turn=7 cand_prizes=1 opp_prizes=0 sec=87.24
+EVAL_GAME_DONE=35/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=1 cause=prize turn=30 cand_prizes=0 opp_prizes=6 sec=454.47
+EVAL_GAME_DONE=36/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=2 cause=deckout turn=36 cand_prizes=0 opp_prizes=1 sec=489.64
+EVAL_GAME_DONE=37/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=3 cause=other turn=6 cand_prizes=0 opp_prizes=1 sec=29.51
+EVAL_GAME_DONE=38/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=2 cause=deckout turn=34 cand_prizes=0 opp_prizes=5 sec=602.70
+EVAL_GAME_DONE=39/40 winner=random(random) p0=candidate p1=random(random) result=1 reason=1 cause=prize turn=24 cand_prizes=4 opp_prizes=6 sec=358.21
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=40
+AGENT=UNKNOWN
+TRUNC_TOTAL_NODES=291025
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:228066|9-16:47113|17-32:15353|33-64:493|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/28839)|3-5:0.00%(0/36576)|6+:0.00%(0/225610)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+MULTISELECT_FIXED_LEN=min=0,max=2:nodes=1664,shorter_legal=1664,shorter_generated=0,shorter_missed=1664|min=0,max=3:nodes=3053,shorter_legal=3053,shorter_generated=0,shorter_missed=3053|min=0,max=4:nodes=48,shorter_legal=48,shorter_generated=0,shorter_missed=48|min=0,max=5:nodes=366,shorter_legal=366,shorter_generated=0,shorter_missed=366|min=2,max=2:nodes=5810,shorter_legal=0,shorter_generated=0,shorter_missed=0|min=3,max=3:nodes=132,shorter_legal=0,shorter_generated=0,shorter_missed=0
+MULTISELECT_SHORTER_MISSED=5131
+MULTISELECT_CTX_HIST=DISCARD:4925,DISCARD_ENERGY_CARD:4,SETUP_BENCH_POKEMON:501,TO_HAND:5643
+GAME_LENGTH_HIST=1-15:9|16-25:10|26-40:20|41-60:1|61+:0
+WIN_BY_CAUSE=DECK_OUT:W=12,L=12,D=0|NO_ACTIVE:W=9,L=9,D=0|PRIZE:W=19,L=19,D=0
+TURN_NODE_DIST=1-2:9.91%(28839/291025)|3-5:12.57%(36576/291025)|6+:77.52%(225610/291025)
+SEARCH_MAX_DEPTH=24
+SEARCH_MEAN_DEPTH=5.0711
+MEAN_DEPTH=5.0711
+SIMS_CONTRIBUTED=299800
+SIMS_CONFIGURED=299800
+SIMS_CONTRIBUTED_PER_DECISION=100.0000
+SIMS_CONFIGURED_PER_DECISION=100.0000
+PRIZE_REWARD_REACHED=2.60%(78/2998)
+STALL_DRAW_PASS_TURNS=370
+STALL_SHUFFLE_WITH_RESOURCES=81
+MISSED_ATTACH=239
+SHAPING_BREAKDOWN=BOARD_DECK_DIFF:0.104684|DAMAGE_PRESSURE:0.001549|DISRUPTION:0.000029|ENERGY_DENIAL:0.001279|ITEM_LOCK_PENALTY:0.000000|KO_BONUS:0.000569|PARALYSIS:0.000000|PRIZE_DIFF:-0.031264|SLEEP:0.000000
+ROOT_OPTION_STATS=ABILITY:available=256,chosen=159,not_chosen=97,zero_visit_rate=2.34%(6/256),mean_opt_visit=15.33,mean_opt_q=-0.4654,mean_chosen_visit=60.08,mean_chosen_q=-0.1629|ATTACK:available=154,chosen=59,not_chosen=95,zero_visit_rate=25.32%(39/154),mean_opt_visit=7.64,mean_opt_q=-0.6405,mean_chosen_visit=67.21,mean_chosen_q=0.0554|ENERGY_ATTACH:available=780,chosen=284,not_chosen=496,zero_visit_rate=16.28%(127/780),mean_opt_visit=6.21,mean_opt_q=-0.4886,mean_chosen_visit=69.46,mean_chosen_q=-0.0593
+ATTACH_PRIOR_DIST=special:n=727,attach_prior[mean=0.1340,min=0.0001,max=0.9994,hist=(<0.001:239,0.001-0.005:132,0.005-0.01:25,0.01-0.03:58,0.03-0.1:68,0.1-0.3:83,0.3-1.0:122,1.0:0)],chosen_prior[mean=0.5071,min=0.0000,max=0.9994,hist=(<0.001:61,0.001-0.005:11,0.005-0.01:15,0.01-0.03:12,0.03-0.1:51,0.1-0.3:84,0.3-1.0:493,1.0:0)]|plain:n=4008,attach_prior[mean=0.0482,min=0.0000,max=0.9975,hist=(<0.001:1672,0.001-0.005:496,0.005-0.01:186,0.01-0.03:455,0.03-0.1:790,0.1-0.3:242,0.3-1.0:167,1.0:0)],chosen_prior[mean=0.4626,min=0.0000,max=0.9994,hist=(<0.001:311,0.001-0.005:97,0.005-0.01:64,0.01-0.03:113,0.03-0.1:363,0.1-0.3:615,0.3-1.0:2445,1.0:0)]
+SIM_KO_REACHED=1.20%(3587/299800)
+SIM_KO_DEPTH_MEAN=4.4023
+SIM_KO_DEPTH_MIN=1
+SIM_KO_DEPTH_MAX=17
+TRUE_RESULT_TALLY=P0_WINS=18,P1_WINS=22,DRAWS=0
+POLICY_TARGET_ZERO_FRACTION_MEAN=0.1785
+POLICY_TARGET_ENTROPY_MEAN=0.6925
+POLICY_TARGET_COUNT=2998
+ROOT_CHILD_COUNT=mean=6.61,median=5.0,n=2998,by_turn=(1-2:mean=5.96,median=4.0,n=396|3-5:mean=7.12,median=6.0,n=387|6+:mean=6.63,median=5.0,n=2215)
+ROOT_VISIT_HIST=0:26.83%(5315/19807)|1:28.29%(5604/19807)|2-4:8.91%(1764/19807)|5+:35.97%(7124/19807)
+ENERGY_DEV_RATE=41.50%(371/894)
+GRASS_IN_DISCARD_RATE=36.02%(1080/2998)
+=== DIAG_DUMP_END ===
+EVAL_GAME_DONE=40/40 winner=random(random) p0=random(random) p1=candidate result=0 reason=2 cause=deckout turn=26 cand_prizes=0 opp_prizes=1 sec=436.73
+OPP_WALL_SEC=15183.77
+OPP_MEAN_SEC_PER_GAME=379.59
+OPP_random_CANDIDATE: wins=6 losses=34 draws=0 win_rate=15.0%(6/40) wilson95=[7.1%,29.1%] prize_decided=19/40 deckout_share=30.0%(12/40)
+OPP_random_OPPONENT: wins=34 losses=6 draws=0 win_rate=85.0%(34/40) wilson95=[70.9%,92.9%] prize_decided=19/40 deckout_share=30.0%(12/40)

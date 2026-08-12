@@ -1,0 +1,29 @@
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+DEPS_STAGE1_OK
+  WARNING: The scripts torchfrtrace and torchrun are installed in '/work/.dockerhome/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+DEPS_STAGE2_OK
+PY_COMPILE_OK
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+ok 1: mask marks exactly the legal slots (smoothing=0.0)
+ok 2: padding targets are exactly 0 (smoothing=0.0)
+ok 3: targets renormalise to 1 over legal actions (smoothing=0.0)
+ok 4: mask marks exactly the legal slots (smoothing=0.05)
+ok 5: padding targets are exactly 0 (smoothing=0.05)
+ok 6: targets renormalise to 1 over legal actions (smoothing=0.05)
+ok 7: zero-visit sample target stays exactly zero (no spurious gradient)
+ok 8: softmax probability mass on illegal/padding slots ~ 0
+ok 9: softmax renormalises to 1 over legal slots
+ok 10: policy-loss gradient on illegal/padding logits ~ 0
+ok 11: _sample_dirichlet(k=1) is a valid simplex point
+ok 12: _sample_dirichlet(k=2) is a valid simplex point
+ok 13: _sample_dirichlet(k=7) is a valid simplex point
+ok 14: _sample_dirichlet(k=40) is a valid simplex point
+ok 15: root Dirichlet mix preserves a normalised prior
+ok 16: real game completed with mcts_agent(self_play=True) on every candidate decision
+ok 17: every selected action was a legal engine option (asserted per decision)
+ok 18: every stored policy target was normalised over legal actions
+
+ALL 18 CHECKS PASSED
