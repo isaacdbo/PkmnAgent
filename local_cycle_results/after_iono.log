@@ -1,0 +1,96 @@
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+EVAL_CANDIDATE=checkpoints/m2/model_2026-08-11_22-44.pth
+EVAL_CANDIDATE_DECK=M2Deck.xlsx
+EVAL_SIMULATIONS_PER_MOVE=100
+EVAL_GAMES_PER_OPPONENT=40
+EVAL_BASE_SEED=20260811
+
+=== PANEL: candidate vs iono_rule ===
+EVAL_GAME_DONE=1/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=14 cand_prizes=1 opp_prizes=6 sec=302.72
+EVAL_GAME_DONE=2/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=21 cand_prizes=0 opp_prizes=6 sec=400.59
+EVAL_GAME_DONE=3/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=14 cand_prizes=0 opp_prizes=6 sec=354.10
+EVAL_GAME_DONE=4/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=3 cause=other turn=3 cand_prizes=0 opp_prizes=1 sec=11.21
+EVAL_GAME_DONE=5/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=14 cand_prizes=0 opp_prizes=6 sec=252.85
+EVAL_GAME_DONE=6/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=9 cand_prizes=1 opp_prizes=6 sec=286.36
+EVAL_GAME_DONE=7/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=14 cand_prizes=3 opp_prizes=6 sec=385.74
+EVAL_GAME_DONE=8/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=15 cand_prizes=0 opp_prizes=6 sec=405.48
+EVAL_GAME_DONE=9/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=16 cand_prizes=0 opp_prizes=6 sec=349.40
+EVAL_GAME_DONE=10/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=15 cand_prizes=2 opp_prizes=6 sec=456.58
+EVAL_GAME_DONE=11/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=14 cand_prizes=0 opp_prizes=6 sec=419.34
+EVAL_GAME_DONE=12/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=11 cand_prizes=0 opp_prizes=6 sec=188.24
+EVAL_GAME_DONE=13/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=12 cand_prizes=1 opp_prizes=6 sec=269.10
+EVAL_GAME_DONE=14/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=13 cand_prizes=0 opp_prizes=6 sec=239.66
+EVAL_GAME_DONE=15/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=12 cand_prizes=0 opp_prizes=6 sec=331.08
+EVAL_GAME_DONE=16/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=15 cand_prizes=0 opp_prizes=6 sec=320.04
+EVAL_GAME_DONE=17/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=14 cand_prizes=1 opp_prizes=6 sec=359.93
+EVAL_GAME_DONE=18/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=13 cand_prizes=0 opp_prizes=6 sec=208.57
+EVAL_GAME_DONE=19/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=12 cand_prizes=0 opp_prizes=6 sec=209.89
+EVAL_GAME_DONE=20/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=11 cand_prizes=1 opp_prizes=6 sec=277.64
+EVAL_GAME_DONE=21/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=14 cand_prizes=0 opp_prizes=6 sec=310.94
+EVAL_GAME_DONE=22/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=13 cand_prizes=1 opp_prizes=6 sec=244.77
+EVAL_GAME_DONE=23/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=14 cand_prizes=0 opp_prizes=6 sec=334.72
+EVAL_GAME_DONE=24/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=13 cand_prizes=0 opp_prizes=6 sec=185.68
+EVAL_GAME_DONE=25/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=10 cand_prizes=0 opp_prizes=6 sec=252.93
+EVAL_GAME_DONE=26/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=15 cand_prizes=1 opp_prizes=6 sec=220.95
+EVAL_GAME_DONE=27/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=14 cand_prizes=0 opp_prizes=6 sec=291.77
+EVAL_GAME_DONE=28/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=3 cause=other turn=3 cand_prizes=0 opp_prizes=1 sec=46.32
+EVAL_GAME_DONE=29/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=12 cand_prizes=0 opp_prizes=6 sec=247.91
+EVAL_GAME_DONE=30/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=13 cand_prizes=2 opp_prizes=6 sec=223.73
+EVAL_GAME_DONE=31/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=3 cause=other turn=10 cand_prizes=0 opp_prizes=1 sec=85.52
+EVAL_GAME_DONE=32/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=11 cand_prizes=0 opp_prizes=6 sec=256.11
+EVAL_GAME_DONE=33/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=14 cand_prizes=0 opp_prizes=6 sec=175.42
+EVAL_GAME_DONE=34/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=15 cand_prizes=1 opp_prizes=6 sec=396.77
+EVAL_GAME_DONE=35/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=12 cand_prizes=0 opp_prizes=6 sec=364.33
+EVAL_GAME_DONE=36/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=13 cand_prizes=0 opp_prizes=6 sec=199.78
+EVAL_GAME_DONE=37/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=18 cand_prizes=2 opp_prizes=6 sec=354.07
+EVAL_GAME_DONE=38/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=15 cand_prizes=1 opp_prizes=6 sec=281.26
+EVAL_GAME_DONE=39/40 winner=iono_rule(kaggle) p0=candidate p1=iono_rule(kaggle) result=1 reason=1 cause=prize turn=16 cand_prizes=2 opp_prizes=6 sec=483.54
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=40
+AGENT=UNKNOWN
+TRUNC_TOTAL_NODES=208534
+TRUNC_FIRED=12
+TRUNC_FIRE_RATE=0.01%
+TRUNC_OPTCOUNT_HIST=1-8:173027|9-16:17198|17-32:6646|33-64:11651|65-128:12|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/26274)|3-5:0.00%(0/44330)|6+:0.01%(12/137930)
+TRUNC_DROPPED_BY_TYPE=ABILITY:8,RETREAT:8
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+MULTISELECT_FIXED_LEN=min=0,max=2:nodes=637,shorter_legal=637,shorter_generated=0,shorter_missed=637|min=0,max=3:nodes=1854,shorter_legal=1854,shorter_generated=0,shorter_missed=1854|min=0,max=4:nodes=39,shorter_legal=39,shorter_generated=0,shorter_missed=39|min=0,max=5:nodes=298,shorter_legal=298,shorter_generated=0,shorter_missed=298|min=1,max=2:nodes=1498,shorter_legal=1498,shorter_generated=0,shorter_missed=1498|min=2,max=2:nodes=3796,shorter_legal=0,shorter_generated=0,shorter_missed=0
+MULTISELECT_SHORTER_MISSED=4326
+MULTISELECT_CTX_HIST=DISCARD:2290,SETUP_BENCH_POKEMON:401,TO_HAND:5431
+GAME_LENGTH_HIST=1-15:36|16-25:4|26-40:0|41-60:0|61+:0
+WIN_BY_CAUSE=NO_ACTIVE:W=3,L=3,D=0|PRIZE:W=37,L=37,D=0
+TURN_NODE_DIST=1-2:12.60%(26274/208534)|3-5:21.26%(44330/208534)|6+:66.14%(137930/208534)
+SEARCH_MAX_DEPTH=19
+SEARCH_MEAN_DEPTH=5.3203
+MEAN_DEPTH=5.3203
+SIMS_CONTRIBUTED=216100
+SIMS_CONFIGURED=216100
+SIMS_CONTRIBUTED_PER_DECISION=100.0000
+SIMS_CONFIGURED_PER_DECISION=100.0000
+PRIZE_REWARD_REACHED=2.96%(64/2161)
+STALL_DRAW_PASS_TURNS=297
+STALL_SHUFFLE_WITH_RESOURCES=124
+MISSED_ATTACH=222
+SHAPING_BREAKDOWN=BOARD_DECK_DIFF:-0.062089|DAMAGE_PRESSURE:0.001199|DISRUPTION:0.000027|ENERGY_DENIAL:0.001887|ITEM_LOCK_PENALTY:0.000000|KO_BONUS:0.000290|PARALYSIS:0.000000|PRIZE_DIFF:-0.040494|SLEEP:0.000000
+ROOT_OPTION_STATS=ABILITY:available=169,chosen=101,not_chosen=68,zero_visit_rate=0.59%(1/169),mean_opt_visit=17.25,mean_opt_q=0.0975,mean_chosen_visit=57.18,mean_chosen_q=0.3925|ATTACK:available=78,chosen=34,not_chosen=44,zero_visit_rate=25.64%(20/78),mean_opt_visit=7.02,mean_opt_q=0.0935,mean_chosen_visit=61.95,mean_chosen_q=0.4062|ENERGY_ATTACH:available=481,chosen=170,not_chosen=311,zero_visit_rate=34.72%(167/481),mean_opt_visit=8.22,mean_opt_q=0.1315,mean_chosen_visit=68.56,mean_chosen_q=0.4443
+ATTACH_PRIOR_DIST=special:n=359,attach_prior[mean=0.1385,min=0.0001,max=0.9996,hist=(<0.001:40,0.001-0.005:73,0.005-0.01:15,0.01-0.03:30,0.03-0.1:59,0.1-0.3:86,0.3-1.0:56,1.0:0)],chosen_prior[mean=0.4222,min=0.0000,max=0.9996,hist=(<0.001:5,0.001-0.005:2,0.005-0.01:2,0.01-0.03:0,0.03-0.1:36,0.1-0.3:110,0.3-1.0:204,1.0:0)]|plain:n=2011,attach_prior[mean=0.0645,min=0.0000,max=0.9927,hist=(<0.001:911,0.001-0.005:212,0.005-0.01:120,0.01-0.03:170,0.03-0.1:212,0.1-0.3:261,0.3-1.0:125,1.0:0)],chosen_prior[mean=0.4859,min=0.0000,max=0.9990,hist=(<0.001:52,0.001-0.005:2,0.005-0.01:7,0.01-0.03:2,0.03-0.1:115,0.1-0.3:527,0.3-1.0:1306,1.0:0)]
+SIM_KO_REACHED=0.28%(603/216100)
+SIM_KO_DEPTH_MEAN=5.5788
+SIM_KO_DEPTH_MIN=3
+SIM_KO_DEPTH_MAX=12
+TRUE_RESULT_TALLY=P0_WINS=20,P1_WINS=20,DRAWS=0
+POLICY_TARGET_ZERO_FRACTION_MEAN=0.3172
+POLICY_TARGET_ENTROPY_MEAN=0.5894
+POLICY_TARGET_COUNT=2161
+ROOT_CHILD_COUNT=mean=5.61,median=4.0,n=2161,by_turn=(1-2:mean=5.65,median=4.0,n=405|3-5:mean=6.55,median=4.0,n=418|6+:mean=5.29,median=4.0,n=1338)
+ROOT_VISIT_HIST=0:49.18%(5957/12113)|1:5.45%(660/12113)|2-4:4.76%(576/12113)|5+:40.62%(4920/12113)
+ENERGY_DEV_RATE=42.83%(242/565)
+GRASS_IN_DISCARD_RATE=48.87%(1056/2161)
+=== DIAG_DUMP_END ===
+EVAL_GAME_DONE=40/40 winner=iono_rule(kaggle) p0=iono_rule(kaggle) p1=candidate result=0 reason=1 cause=prize turn=15 cand_prizes=0 opp_prizes=6 sec=181.83
+OPP_WALL_SEC=11166.98
+OPP_MEAN_SEC_PER_GAME=279.17
+OPP_iono_rule_CANDIDATE: wins=0 losses=40 draws=0 win_rate=0.0%(0/40) wilson95=[0.0%,8.8%] prize_decided=37/40 deckout_share=0.0%(0/40)
+OPP_iono_rule_OPPONENT: wins=40 losses=0 draws=0 win_rate=100.0%(40/40) wilson95=[91.2%,100.0%] prize_decided=37/40 deckout_share=0.0%(0/40)

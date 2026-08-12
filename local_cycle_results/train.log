@@ -1,0 +1,199 @@
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+=== Warm-up Phase (2 epochs) ===
+--- Warm-up Epoch 1/2 ---
+[m2] self-play (8 workers) 0%   [CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+[m2] self-play (8 workers) 12%   [m2] self-play (8 workers) 25%   [m2] self-play (8 workers) 37%   [m2] self-play (8 workers) 50%   [m2] self-play (8 workers) 62%   [m2] self-play (8 workers) 75%   [m2] self-play (8 workers) 87%   [m2] self-play (8 workers) 100%   
+[m2] Training (1497 samples, 11 batches)...
+[m2] Done (11 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-11_14-14.pth
+--- Warm-up Epoch 2/2 ---
+[m2] self-play (8 workers) 0%   [m2] self-play (8 workers) 12%   [m2] self-play (8 workers) 25%   [m2] self-play (8 workers) 37%   [m2] self-play (8 workers) 50%   [m2] self-play (8 workers) 62%   [m2] self-play (8 workers) 75%   [m2] self-play (8 workers) 87%   [m2] self-play (8 workers) 100%   
+[m2] Training (2946 samples, 23 batches)...
+[m2] Done (23 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-11_14-44.pth
+=== Main Phase (8 epochs) ===
+--- Main Epoch 1/8 ---
+[m2] self-play (8 workers) 0%   [m2] self-play (8 workers) 12%   [m2] self-play (8 workers) 25%   [m2] self-play (8 workers) 37%   [m2] self-play (8 workers) 50%   [m2] self-play (8 workers) 62%   [m2] self-play (8 workers) 75%   [m2] self-play (8 workers) 87%   [m2] self-play (8 workers) 100%   
+[m2] Training (4405 samples, 34 batches)...
+[m2] Done (34 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-11_15-21.pth
+Games: 24 | Epoch: 36.5m | Elapsed: 93.3m | ETA: 652.8m
+--- Main Epoch 2/8 ---
+[m2] self-play (8 workers) 0%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=25
+AGENT=m2
+TRUNC_TOTAL_NODES=442746
+TRUNC_FIRED=786
+TRUNC_FIRE_RATE=0.18%
+TRUNC_OPTCOUNT_HIST=1-8:351126|9-16:43869|17-32:25167|33-64:21798|65-128:773|129-256:13|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/35468)|3-5:0.00%(0/55141)|6+:0.22%(786/352137)
+TRUNC_DROPPED_BY_TYPE=ABILITY:49,ATTACH:5828,PLAY:7,RETREAT:445
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+MULTISELECT_FIXED_LEN=min=0,max=2:nodes=2588,shorter_legal=2588,shorter_generated=0,shorter_missed=2588|min=0,max=3:nodes=2980,shorter_legal=2980,shorter_generated=0,shorter_missed=2980|min=0,max=4:nodes=83,shorter_legal=83,shorter_generated=0,shorter_missed=83|min=0,max=5:nodes=517,shorter_legal=517,shorter_generated=0,shorter_missed=517|min=2,max=2:nodes=7222,shorter_legal=0,shorter_generated=0,shorter_missed=0
+MULTISELECT_SHORTER_MISSED=6168
+MULTISELECT_CTX_HIST=ATTACH_TO:1,DISCARD:6649,DISCARD_ENERGY_CARD:197,SETUP_BENCH_POKEMON:772,TO_HAND:5771
+GAME_LENGTH_HIST=1-15:1|16-25:8|26-40:14|41-60:1|61+:1
+WIN_BY_CAUSE=DECK_OUT:W=24,L=24,D=0|NO_ACTIVE:W=1,L=1,D=0
+TURN_NODE_DIST=1-2:8.01%(35468/442746)|3-5:12.45%(55141/442746)|6+:79.53%(352137/442746)
+SEARCH_MAX_DEPTH=26
+SEARCH_MEAN_DEPTH=4.5896
+MEAN_DEPTH=4.5896
+SIMS_CONTRIBUTED=449500
+SIMS_CONFIGURED=449500
+SIMS_CONTRIBUTED_PER_DECISION=100.0000
+SIMS_CONFIGURED_PER_DECISION=100.0000
+PRIZE_REWARD_REACHED=2.11%(95/4495)
+STALL_DRAW_PASS_TURNS=234
+STALL_SHUFFLE_WITH_RESOURCES=53
+MISSED_ATTACH=106
+SHAPING_BREAKDOWN=BOARD_DECK_DIFF:0.022012|DAMAGE_PRESSURE:0.002460|DISRUPTION:0.000020|ENERGY_DENIAL:0.001042|ITEM_LOCK_PENALTY:0.000000|KO_BONUS:0.000347|PARALYSIS:0.000000|PRIZE_DIFF:-0.000267|SLEEP:0.000000
+ROOT_OPTION_STATS=ABILITY:available=498,chosen=263,not_chosen=235,zero_visit_rate=0.20%(1/498),mean_opt_visit=31.26,mean_opt_q=0.0780,mean_chosen_visit=31.69,mean_chosen_q=0.1225|ATTACK:available=212,chosen=44,not_chosen=168,zero_visit_rate=17.45%(37/212),mean_opt_visit=9.24,mean_opt_q=-0.2668,mean_chosen_visit=48.35,mean_chosen_q=0.0891|ENERGY_ATTACH:available=1114,chosen=512,not_chosen=602,zero_visit_rate=4.04%(45/1114),mean_opt_visit=12.15,mean_opt_q=-0.0869,mean_chosen_visit=48.22,mean_chosen_q=0.1400
+ATTACH_PRIOR_DIST=special:n=1735,attach_prior[mean=0.0983,min=0.0002,max=0.8846,hist=(<0.001:63,0.001-0.005:232,0.005-0.01:119,0.01-0.03:298,0.03-0.1:492,0.1-0.3:374,0.3-1.0:157,1.0:0)],chosen_prior[mean=0.2201,min=0.0001,max=0.8846,hist=(<0.001:103,0.001-0.005:56,0.005-0.01:36,0.01-0.03:140,0.03-0.1:361,0.1-0.3:512,0.3-1.0:527,1.0:0)]|plain:n=6138,attach_prior[mean=0.0661,min=0.0000,max=0.8777,hist=(<0.001:462,0.001-0.005:689,0.005-0.01:572,0.01-0.03:1392,0.03-0.1:1740,0.1-0.3:1069,0.3-1.0:214,1.0:0)],chosen_prior[mean=0.2331,min=0.0001,max=0.9946,hist=(<0.001:306,0.001-0.005:178,0.005-0.01:138,0.01-0.03:482,0.03-0.1:1233,0.1-0.3:1859,0.3-1.0:1942,1.0:0)]
+SIM_KO_REACHED=0.41%(1865/449500)
+SIM_KO_DEPTH_MEAN=5.5201
+SIM_KO_DEPTH_MIN=1
+SIM_KO_DEPTH_MAX=15
+TRUE_RESULT_TALLY=P0_WINS=11,P1_WINS=14,DRAWS=0
+POLICY_TARGET_ZERO_FRACTION_MEAN=0.1323
+POLICY_TARGET_ENTROPY_MEAN=0.8631
+POLICY_TARGET_COUNT=4495
+ROOT_CHILD_COUNT=mean=6.08,median=4.0,n=4495,by_turn=(1-2:mean=6.27,median=4.0,n=486|3-5:mean=6.13,median=5.0,n=572|6+:mean=6.04,median=4.0,n=3437)
+ROOT_VISIT_HIST=0:23.75%(6485/27311)|1:15.68%(4281/27311)|2-4:10.72%(2927/27311)|5+:49.86%(13618/27311)
+ENERGY_DEV_RATE=49.56%(625/1261)
+GRASS_IN_DISCARD_RATE=20.42%(918/4495)
+=== DIAG_DUMP_END ===
+[m2] self-play (8 workers) 12%   [m2] self-play (8 workers) 25%   [m2] self-play (8 workers) 37%   [m2] self-play (8 workers) 50%   [m2] self-play (8 workers) 62%   [m2] self-play (8 workers) 75%   [m2] self-play (8 workers) 87%   [m2] self-play (8 workers) 100%   
+[m2] Training (5895 samples, 46 batches)...
+[m2] Done (46 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-11_16-05.pth
+Games: 32 | Epoch: 44.1m | Elapsed: 137.4m | ETA: 412.1m
+--- Main Epoch 3/8 ---
+[m2] self-play (8 workers) 0%   [m2] self-play (8 workers) 12%   [m2] self-play (8 workers) 25%   [m2] self-play (8 workers) 37%   [m2] self-play (8 workers) 50%   [m2] self-play (8 workers) 62%   [m2] self-play (8 workers) 75%   [m2] self-play (8 workers) 87%   [m2] self-play (8 workers) 100%   
+[m2] Training (7433 samples, 58 batches)...
+[m2] Done (58 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-11_16-53.pth
+Games: 40 | Epoch: 47.8m | Elapsed: 185.2m | ETA: 308.7m
+--- Main Epoch 4/8 ---
+[m2] self-play (8 workers) 0%   [m2] self-play (8 workers) 12%   [m2] self-play (8 workers) 25%   [m2] self-play (8 workers) 37%   [m2] self-play (8 workers) 50%   [m2] self-play (8 workers) 62%   [m2] self-play (8 workers) 75%   [m2] self-play (8 workers) 87%   [m2] self-play (8 workers) 100%   
+[m2] Training (8834 samples, 69 batches)...
+[m2] Done (69 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-11_17-45.pth
+=== Evaluation ===
+Games: 48 | Epoch: 52.6m | Elapsed: 237.8m | ETA: 237.8m
+--- Main Epoch 5/8 ---
+[m2] self-play (8 workers) 0%   [m2] self-play (8 workers) 12%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=25
+AGENT=m2
+TRUNC_TOTAL_NODES=462074
+TRUNC_FIRED=1442
+TRUNC_FIRE_RATE=0.31%
+TRUNC_OPTCOUNT_HIST=1-8:374612|9-16:43100|17-32:22849|33-64:20071|65-128:1442|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/35180)|3-5:0.00%(0/58630)|6+:0.39%(1442/368264)
+TRUNC_DROPPED_BY_TYPE=ABILITY:288,ATTACH:12650,PLAY:121,RETREAT:856
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+MULTISELECT_FIXED_LEN=min=0,max=2:nodes=2626,shorter_legal=2626,shorter_generated=0,shorter_missed=2626|min=0,max=3:nodes=3624,shorter_legal=3624,shorter_generated=0,shorter_missed=3624|min=0,max=4:nodes=19,shorter_legal=19,shorter_generated=0,shorter_missed=19|min=0,max=5:nodes=357,shorter_legal=357,shorter_generated=0,shorter_missed=357|min=2,max=2:nodes=7850,shorter_legal=0,shorter_generated=0,shorter_missed=0
+MULTISELECT_SHORTER_MISSED=6626
+MULTISELECT_CTX_HIST=ATTACH_TO:1,DISCARD:7530,DISCARD_ENERGY_CARD:28,SETUP_BENCH_POKEMON:448,TO_HAND:6469
+GAME_LENGTH_HIST=1-15:1|16-25:6|26-40:14|41-60:4|61+:0
+WIN_BY_CAUSE=DECK_OUT:W=24,L=24,D=0|NO_ACTIVE:W=1,L=1,D=0
+TURN_NODE_DIST=1-2:7.61%(35180/462074)|3-5:12.69%(58630/462074)|6+:79.70%(368264/462074)
+SEARCH_MAX_DEPTH=28
+SEARCH_MEAN_DEPTH=5.2548
+MEAN_DEPTH=5.2548
+SIMS_CONTRIBUTED=470600
+SIMS_CONFIGURED=470600
+SIMS_CONTRIBUTED_PER_DECISION=100.0000
+SIMS_CONFIGURED_PER_DECISION=100.0000
+PRIZE_REWARD_REACHED=3.02%(142/4706)
+STALL_DRAW_PASS_TURNS=238
+STALL_SHUFFLE_WITH_RESOURCES=66
+MISSED_ATTACH=101
+SHAPING_BREAKDOWN=BOARD_DECK_DIFF:0.018377|DAMAGE_PRESSURE:0.001112|DISRUPTION:0.000013|ENERGY_DENIAL:0.001017|ITEM_LOCK_PENALTY:0.000000|KO_BONUS:0.000373|PARALYSIS:0.000000|PRIZE_DIFF:0.000343|SLEEP:0.000000
+ROOT_OPTION_STATS=ABILITY:available=569,chosen=308,not_chosen=261,zero_visit_rate=1.05%(6/569),mean_opt_visit=29.76,mean_opt_q=0.0079,mean_chosen_visit=41.91,mean_chosen_q=0.2037|ATTACK:available=251,chosen=63,not_chosen=188,zero_visit_rate=18.33%(46/251),mean_opt_visit=9.26,mean_opt_q=-0.3567,mean_chosen_visit=53.22,mean_chosen_q=0.1482|ENERGY_ATTACH:available=1159,chosen=503,not_chosen=656,zero_visit_rate=12.86%(149/1159),mean_opt_visit=11.61,mean_opt_q=-0.1200,mean_chosen_visit=56.24,mean_chosen_q=0.2032
+ATTACH_PRIOR_DIST=special:n=1716,attach_prior[mean=0.0949,min=0.0001,max=0.9145,hist=(<0.001:196,0.001-0.005:287,0.005-0.01:169,0.01-0.03:272,0.03-0.1:342,0.1-0.3:267,0.3-1.0:183,1.0:0)],chosen_prior[mean=0.3150,min=0.0001,max=0.9850,hist=(<0.001:47,0.001-0.005:41,0.005-0.01:25,0.01-0.03:93,0.03-0.1:237,0.1-0.3:517,0.3-1.0:756,1.0:0)]|plain:n=5887,attach_prior[mean=0.0570,min=0.0000,max=0.9199,hist=(<0.001:794,0.001-0.005:933,0.005-0.01:533,0.01-0.03:1211,0.03-0.1:1486,0.1-0.3:715,0.3-1.0:215,1.0:0)],chosen_prior[mean=0.3251,min=0.0001,max=0.9850,hist=(<0.001:153,0.001-0.005:104,0.005-0.01:76,0.01-0.03:296,0.03-0.1:854,0.1-0.3:1738,0.3-1.0:2666,1.0:0)]
+SIM_KO_REACHED=0.63%(2981/470600)
+SIM_KO_DEPTH_MEAN=6.1087
+SIM_KO_DEPTH_MIN=1
+SIM_KO_DEPTH_MAX=14
+TRUE_RESULT_TALLY=P0_WINS=12,P1_WINS=13,DRAWS=0
+POLICY_TARGET_ZERO_FRACTION_MEAN=0.1932
+POLICY_TARGET_ENTROPY_MEAN=0.7120
+POLICY_TARGET_COUNT=4706
+ROOT_CHILD_COUNT=mean=6.03,median=4.0,n=4706,by_turn=(1-2:mean=5.75,median=4.0,n=496|3-5:mean=5.93,median=5.0,n=592|6+:mean=6.08,median=5.0,n=3618)
+ROOT_VISIT_HIST=0:33.21%(9423/28373)|1:16.42%(4658/28373)|2-4:8.39%(2381/28373)|5+:41.98%(11911/28373)
+ENERGY_DEV_RATE=47.69%(641/1344)
+GRASS_IN_DISCARD_RATE=21.67%(1020/4706)
+=== DIAG_DUMP_END ===
+[m2] self-play (8 workers) 25%   [m2] self-play (8 workers) 37%   [m2] self-play (8 workers) 50%   [m2] self-play (8 workers) 62%   [m2] self-play (8 workers) 75%   [m2] self-play (8 workers) 87%   [m2] self-play (8 workers) 100%   
+[m2] Training (10543 samples, 82 batches)...
+[m2] Done (82 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-11_18-51.pth
+Games: 56 | Epoch: 65.6m | Elapsed: 303.4m | ETA: 182.0m
+--- Main Epoch 6/8 ---
+[m2] self-play (8 workers) 0%   [m2] self-play (8 workers) 12%   [m2] self-play (8 workers) 25%   [m2] self-play (8 workers) 37%   [m2] self-play (8 workers) 50%   [m2] self-play (8 workers) 62%   [m2] self-play (8 workers) 75%   [m2] self-play (8 workers) 87%   [m2] self-play (8 workers) 100%   
+[m2] Training (11983 samples, 93 batches)...
+[m2] Done (93 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-11_19-57.pth
+Games: 64 | Epoch: 65.5m | Elapsed: 368.9m | ETA: 123.0m
+--- Main Epoch 7/8 ---
+[m2] self-play (8 workers) 0%   [m2] self-play (8 workers) 12%   [m2] self-play (8 workers) 25%   [m2] self-play (8 workers) 37%   [m2] self-play (8 workers) 50%   [m2] self-play (8 workers) 62%   [m2] self-play (8 workers) 75%   [m2] self-play (8 workers) 87%   [m2] self-play (8 workers) 100%   
+[m2] Training (13373 samples, 104 batches)...
+[m2] Done (104 batches).
+[m2] Saved: checkpoints/m2/model_2026-08-11_21-11.pth
+Games: 72 | Epoch: 74.5m | Elapsed: 443.5m | ETA: 63.4m
+--- Main Epoch 8/8 ---
+[m2] self-play (8 workers) 0%   [m2] self-play (8 workers) 12%   [m2] self-play (8 workers) 25%   === DIAG_DUMP_BEGIN ===
+DIAG_GAMES=25
+AGENT=m2
+TRUNC_TOTAL_NODES=460312
+TRUNC_FIRED=3287
+TRUNC_FIRE_RATE=0.71%
+TRUNC_OPTCOUNT_HIST=1-8:367304|9-16:48948|17-32:24884|33-64:15889|65-128:3165|129-256:122|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/31060)|3-5:0.00%(0/45446)|6+:0.86%(3287/383806)
+TRUNC_DROPPED_BY_TYPE=ABILITY:991,ATTACH:53685,PLAY:1293,RETREAT:2520
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+MULTISELECT_FIXED_LEN=min=0,max=2:nodes=2348,shorter_legal=2348,shorter_generated=0,shorter_missed=2348|min=0,max=3:nodes=4139,shorter_legal=4139,shorter_generated=0,shorter_missed=4139|min=0,max=4:nodes=36,shorter_legal=36,shorter_generated=0,shorter_missed=36|min=0,max=5:nodes=338,shorter_legal=338,shorter_generated=0,shorter_missed=338|min=2,max=2:nodes=9500,shorter_legal=0,shorter_generated=0,shorter_missed=0
+MULTISELECT_SHORTER_MISSED=6861
+MULTISELECT_CTX_HIST=ATTACH_TO:3,DISCARD:8889,DISCARD_ENERGY_CARD:118,SETUP_BENCH_POKEMON:485,TO_HAND:6866
+GAME_LENGTH_HIST=1-15:1|16-25:2|26-40:9|41-60:12|61+:1
+WIN_BY_CAUSE=DECK_OUT:W=20,L=20,D=0|NO_ACTIVE:W=2,L=2,D=0|PRIZE:W=3,L=3,D=0
+TURN_NODE_DIST=1-2:6.75%(31060/460312)|3-5:9.87%(45446/460312)|6+:83.38%(383806/460312)
+SEARCH_MAX_DEPTH=26
+SEARCH_MEAN_DEPTH=4.9032
+MEAN_DEPTH=4.9032
+SIMS_CONTRIBUTED=463600
+SIMS_CONFIGURED=463600
+SIMS_CONTRIBUTED_PER_DECISION=100.0000
+SIMS_CONFIGURED_PER_DECISION=100.0000
+PRIZE_REWARD_REACHED=5.95%(276/4636)
+STALL_DRAW_PASS_TURNS=521
+STALL_SHUFFLE_WITH_RESOURCES=54
+MISSED_ATTACH=379
+SHAPING_BREAKDOWN=BOARD_DECK_DIFF:0.016203|DAMAGE_PRESSURE:0.002383|DISRUPTION:0.000014|ENERGY_DENIAL:0.001052|ITEM_LOCK_PENALTY:0.000000|KO_BONUS:0.000641|PARALYSIS:0.000000|PRIZE_DIFF:-0.002101|SLEEP:0.000000
+ROOT_OPTION_STATS=ABILITY:available=585,chosen=256,not_chosen=329,zero_visit_rate=1.71%(10/585),mean_opt_visit=19.64,mean_opt_q=-0.3467,mean_chosen_visit=52.01,mean_chosen_q=0.0407|ATTACK:available=328,chosen=112,not_chosen=216,zero_visit_rate=13.41%(44/328),mean_opt_visit=12.17,mean_opt_q=-0.2109,mean_chosen_visit=56.54,mean_chosen_q=0.3244|ENERGY_ATTACH:available=1371,chosen=443,not_chosen=928,zero_visit_rate=10.36%(142/1371),mean_opt_visit=8.43,mean_opt_q=-0.4700,mean_chosen_visit=59.57,mean_chosen_q=0.0824
+ATTACH_PRIOR_DIST=special:n=2318,attach_prior[mean=0.0775,min=0.0001,max=0.9486,hist=(<0.001:377,0.001-0.005:418,0.005-0.01:206,0.01-0.03:444,0.03-0.1:431,0.1-0.3:214,0.3-1.0:228,1.0:0)],chosen_prior[mean=0.2359,min=0.0000,max=0.9486,hist=(<0.001:177,0.001-0.005:224,0.005-0.01:63,0.01-0.03:249,0.03-0.1:327,0.1-0.3:482,0.3-1.0:796,1.0:0)]|plain:n=8771,attach_prior[mean=0.0422,min=0.0000,max=0.9165,hist=(<0.001:1695,0.001-0.005:1661,0.005-0.01:934,0.01-0.03:1815,0.03-0.1:1780,0.1-0.3:636,0.3-1.0:250,1.0:0)],chosen_prior[mean=0.2404,min=0.0000,max=0.9726,hist=(<0.001:702,0.001-0.005:699,0.005-0.01:232,0.01-0.03:895,0.03-0.1:1304,0.1-0.3:1907,0.3-1.0:3032,1.0:0)]
+SIM_KO_REACHED=1.39%(6452/463600)
+SIM_KO_DEPTH_MEAN=5.6297
+SIM_KO_DEPTH_MIN=1
+SIM_KO_DEPTH_MAX=19
+TRUE_RESULT_TALLY=P0_WINS=13,P1_WINS=12,DRAWS=0
+POLICY_TARGET_ZERO_FRACTION_MEAN=0.1958
+POLICY_TARGET_ENTROPY_MEAN=0.7724
+POLICY_TARGET_COUNT=4636
+ROOT_CHILD_COUNT=mean=7.73,median=5.0,n=4636,by_turn=(1-2:mean=5.87,median=4.0,n=436|3-5:mean=6.41,median=5.0,n=441|6+:mean=8.11,median=5.0,n=3759)
+ROOT_VISIT_HIST=0:30.95%(11099/35858)|1:27.31%(9792/35858)|2-4:9.19%(3294/35858)|5+:32.55%(11673/35858)
+ENERGY_DEV_RATE=36.83%(572/1553)
+GRASS_IN_DISCARD_RATE=24.37%(1130/4636)
+=== DIAG_DUMP_END ===
+[m2] self-play (8 workers) 37%   [m2] self-play (8 workers) 50%   [m2] self-play (8 workers) 62%   [m2] self-play (8 workers) 75%   [m2] self-play (8 workers) 87%   [m2] self-play (8 workers) 100%   
+[m2] Training (14923 samples, 116 batches)...

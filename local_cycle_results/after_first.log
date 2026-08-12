@@ -1,0 +1,96 @@
+[CONFIG] self-play exploration: SELF_PLAY_DIRICHLET_ALPHA=0.3 SELF_PLAY_DIRICHLET_EPSILON=0.25 SELF_PLAY_TEMP_HIGH_TURN=30 self_play=True is hardcoded in _play_one_self_play_game and _play_one_cross_play_game (the only two call sites that invoke mcts_agent for self-play generation)
+EVAL_CANDIDATE=checkpoints/m2/model_2026-08-11_22-44.pth
+EVAL_CANDIDATE_DECK=M2Deck.xlsx
+EVAL_SIMULATIONS_PER_MOVE=100
+EVAL_GAMES_PER_OPPONENT=40
+EVAL_BASE_SEED=20260811
+
+=== PANEL: candidate vs first ===
+EVAL_GAME_DONE=1/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=1 cause=prize turn=14 cand_prizes=0 opp_prizes=6 sec=314.48
+EVAL_GAME_DONE=2/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=1 cause=prize turn=11 cand_prizes=0 opp_prizes=6 sec=397.12
+EVAL_GAME_DONE=3/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=3 cause=other turn=8 cand_prizes=0 opp_prizes=5 sec=166.60
+EVAL_GAME_DONE=4/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=3 cause=other turn=3 cand_prizes=0 opp_prizes=1 sec=37.75
+EVAL_GAME_DONE=5/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=1 cause=prize turn=10 cand_prizes=0 opp_prizes=6 sec=261.57
+EVAL_GAME_DONE=6/40 winner=candidate p0=first(first-legal) p1=candidate result=1 reason=2 cause=deckout turn=27 cand_prizes=1 opp_prizes=3 sec=599.80
+EVAL_GAME_DONE=7/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=1 cause=prize turn=10 cand_prizes=0 opp_prizes=6 sec=132.33
+EVAL_GAME_DONE=8/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=3 cause=other turn=3 cand_prizes=0 opp_prizes=1 sec=67.54
+EVAL_GAME_DONE=9/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=1 cause=prize turn=24 cand_prizes=1 opp_prizes=6 sec=640.79
+EVAL_GAME_DONE=10/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=1 cause=prize turn=11 cand_prizes=0 opp_prizes=6 sec=213.92
+EVAL_GAME_DONE=11/40 winner=candidate p0=candidate p1=first(first-legal) result=0 reason=3 cause=other turn=3 cand_prizes=1 opp_prizes=0 sec=55.38
+EVAL_GAME_DONE=12/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=3 cause=other turn=3 cand_prizes=0 opp_prizes=1 sec=20.25
+EVAL_GAME_DONE=13/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=3 cause=other turn=4 cand_prizes=0 opp_prizes=1 sec=35.47
+EVAL_GAME_DONE=14/40 winner=candidate p0=first(first-legal) p1=candidate result=1 reason=3 cause=other turn=10 cand_prizes=2 opp_prizes=0 sec=213.69
+EVAL_GAME_DONE=15/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=1 cause=prize turn=10 cand_prizes=0 opp_prizes=6 sec=134.82
+EVAL_GAME_DONE=16/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=3 cause=other turn=3 cand_prizes=0 opp_prizes=1 sec=46.24
+EVAL_GAME_DONE=17/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=2 cause=deckout turn=27 cand_prizes=1 opp_prizes=0 sec=479.13
+EVAL_GAME_DONE=18/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=1 cause=prize turn=9 cand_prizes=0 opp_prizes=6 sec=136.86
+EVAL_GAME_DONE=19/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=1 cause=prize turn=12 cand_prizes=0 opp_prizes=6 sec=165.01
+EVAL_GAME_DONE=20/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=1 cause=prize turn=9 cand_prizes=0 opp_prizes=6 sec=331.96
+EVAL_GAME_DONE=21/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=1 cause=prize turn=22 cand_prizes=0 opp_prizes=6 sec=389.62
+EVAL_GAME_DONE=22/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=1 cause=prize turn=9 cand_prizes=0 opp_prizes=6 sec=317.54
+EVAL_GAME_DONE=23/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=2 cause=deckout turn=35 cand_prizes=0 opp_prizes=2 sec=477.09
+EVAL_GAME_DONE=24/40 winner=candidate p0=first(first-legal) p1=candidate result=1 reason=2 cause=deckout turn=31 cand_prizes=1 opp_prizes=2 sec=358.40
+EVAL_GAME_DONE=25/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=3 cause=other turn=10 cand_prizes=0 opp_prizes=4 sec=146.52
+EVAL_GAME_DONE=26/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=3 cause=other turn=3 cand_prizes=0 opp_prizes=1 sec=44.84
+EVAL_GAME_DONE=27/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=1 cause=prize turn=18 cand_prizes=0 opp_prizes=6 sec=325.29
+EVAL_GAME_DONE=28/40 winner=candidate p0=first(first-legal) p1=candidate result=1 reason=2 cause=deckout turn=35 cand_prizes=0 opp_prizes=4 sec=434.69
+EVAL_GAME_DONE=29/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=2 cause=deckout turn=25 cand_prizes=0 opp_prizes=0 sec=405.56
+EVAL_GAME_DONE=30/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=3 cause=other turn=3 cand_prizes=0 opp_prizes=2 sec=15.96
+EVAL_GAME_DONE=31/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=1 cause=prize turn=24 cand_prizes=0 opp_prizes=6 sec=489.30
+EVAL_GAME_DONE=32/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=3 cause=other turn=5 cand_prizes=0 opp_prizes=3 sec=62.31
+EVAL_GAME_DONE=33/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=1 cause=prize turn=12 cand_prizes=0 opp_prizes=6 sec=169.78
+EVAL_GAME_DONE=34/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=1 cause=prize turn=11 cand_prizes=0 opp_prizes=6 sec=163.77
+EVAL_GAME_DONE=35/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=1 cause=prize turn=12 cand_prizes=0 opp_prizes=6 sec=250.44
+EVAL_GAME_DONE=36/40 winner=first(first-legal) p0=first(first-legal) p1=candidate result=0 reason=1 cause=prize turn=13 cand_prizes=0 opp_prizes=6 sec=266.17
+EVAL_GAME_DONE=37/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=3 cause=other turn=10 cand_prizes=0 opp_prizes=4 sec=119.13
+EVAL_GAME_DONE=38/40 winner=candidate p0=first(first-legal) p1=candidate result=1 reason=2 cause=deckout turn=25 cand_prizes=2 opp_prizes=5 sec=396.96
+EVAL_GAME_DONE=39/40 winner=first(first-legal) p0=candidate p1=first(first-legal) result=1 reason=1 cause=prize turn=10 cand_prizes=0 opp_prizes=6 sec=259.37
+=== DIAG_DUMP_BEGIN ===
+DIAG_GAMES=40
+AGENT=UNKNOWN
+TRUNC_TOTAL_NODES=185085
+TRUNC_FIRED=0
+TRUNC_FIRE_RATE=0.00%
+TRUNC_OPTCOUNT_HIST=1-8:144283|9-16:30445|17-32:9243|33-64:1114|65-128:0|129-256:0|257+:0
+TRUNC_FIRE_RATE_BY_TURN=1-2:0.00%(0/28965)|3-5:0.00%(0/33916)|6+:0.00%(0/122204)
+TRUNC_DROPPED_BY_TYPE=NONE
+TRUNC_DROPPED_CRITICAL=0
+TRUNC_DROPPED_CRITICAL_STATUS=PASS
+MULTISELECT_FIXED_LEN=min=0,max=2:nodes=857,shorter_legal=857,shorter_generated=0,shorter_missed=857|min=0,max=3:nodes=2327,shorter_legal=2327,shorter_generated=0,shorter_missed=2327|min=0,max=4:nodes=25,shorter_legal=25,shorter_generated=0,shorter_missed=25|min=0,max=5:nodes=365,shorter_legal=365,shorter_generated=0,shorter_missed=365|min=2,max=2:nodes=3522,shorter_legal=0,shorter_generated=0,shorter_missed=0|min=3,max=3:nodes=61,shorter_legal=0,shorter_generated=0,shorter_missed=0
+MULTISELECT_SHORTER_MISSED=3574
+MULTISELECT_CTX_HIST=ATTACH_TO:1,DISCARD:3112,DISCARD_ENERGY_CARD:28,SETUP_BENCH_POKEMON:446,TO_HAND:3570
+GAME_LENGTH_HIST=1-15:28|16-25:6|26-40:6|41-60:0|61+:0
+WIN_BY_CAUSE=DECK_OUT:W=7,L=7,D=0|NO_ACTIVE:W=14,L=14,D=0|PRIZE:W=19,L=19,D=0
+TURN_NODE_DIST=1-2:15.65%(28965/185085)|3-5:18.32%(33916/185085)|6+:66.03%(122204/185085)
+SEARCH_MAX_DEPTH=30
+SEARCH_MEAN_DEPTH=5.1222
+MEAN_DEPTH=5.1222
+SIMS_CONTRIBUTED=190600
+SIMS_CONFIGURED=190600
+SIMS_CONTRIBUTED_PER_DECISION=100.0000
+SIMS_CONFIGURED_PER_DECISION=100.0000
+PRIZE_REWARD_REACHED=2.62%(50/1906)
+STALL_DRAW_PASS_TURNS=258
+STALL_SHUFFLE_WITH_RESOURCES=47
+MISSED_ATTACH=70
+SHAPING_BREAKDOWN=BOARD_DECK_DIFF:0.042401|DAMAGE_PRESSURE:0.001530|DISRUPTION:0.000038|ENERGY_DENIAL:0.002004|ITEM_LOCK_PENALTY:0.000000|KO_BONUS:0.000522|PARALYSIS:0.000000|PRIZE_DIFF:-0.025400|SLEEP:0.000000
+ROOT_OPTION_STATS=ABILITY:available=128,chosen=86,not_chosen=42,zero_visit_rate=0.78%(1/128),mean_opt_visit=16.52,mean_opt_q=-0.5238,mean_chosen_visit=53.57,mean_chosen_q=-0.3121|ATTACK:available=83,chosen=27,not_chosen=56,zero_visit_rate=18.07%(15/83),mean_opt_visit=10.36,mean_opt_q=-0.4338,mean_chosen_visit=61.14,mean_chosen_q=0.0314|ENERGY_ATTACH:available=501,chosen=181,not_chosen=320,zero_visit_rate=19.36%(97/501),mean_opt_visit=5.62,mean_opt_q=-0.5708,mean_chosen_visit=69.53,mean_chosen_q=-0.0986
+ATTACH_PRIOR_DIST=special:n=390,attach_prior[mean=0.1179,min=0.0001,max=0.9989,hist=(<0.001:156,0.001-0.005:70,0.005-0.01:14,0.01-0.03:24,0.03-0.1:25,0.1-0.3:48,0.3-1.0:53,1.0:0)],chosen_prior[mean=0.5403,min=0.0001,max=0.9988,hist=(<0.001:15,0.001-0.005:12,0.005-0.01:4,0.01-0.03:4,0.03-0.1:18,0.1-0.3:58,0.3-1.0:279,1.0:0)]|plain:n=2637,attach_prior[mean=0.0512,min=0.0000,max=0.9990,hist=(<0.001:1280,0.001-0.005:276,0.005-0.01:123,0.01-0.03:251,0.03-0.1:354,0.1-0.3:239,0.3-1.0:114,1.0:0)],chosen_prior[mean=0.5039,min=0.0001,max=0.9995,hist=(<0.001:134,0.001-0.005:83,0.005-0.01:13,0.01-0.03:34,0.03-0.1:211,0.1-0.3:437,0.3-1.0:1725,1.0:0)]
+SIM_KO_REACHED=1.20%(2279/190600)
+SIM_KO_DEPTH_MEAN=4.3690
+SIM_KO_DEPTH_MIN=1
+SIM_KO_DEPTH_MAX=12
+TRUE_RESULT_TALLY=P0_WINS=15,P1_WINS=25,DRAWS=0
+POLICY_TARGET_ZERO_FRACTION_MEAN=0.1764
+POLICY_TARGET_ENTROPY_MEAN=0.6912
+POLICY_TARGET_COUNT=1906
+ROOT_CHILD_COUNT=mean=6.61,median=5.0,n=1906,by_turn=(1-2:mean=6.97,median=4.0,n=420|3-5:mean=6.48,median=5.0,n=319|6+:mean=6.51,median=5.0,n=1167)
+ROOT_VISIT_HIST=0:30.13%(3794/12592)|1:25.67%(3232/12592)|2-4:8.20%(1033/12592)|5+:36.00%(4533/12592)
+ENERGY_DEV_RATE=41.24%(233/565)
+GRASS_IN_DISCARD_RATE=33.11%(631/1906)
+=== DIAG_DUMP_END ===
+EVAL_GAME_DONE=40/40 winner=candidate p0=first(first-legal) p1=candidate result=1 reason=3 cause=other turn=32 cand_prizes=4 opp_prizes=0 sec=344.59
+OPP_WALL_SEC=9888.18
+OPP_MEAN_SEC_PER_GAME=247.20
+OPP_first_CANDIDATE: wins=7 losses=33 draws=0 win_rate=17.5%(7/40) wilson95=[8.7%,31.9%] prize_decided=19/40 deckout_share=17.5%(7/40)
+OPP_first_OPPONENT: wins=33 losses=7 draws=0 win_rate=82.5%(33/40) wilson95=[68.1%,91.3%] prize_decided=19/40 deckout_share=17.5%(7/40)

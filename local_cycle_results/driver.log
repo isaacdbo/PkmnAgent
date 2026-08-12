@@ -1,0 +1,5 @@
+STAGE1_BEGIN before-eval 2026-08-11T11:42:33Z
+STAGE1_DONE 2026-08-11T13:47:56Z
+OPP_random_CANDIDATE: wins=5 losses=35 draws=0 win_rate=12.5%(5/40) wilson95=[5.5%,26.1%] prize_decided=9/40 deckout_share=15.0%(6/40)
+OPP_iono_rule_CANDIDATE: wins=0 losses=40 draws=0 win_rate=0.0%(0/40) wilson95=[0.0%,8.8%] prize_decided=0/40 deckout_share=0.0%(0/40)
+STAGE2_BEGIN training 2026-08-11T13:47:57Z
